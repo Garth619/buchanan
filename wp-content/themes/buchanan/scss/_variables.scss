@@ -22,11 +22,6 @@ $themePath: '/wp-content/themes/starter/';
 // industry
 
 
-@mixin industry_bold {
-  font-family: industry, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-}
 
 
 @mixin industry_book {
@@ -34,6 +29,19 @@ $themePath: '/wp-content/themes/starter/';
 	font-weight: 400;
 	font-style: normal;
 }
+
+@mixin industry_bold {
+  font-family: industry, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin industry_black {
+  font-family: industry, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
 
 
 // montserrat

@@ -51,6 +51,42 @@
 	
 	<header>
 		
+		<div class="header_left">
+			
+			<a href="">
+				
+				<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+				
+			</a>
+			
+		</div><!-- header_left -->
+		
+		<div class="header_right">
+			
+			<div class="consult_phone">
+				
+				<span class="free_consult">Free Consultation</span><!-- free_consult -->
+				
+				<a class="phone" href="">1(800)272-4080</a><!-- phone -->
+				
+			</div><!-- consult_phone -->
+			
+			<div class="menu_wrapper">
+				
+				<div class="menu_bars">
+					
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+					
+					<span class="menu_title">Menu</span><!-- menu_title -->
+					
+				</div><!-- menu_bars -->
+				
+			</div><!-- menu_wrapper -->
+			
+		</div><!-- header_right -->
+		
 		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 		
 	</header>
