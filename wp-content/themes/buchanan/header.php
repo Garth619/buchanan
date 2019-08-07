@@ -26,11 +26,13 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-
+<!-- <link rel="stylesheet" href="https://use.typekit.net/vvg8luc.css"> -->
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+@import url("https://use.typekit.net/vvg8luc.css");
 
 <?php the_field( 'review_css','option'); ?>
 

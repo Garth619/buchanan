@@ -13,3 +13,60 @@ $themePath: '/wp-content/themes/starter/';
 @include quatro_reg;
 
 */
+
+
+
+// fonts
+
+
+// industry
+
+
+@mixin industry_bold {
+  font-family: industry, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@mixin industry_book {
+  font-family: industry, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+// montserrat
+
+
+@mixin montserrat_reg {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin montserrat_bold {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin montserrat_extrabold {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+// colors
+
+$bluedark: #001a3d;
+$blue: #093d9d;
+$bluelight: #387bd4;
+$bluesky: #9cc7ec;
+
+$red: #e20000;
+$greydark: #9da9b6;
+$greylight: #dde0e5;
+
+
