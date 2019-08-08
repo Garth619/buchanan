@@ -64,6 +64,53 @@ ul.sec_one_sp_list {
 	}
 }
 
+.pa_input_wrapper {
+	width:633px;
+	display: flex;
+	margin-top:40px;
+	.pa_input {
+		flex-grow:1;
+		background:#fff;
+		height:69px;
+		display: flex;
+		align-items: center;
+		span.pa_input_value {
+			color:$bluedark;
+			text-transform: uppercase;
+			font-size: 16px;
+			letter-spacing: 0.075em;
+			padding: 0 32px;
+			@include montserrat_bold;
+			&:after {
+				content:"";
+				display: inline-block;
+				vertical-align: top;
+				width: 0; 
+				height: 0; 
+				margin-top:3px;
+				margin-left:6px;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+				border-top: 9px solid $red;
+			}
+		}
+	}
+	.pa_submit {
+		flex-basis:135px;
+		flex-shrink:0;
+		height:69px;
+		background: $red;
+		color:#fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		font-size: 17px;
+		letter-spacing: 0.1em;
+		@include industry_black;
+	}
+}
+
 
 .parallax {
 	position: absolute;
