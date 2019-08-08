@@ -47,6 +47,12 @@ $themePath: '/wp-content/themes/starter/';
 // montserrat
 
 
+@mixin montserrat_light {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
 @mixin montserrat_reg {
   font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
