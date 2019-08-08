@@ -90,14 +90,55 @@
 		
 		<div class="parallax">
 			
-			<img id="para_one" src="<?php bloginfo('template_directory');?>/images/layer-3.jpg"/>
+
+			<picture id="pic_one">
+				
+				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-3.jpg">
+					
+				<img id="para_one" src="" alt=""/>
+		
+			</picture>
+			
+			<picture id="pic_two">
+				
+				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-2.png">
+					
+				<img id="para_two" src="" alt=""/>
+				
+			</picture>
+			
+			<picture id="pic_three">
+				
+				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-1.png">
+					
+				<img id="para_three" src="" alt=""/>
+				
+			</picture>
+
+			
+			
+<!--
+			<img id="para_one" src="<?php bloginfo('template_directory');?>/images/layer-3.jpg"/> 
 			
 			<img id="para_two" src="<?php bloginfo('template_directory');?>/images/layer-2.png"/>
 			
 			<img id="para_three" src="<?php bloginfo('template_directory');?>/images/layer-1.png"/>
-			
-		</div><!-- updated_parallax -->
+-->
 
+			
+		</div><!-- parallax -->
+
+		
+		<picture>
+				
+			<source media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/hero-tab.jpg">
+					
+			<img class="tab_hero" src="" alt=""/>
+		
+		</picture>
+		
+
+		
 	
 </section><!-- section_one -->
 

@@ -313,10 +313,16 @@ $('.sec_three_slider').slick({
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
+	
 
 
 
-window.requestAnimFrame = (function(){
+
+function paraWidth() {
+    
+    if ($(window).width() > 1290) {
+        
+      window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
           window.webkitRequestAnimationFrame ||
           window.mozRequestAnimationFrame    ||
@@ -392,8 +398,8 @@ window.requestAnimFrame = (function(){
     updateElements(win.pageYOffset);
 
     
-   // paraTwo.classList.add('force-show');
-    //paraThree.classList.add('force-show');
+   paraTwo.classList.add('force-show');
+   paraThree.classList.add('force-show');
 
   })();
 
@@ -401,6 +407,17 @@ window.requestAnimFrame = (function(){
   win.addEventListener('scroll', onScroll, false);
 
 })(window, document);
+        	   		
+    		
+    } 
+    
+};
+	
+
+paraWidth();
+
+
+
 
 
 

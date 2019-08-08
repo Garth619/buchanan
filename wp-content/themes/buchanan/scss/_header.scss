@@ -88,4 +88,30 @@ header {
 }
 
 
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.consult_phone {
+		position: fixed;
+		width:100%;
+		top:96px;
+		left:0;
+		height:60px;
+		background: $bluedark;
+		flex-direction: row;
+		align-items: center;
+		span.free_consult {
+			margin-bottom:0;
+			margin-right:15px;
+			margin-top:2px;
+		}
+		a.phone {
+			color:#fff;
+		}
+	}
 
+	
+	
+	
+} /* Media Query */
