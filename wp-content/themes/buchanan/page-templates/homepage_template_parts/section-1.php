@@ -74,6 +74,20 @@
 			
 		</div><!-- section_one_inner -->
 		
+		<div class="sec_one_play_wrapper">
+				
+				<img class="play_button_dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
+				
+				<div class="vid_img_wrapper">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb.png"/>
+					
+				</div><!-- vid_img_wrapper -->
+				
+				<img class="play_verbiage" src="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png"/><!-- play_verbiage -->
+				
+			</div><!-- sec_one_play_wrapper -->
+		
 		<div class="parallax">
 			
 			<img id="para_one" src="<?php bloginfo('template_directory');?>/images/layer-3.jpg"/>
