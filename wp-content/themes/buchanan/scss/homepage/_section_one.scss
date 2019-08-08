@@ -115,10 +115,15 @@ ul.sec_one_sp_list {
 .pa_sps_wrapper {
 	margin-top:153px;
 	display: flex;
+	max-width:1055px;
+	justify-content: space-between;
 }
 
 
 .pa_sps {
+	&:first-of-type {
+		margin-right:45px;
+	}
 	span {
 		display: block;
 	}
@@ -134,6 +139,7 @@ ul.sec_one_sp_list {
 		font-size: 17px;
 		line-height: 32px;
 		margin-top:15px;
+		max-width:480px;
 		@include montserrat_light;
 	}
 	a.learn_more {
@@ -141,10 +147,23 @@ ul.sec_one_sp_list {
 		color:#fff;
 		text-decoration: none;
 		font-size: 15px;
-		display: inline-block;
 		letter-spacing: 0.14em;
 		margin-top:35px;
+		width:215px;
+		display: flex;
+		transition: all 200ms ease-in-out;
 		@include industry_black;
+		&:hover {
+			color:$bluesky;
+		}
+		span {
+			
+		}
+		svg {
+			width:80px;
+			height:15px;
+			margin-left:12px;
+		}
 	}
 }
 
@@ -171,7 +190,12 @@ ul.sec_one_sp_list {
 	}
 	&:after {
 		z-index: 2;
-		background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(46,87,127,0) 63%,rgba(31,68,107,1) 75%,rgba(0,29,65,0.7) 100%);
+		position: absolute;
+		width:100%;
+		height:1052px;
+		top:96px;
+		left:0;
+		background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(68,113,155,0) 46%,rgba(16,49,87,1) 87%,rgba(0,29,65,1) 100%);
 	}
 	img {
 		position: absolute;

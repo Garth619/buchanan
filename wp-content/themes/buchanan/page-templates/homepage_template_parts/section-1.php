@@ -44,17 +44,29 @@
 				
 					<span class="pa_sps_description">We have a well-earned reputation for providing high quality representation to victims of medical malpractice.</span><!-- pa_sps_description -->
 				
-					<a class="learn_more" href="">Learn More</a><!-- learn_more -->
+					<a class="learn_more" href="">
+						
+						<span>Learn More</span>
+						
+						<?php echo file_get_contents("wp-content/themes/buchanan/images/graphic-squiggle.svg"); ?>
+					
+					</a><!-- learn_more -->
 				
 				</div><!-- pa_sps -->
 				
 				<div class="pa_sps">
 				
-					<span class="pa_sps_title">Medical Malpractice</span><!-- pa_sps_title -->
+					<span class="pa_sps_title">Vehicle Malpractice</span><!-- pa_sps_title -->
 				
-					<span class="pa_sps_description">We have a well-earned reputation for providing high quality representation to victims of medical malpractice.</span><!-- pa_sps_description -->
+					<span class="pa_sps_description">If you have been injured in an accident, contact us today for help and for the reimbursements you deserve.</span><!-- pa_sps_description -->
 				
-					<a class="learn_more" href="">Learn More</a><!-- learn_more -->
+					<a class="learn_more" href="">
+						
+						<span>Learn More</span>
+						
+						<?php echo file_get_contents("wp-content/themes/buchanan/images/graphic-squiggle.svg"); ?>
+					
+					</a><!-- learn_more -->
 				
 				</div><!-- pa_sps -->
 				
