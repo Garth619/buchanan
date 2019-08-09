@@ -152,4 +152,19 @@ header {
 	}
 	
 	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 399px) {
+	
+	
+	
+	.consult_phone {
+		span.free_consult {
+			display: none;
+		}
+	}
+	
+	
 } /* Media Query */

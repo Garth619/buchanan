@@ -323,7 +323,41 @@ $('.pa_sps_wrapper').slick({
  });
  
 
-
+$('.sec_three_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+	arrows:true,
+	prevArrow:".arrow_left",
+	nextArrow:".arrow_right"
+/*
+	responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+      slidesToShow: 5,
+      slidesToScroll: 5,
+     }
+   },
+   {
+      breakpoint: 1100,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots:true,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots:true,
+     }
+   }
+	]
+*/
+ });
 
  
 
