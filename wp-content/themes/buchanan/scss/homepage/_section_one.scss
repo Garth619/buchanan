@@ -545,6 +545,7 @@ img.tab_hero {
    padding:0 20px;
    .slick-dots {
    	bottom: -50px;
+   	width:calc(100% - 32px);
    	li.slick-active {
    		button {
    			&:before {
@@ -616,18 +617,24 @@ img.tab_hero {
 	
 	
 .sec_one_play_wrapper {
-	
+	max-width:320px;
 	img.play_button_dots {
-		
+		width: 247px;
+		height:247px;
 	}
 	.vid_img_wrapper {
-		
+		width: 192px;
+		height:192px;
+		top: 83px;
 		img {
-			
+			width: 192px;
+			height:192px;
 		}
 	}
 	img.play_verbiage {
-		
+		width:210px;
+		top: 69px;
+    left: 52px;
 	}
 }
 	

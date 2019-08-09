@@ -4,3 +4,49 @@
 	width:100%;
 	height:3000px;
 }
+
+
+.sec_two_top {
+	padding: 184px 0 0 97px;
+	max-width: 1824px;
+	margin:0 auto;
+	h1 {
+		span {
+			display: block;
+		}
+		span.large_header {
+			font-size:170px;
+			text-transform: uppercase;
+			color:$blue;
+			@include montserrat_bold;
+		}
+		span.sub_header {
+			text-transform: uppercase;
+			font-size: 24px;
+			letter-spacing: 0.26em;
+			margin-top:19px;
+			margin-left:10px;
+			@include industry_black;
+			&:after {
+				content:"";
+				display: inline-block;
+				width:80px;
+				height:11px;
+				vertical-align: top;
+				margin-top:5px;
+				margin-left:7px;
+				background-size:80px 11px;
+				background: url(#{$themePath}images/graphic-squiggle.svg);
+			}
+		}
+	}
+	span.sec_two_top_description {
+		font-size: 35px;
+		line-height: 55px;
+		margin-top:60px;
+		color:$greydark;
+		display: block;
+		max-width:967px;
+		@include montserrat_extralight;
+	}
+}

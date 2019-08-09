@@ -30,7 +30,7 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800&display=swap');
 
 @import url("https://use.typekit.net/vvg8luc.css");
 
