@@ -328,8 +328,9 @@ $('.sec_three_slider').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
 	arrows:true,
-	prevArrow:".arrow_left",
-	nextArrow:".arrow_right"
+	dots:true,
+	prevArrow:".sec_three_arrow_left",
+	nextArrow:".sec_three_arrow_right"
 /*
 	responsive: [
     {

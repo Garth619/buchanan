@@ -7,7 +7,7 @@
 .sec_three_inner {
 	max-width:1605px;
 	margin:0 auto;
-	padding:94px 0 129px;
+	padding:94px 0 0px;
 }
 
 .sec_three_slider {
@@ -17,6 +17,39 @@
 	  .slick-list {
 	    margin: 0 -33px;
 	    padding-bottom: 45px;
+	  }
+	  .slick-dots {
+	  	bottom: -100px;
+	  	width:250px;
+	  	margin:auto;
+	  	position: relative;
+	  	li.slick-active {
+	  		button {
+	  			&:before {
+	  				color:#fff;
+	  			}
+	  		}
+	  	}
+	  	li:hover {
+	  		button {
+	  			&:before {
+	  				color:#fff;
+	  			}
+	  		}
+	  	}
+	  	li {
+	  		margin:0;
+	  		width:33px;
+	  		button {
+	  			width:33px;
+	  			&:before {
+	  				width:33px;
+	  				opacity: 1;
+	  				color: #526787;
+	  				font-size:30px;
+	  			}
+	  		}
+	  	}
 	  }
 }
 
@@ -73,5 +106,24 @@
 			margin-top:37px;
 			@include industry_black;
 		}
+	}
+}
+
+
+.sec_three_arrow_wrapper {
+	width:100%;
+	max-width:400px;
+	margin:63px auto 0;
+	display: flex;
+	justify-content: space-between;
+	.sec_three_arrow {
+		width:75px;
+		svg {
+			width:75px;
+			height: 47px;
+		}
+	}
+	.sec_three_arrow_left {
+		transform: rotate(180deg);
 	}
 }
