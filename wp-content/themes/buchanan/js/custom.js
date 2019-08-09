@@ -420,15 +420,5 @@ paraWidth();
 
 
 
-
-
-
-
-
-
-
-
-
-
   
 }); // document ready

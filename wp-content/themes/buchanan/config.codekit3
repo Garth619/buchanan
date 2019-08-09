@@ -452,6 +452,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/vid_thumb.png": {
+		"ft": 32768,
+		"iS": 138002,
+		"oA": 0,
+		"oAP": "/images/vid_thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
