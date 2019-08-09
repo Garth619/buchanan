@@ -95,6 +95,9 @@ ul.sec_one_sp_list {
 				border-top: 9px solid $red;
 			}
 		}
+		span.pa_input_value.mobile {
+			display: none;
+		}
 	}
 	.pa_submit {
 		flex-basis:135px;
@@ -430,7 +433,7 @@ img.tab_hero {
 	
 	
 	#section_one {
-		margin-top: 156px;
+		margin-top: 149px;
 		padding:1px 54px 0px;
 	}
 	
@@ -448,7 +451,155 @@ img.tab_hero {
 	}
 	
 	
+	
+	
+	
 		
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	#section_one {
+		padding:1px 32px 0;
+		//overflow: hidden;
+		height:auto;
+	}
+	
+	.section_one_inner {
+		margin: 66px auto 0;
+		span.sec_one_subheader {
+			font-size: 22px;
+		}
+		span.sec_one_large_header {
+			font-size: 72px;
+			line-height: 69px;
+		}
+	}
+	
+	
+	ul.sec_one_sp_list {
+		margin-top: 22px;
+		max-width:505px;
+		li {
+			letter-spacing: 0.065em;
+			display: inline;
+			&:after {
+				
+			}
+		}
+	}
+	
+	
+.pa_input_wrapper {
+	flex-direction: column;
+	width:100%;
+	margin-top: 44px;
+	max-width: 500px;
+	.pa_input {
+		flex-basis:auto;
+		height:65px;
+		span.pa_input_value {
+			margin:0 auto;
+			&:after {
+				
+			}
+		}
+		span.pa_input_value.desktop {
+			display: none;
+		}
+		span.pa_input_value.mobile {
+			display: block;
+		}
+	}
+	.pa_submit {
+		flex-basis:auto;
+		margin-top:10px;
+		background:transparent;
+		border: 1px solid #9fb8d1;
+		position: relative;
+		z-index:1;
+		height:83px;
+		&:before, &:after {
+			content:"";
+			display: block;
+			width:calc(100% - 20px);
+			height:calc(100% - 20px);
+			position: absolute;
+			top:10px;
+			left:10px;
+		}
+		&:before {
+			background:$red;
+			z-index:-1;
+		}
+	}
+}
+
+
+.pa_sps_wrapper {
+   margin-top: 69px;
+   padding:0 20px;
+   padding-bottom:33px;
+   .slick-dots {
+   	bottom: -30px;
+   	li.slick-active {
+   		button {
+   			&:before {
+   				color:#fff;
+   			}
+   		}
+   	}
+   	li:hover {
+   		button {
+   			&:before {
+   				color:#fff;
+   			}
+   		}
+   	}
+   	li {
+   		margin:0;
+   		width:19px;
+   		button {
+   			width:19px;
+   			&:before {
+   				width:19px;
+   				opacity: 1;
+   				color: #526787;
+   				font-size:24px;
+   			}
+   		}
+   	}
+   }
+}
+
+
+.sec_one_play_wrapper {
+	max-width:350px;
+	img.play_button_dots {
+		width: 277px;
+    height: 277px;
+    margin: 155px 106px 0 0;
+	}
+	.vid_img_wrapper {
+		width: 234px;
+    height: 234px;
+		img {
+			width:234px;
+			height:234px;
+		}
+	}
+	img.play_verbiage {
+		width:235px;
+		height:auto;
+		top: 71px;
+    left: 62px;
+	}
+}
+	
 	
 } /* Media Query */
 

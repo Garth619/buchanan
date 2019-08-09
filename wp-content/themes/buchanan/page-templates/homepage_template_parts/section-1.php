@@ -18,7 +18,9 @@
 				
 				<div class="pa_input">
 					
-					<span class="pa_input_value">What Type of Injury Did You Suffer?</span><!-- pa_input_value -->
+					<span class="pa_input_value desktop">What Type of Injury Did You Suffer?</span><!-- pa_input_value -->
+					
+					<span class="pa_input_value mobile">Select Your Injury</span><!-- pa_input_value -->
 					
 				</div><!-- pa_input -->
 				

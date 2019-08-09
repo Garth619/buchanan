@@ -95,7 +95,7 @@ header {
 	.consult_phone {
 		position: fixed;
 		width:100%;
-		top:96px;
+		top: 89px;
 		left:0;
 		height:60px;
 		background: $bluedark;
@@ -112,6 +112,44 @@ header {
 	}
 
 	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	header {
+		height:89px;
+	}
+	
+	
+	.header_left {
+		padding-left:15px;
+		a {
+			img.logo {
+				width: 219px;
+				height: 53px;
+			}
+		}
+	}
+	
+	
+	.consult_phone {
+		span.free_consult {
+			font-size:12px;
+			margin-right: 9px;
+		}
+		a.phone {
+			font-size: 25px;
+		}
+	}
+	
+	.menu_wrapper {
+		width: 92px;
+	}
 	
 	
 } /* Media Query */

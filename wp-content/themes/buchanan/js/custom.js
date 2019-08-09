@@ -266,6 +266,7 @@ jQuery(document).ready(function($){
 --------------------------------------------------------------------------------------- */
 
 
+
 /*
 $('.sec_three_slider').slick({
   infinite: true,
@@ -302,6 +303,28 @@ $('.sec_three_slider').slick({
  });
  
 */
+
+
+
+$('.pa_sps_wrapper').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:true,
+	fade:true,
+	mobileFirst:true,
+	responsive: [
+    {
+      breakpoint: 768,
+      settings: "unslick",
+   }
+	]
+ });
+ 
+
+
+
  
 
 	
