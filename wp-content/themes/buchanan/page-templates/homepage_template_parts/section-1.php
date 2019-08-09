@@ -76,6 +76,8 @@
 			
 		</div><!-- section_one_inner -->
 		
+		<div class="mobile_position_play">
+		
 		<div class="sec_one_play_wrapper">
 				
 				<img class="play_button_dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
@@ -89,6 +91,8 @@
 				<img class="play_verbiage" src="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png"/><!-- play_verbiage -->
 				
 			</div><!-- sec_one_play_wrapper -->
+			
+		</div><!-- mobile_position -->
 		
 		<div class="parallax">
 			

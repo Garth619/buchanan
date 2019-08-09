@@ -464,7 +464,7 @@ img.tab_hero {
 	
 	
 	#section_one {
-		padding:1px 32px 0;
+		padding:1px 32px 280px;
 		//overflow: hidden;
 		height:auto;
 	}
@@ -543,9 +543,8 @@ img.tab_hero {
 .pa_sps_wrapper {
    margin-top: 69px;
    padding:0 20px;
-   padding-bottom:33px;
    .slick-dots {
-   	bottom: -30px;
+   	bottom: -50px;
    	li.slick-active {
    		button {
    			&:before {
@@ -577,6 +576,14 @@ img.tab_hero {
 }
 
 
+.mobile_position_play {
+	position: absolute;
+	bottom:-198px;
+	left:0;
+	width:100%;
+}
+
+
 .sec_one_play_wrapper {
 	max-width:350px;
 	img.play_button_dots {
@@ -595,7 +602,7 @@ img.tab_hero {
 	img.play_verbiage {
 		width:235px;
 		height:auto;
-		top: 71px;
+		top: 69px;
     left: 62px;
 	}
 }
