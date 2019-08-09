@@ -119,7 +119,7 @@
 		"oAP": "/images/content-img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/favicon.png": {
