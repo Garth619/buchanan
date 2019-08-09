@@ -610,3 +610,50 @@ img.tab_hero {
 	
 } /* Media Query */
 
+
+@media screen and (max-width: 405px) {
+	
+	
+	
+.sec_one_play_wrapper {
+	
+	img.play_button_dots {
+		
+	}
+	.vid_img_wrapper {
+		
+		img {
+			
+		}
+	}
+	img.play_verbiage {
+		
+	}
+}
+	
+	
+	
+	
+	.section_one_inner {
+		span.sec_one_large_header {
+			font-size: 65px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 375px) {
+	
+	.section_one_inner {
+		span.sec_one_large_header {
+			font-size: 60px;
+			line-height: 58px;
+		}
+	}
+	
+	
+} /* Media Query */
+
