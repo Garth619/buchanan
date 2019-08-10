@@ -24,7 +24,7 @@ sed do esto eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis es 
 				
 				<span class="sec_two_cta_description">Our clients always meet with the team that handles the claim. We never pass you down to an inexperienced attorney or send you off to another firm.</span><!-- sec_two_cta_description -->
 				
-				<a class="sch_free_consult" href="#consultation">Schedule a Free Consultaton</a><!-- sch_free_consult -->
+				<a class="button sec_two_consult_button" href="#consultation">Schedule a Free Consultation</a><!-- consult_button -->
 			
 			</div><!-- sec_two_cta -->
 

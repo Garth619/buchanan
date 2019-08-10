@@ -1,7 +1,7 @@
 #section_four {
 	overflow: hidden;
 	position: relative;
-	height:5000px;
+	padding-bottom:160px;
 	img.circles {
 		position: absolute;
 		top: -36px;
@@ -46,4 +46,32 @@
 			}
 		}
 	}
+}
+
+
+
+span.sec_four_description {
+	display: block;
+	font-size:35px;
+	line-height: 55px;
+	color:$bluedark;
+	max-width:1000px;
+	margin:34px auto 0;
+	@include montserrat_extralight;
+}
+
+a.sec_four_button {
+	margin:32px auto 0;
+}
+
+
+.sec_four_bottom {
+	display: flex;
+	justify-content: space-between;
+	max-width:1605px;
+	margin:115px auto 0;
+}
+
+.sec_four_col {
+	flex-basis: 44.5%;
 }
