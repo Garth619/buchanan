@@ -80,10 +80,7 @@ h1,h2,h3,h4 {
 		 line-height: 31px;
 		 @include industry_bold;
 	 }
-	 h3.hack {
-		 padding-top:5px;
-	 }
-	 p,ul {
+	p,ul {
 		 margin-bottom:29px;
 	 }
 	 ul {

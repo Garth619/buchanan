@@ -1,6 +1,10 @@
 <section id="section_four">
 	
-	<img class="circles" src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
+	<img class="circles desktop" src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
+	
+	<img class="circles tablet" src="<?php bloginfo('template_directory');?>/images/graphic-dots-tablet.svg"/>
+	
+	
 	
 	<div class="sec_four_top">
 		
