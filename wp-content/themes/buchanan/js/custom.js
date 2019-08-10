@@ -330,22 +330,21 @@ $('.sec_three_slider').slick({
 	arrows:true,
 	dots:true,
 	prevArrow:".sec_three_arrow_left",
-	nextArrow:".sec_three_arrow_right"
-/*
+	nextArrow:".sec_three_arrow_right",
 	responsive: [
     {
-      breakpoint: 1450,
+      breakpoint: 1815,
       settings: {
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToShow: 2,
+      slidesToScroll: 2,
      }
    },
    {
-      breakpoint: 1100,
+      breakpoint: 1165,
       settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots:true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
      }
    },
    {
@@ -353,11 +352,11 @@ $('.sec_three_slider').slick({
       settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots:true,
+			centerMode: false
+			//fade:true
      }
    }
 	]
-*/
  });
 
  
