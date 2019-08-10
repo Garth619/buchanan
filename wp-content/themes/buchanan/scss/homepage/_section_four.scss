@@ -1,0 +1,49 @@
+#section_four {
+	overflow: hidden;
+	position: relative;
+	height:5000px;
+	img.circles {
+		position: absolute;
+		top: -36px;
+    left: -20px;
+		width:430px;
+		height:413px;
+		transform: rotate(-90deg);
+	}
+}
+
+
+
+.sec_four_top {
+	text-align: center;
+	position: relative;
+	z-index:1;
+	padding:225px 0 0 0;
+	h2 {
+		span {
+			display: block;
+		}
+		span.large_header {
+			color:$blue;
+			font-size: 170px;
+			text-transform: uppercase;
+			@include montserrat_bold;
+		}
+		span.sub_header {
+			text-transform: uppercase;
+			font-size: 26px;
+			letter-spacing: 0.26em;
+			margin:14px 0 0;
+			@include industry_black;
+			&:after {
+				content:"";
+				display: block;
+				width:80px;
+				height:11px;
+				margin:50px auto 0;
+				background-size:80px 11px;
+				background: url(#{$themePath}images/graphic-squiggle.svg);
+			}
+		}
+	}
+}
