@@ -133,6 +133,12 @@ footer {
 	z-index:2;
 	max-width: 1605px;
 	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.footer_single_info {
 	span {
 		display: block;
 		color:#fff;
@@ -152,9 +158,11 @@ footer {
 			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 		}
 	}
-	span.large_text {
+	.large_text {
 		font-size: 29px;
 		line-height: 41px;
+		color:#fff;
+		text-decoration: none;
 		@include montserrat_light;
 	}
 	span.address {
@@ -168,11 +176,37 @@ footer {
 		letter-spacing: 0.14em;
 		display: flex;
 		align-items: center;
-		margin:35px 0 0;
+		margin:41px 0 0;
 		@include industry_black;
 		svg {
 			width:60px;
 			margin-left:13px;
+		}
+	}
+	span.footer_info_subtitle {
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 0.14em;
+		color:$bluesky;
+		margin-top:35px;
+		@include industry_black;
+	}
+	span.view_calendar {
+		max-width:454px;
+		margin-top:25px;
+	}
+}
+
+.footer_info_left {
+	
+}
+
+.footer_info_right {
+	display: flex;
+	justify-content: space-between;
+	&:last-of-type {
+		.footer_single_info {
+			margin-left:75px;
 		}
 	}
 }
