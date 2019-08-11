@@ -41,11 +41,11 @@
 			&:after {
 				content:"";
 				display: block;
-				width:80px;
-				height:11px;
+				width:77px;
+				height:10px;
 				margin:50px auto 0;
 				background-size:80px 11px;
-				background: url(#{$themePath}images/graphic-squiggle.svg);
+				background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 			}
 		}
 	}

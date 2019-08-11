@@ -40,13 +40,13 @@
 			&:after {
 				content:"";
 				display: inline-block;
-				width:80px;
-				height:11px;
+				width:77px;
+				height:10px;
 				vertical-align: top;
 				margin-top:5px;
 				margin-left:7px;
 				background-size:80px 11px;
-				background: url(#{$themePath}images/graphic-squiggle.svg);
+				background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 			}
 		}
 	}
