@@ -475,7 +475,16 @@ paraWidth();
 
 
 
-
+	// form styles
+  
+  $('footer textarea').parent().parent().addClass('textarea_wrap');
+  
+  
+  $(document).bind('gform_post_render', function(){
+  		
+  	 $('footer textarea').parent().parent().addClass('textarea_wrap');
+    	
+  });
 
   
 }); // document ready

@@ -57,7 +57,7 @@ span.sec_four_description {
 	display: block;
 	font-size:35px;
 	line-height: 55px;
-	color:$bluedark;
+	color:#738095;
 	max-width:1000px;
 	margin:34px auto 0;
 	@include montserrat_extralight;
@@ -312,7 +312,7 @@ a.sec_four_button {
 				font-size: 45px;
 			}
 			span.sub_header {
-				
+				padding: 0 15px;
 				&:after {
 					
 				}
