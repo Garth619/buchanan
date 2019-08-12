@@ -224,6 +224,7 @@ footer {
 
 .copyright {
 	height:79px;
+	padding:0 42px;
 }
 
 
@@ -231,15 +232,26 @@ footer {
 	max-width:1845px;
 	margin:0 auto;
 	display: flex;
-	justify-content: space-between;
+	height:100%;
+	align-items:center;
 }
 
 .social_media {
 	display: flex;
 	a {
 		margin-right:20px;
+		&:hover {
+			svg {
+				path {
+					fill:$bluelight;
+				}
+			}
+		}
 		svg {
-			
+			path {
+				fill:$bluedark;
+				transition: all 200ms ease-in-out;
+			}
 		}
 	}
 	a.facebook {
@@ -249,20 +261,58 @@ footer {
 	a.google {
 		width:17px;
 		height:20px;
+		position: relative;
+		top:1px;
 	}
 	a.youtube {
 		width:25px;
 		height:15px;
+		position: relative;
+		top:1px;
 	}
 }
 
 .all_rights_reserved {
+	display: flex;
+	justify-content: flex-start;
+	flex-grow:1;
+	margin-left:25px;
 	ul {
 		list-style: none;
 		margin:0;
 		li {
 			display: inline-block;
+			font-size: 11px;
+			line-height: 20px;
+			@include montserrat_light;
+			a {
+				color:$bluedark;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$blue;
+				}
+			}
+			&:after {
+				content:"|";
+				display: inline-block;
+				margin:0 4px 0 7px;
+			}
+			&:last-of-type {
+				&:after {
+					display: none;
+				}
+			}
 		}
+	}
+}
+
+
+a.ilawyer {
+	display: flex;
+	justify-content: flex-end;
+	svg {
+		width:255px;
 	}
 }
 
@@ -344,6 +394,19 @@ footer {
 		}
 	}
 }
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	.copyright {
+    padding: 0 32px;
+	}
+	
 	
 	
 } /* Media Query */
@@ -434,6 +497,48 @@ footer {
 } /* Media Query */
 
 
+@media screen and (max-width: 1066px) {
+	
+	.copyright {
+		height:auto;
+		padding:0;
+	}
+	
+	.copyright_inner {
+		flex-wrap:wrap;
+	}
+	
+	.social_media {
+		padding-left:32px;
+		a {
+			margin-right: 26px;
+		}
+	}
+	
+	.all_rights_reserved {
+		padding:28px 32px 28px 0;
+		justify-content: flex-end;
+	}
+	
+	a.ilawyer {
+		flex-basis:100%;
+		background: $bluedark;
+		padding:20px 0;
+		svg {
+			margin:0 auto;
+			.ilawyer-st0{
+				fill:#fff
+			}
+		}
+	}
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -486,7 +591,38 @@ footer {
 	}
 	
 	
-
+	
+	.copyright_inner {
+		display: block;
+	}
+	
+	.social_media {
+		padding:0;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		padding:40px 0 0;
+		a {
+			margin: 0 12px;
+		}
+	}
+	
+	.all_rights_reserved {
+		display: block;
+		padding: 15px 0;
+		margin:0 auto 22px;
+		text-align: center;
+		max-width:355px;
+		ul {
+			li {
+				&:first-of-type {
+					&:after {
+						display: none
+					}
+				}
+			}
+		}
+	}
 	
 	
 } /* Media Query */

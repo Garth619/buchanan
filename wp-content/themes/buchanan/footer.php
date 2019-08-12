@@ -112,7 +112,7 @@
 			
 			<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-logo-ilawyer.svg"); ?>
 			
-		</a>
+		</a><!-- ilawyer -->
 		
 	</div><!-- copyright_inner -->
 	
