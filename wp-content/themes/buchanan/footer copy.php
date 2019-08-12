@@ -86,7 +86,7 @@
 			
 			<a class="sm_icon google" href="">
 				
-				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer_icon-01.svg"); ?>
+				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-google.svg"); ?>
 				
 			</a>
 			
@@ -96,7 +96,7 @@
 				
 			</a>
 			
-		</div><!-- social_media -->
+		<div><!-- social_media -->
 		
 		<div class="all_rights_reserved">
 			
