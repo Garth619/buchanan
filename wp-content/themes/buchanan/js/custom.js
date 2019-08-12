@@ -516,7 +516,7 @@ paraWidth();
   
   $('.step_two').on('click', function(e) {
     
-    $('body').addClass('goooo');
+   	$('.pa_overlay').addClass('open');
     
   });
   
@@ -532,6 +532,13 @@ paraWidth();
     
   	$('.pa_submit').removeClass('hover');
   
+  });
+  
+  
+  $('.pa_close').on('click', function(e) {
+	  
+	  $('.pa_overlay').removeClass('open');
+    
   });
   
 

@@ -35,10 +35,10 @@
 				<div class="pa_dropdown">
 					
 					<ul>
-						<li>Lorem Ipsum 1</li>
-						<li>Lorem Ipsum 2</li>
-						<li>Lorem Ipsum 3</li>
-						<li>Lorem Ipsum 4</li>
+						<li>Practice Area 1</li>
+						<li>Practice Area 2</li>
+						<li>Practice Area 3</li>
+						<li>Practice Area 4</li>
 					</ul>
 					
 				</div><!-- pa_dropdown -->
@@ -153,6 +153,8 @@
 	</section><!-- section_one -->
 	
 	<div class="pa_overlay">
+		
+		<div class="pa_close"></div><!-- pa_close -->
 				
 		<div class="pa_overlay_inner">
 			
