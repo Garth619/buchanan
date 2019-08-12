@@ -30,9 +30,16 @@
 					
 				</div><!-- pa_submit -->
 				
+				<div class="step_two"></div><!-- step_two -->
+				
 				<div class="pa_dropdown">
 					
-					
+					<ul>
+						<li>Lorem Ipsum 1</li>
+						<li>Lorem Ipsum 2</li>
+						<li>Lorem Ipsum 3</li>
+						<li>Lorem Ipsum 4</li>
+					</ul>
 					
 				</div><!-- pa_dropdown -->
 				
@@ -142,9 +149,24 @@
 			<img class="tab_hero" src="" alt=""/>
 		
 		</picture>
-		
 
-		
+	</section><!-- section_one -->
 	
-</section><!-- section_one -->
+	<div class="pa_overlay">
+				
+		<div class="pa_overlay_inner">
+			
+			<div class="form_wrapper">
+		
+				<span class="large_header">Free Consultation</span><!-- large_header -->
+		
+				<span class="small_header">Information Required</span><!-- small_header -->
+		
+				<?php gravity_form(4, false, false, false, '', true, 132); ?>
+		
+			</div><!-- form_wrapper -->		
+					
+		</div><!-- pa_overlay_inner -->
+				
+	</div><!-- pa_overlay -->
 

@@ -477,14 +477,77 @@ paraWidth();
 
 	// form styles
   
-  $('footer textarea').parent().parent().addClass('textarea_wrap');
+  $('footer textarea, .pa_overlay textarea').parent().parent().addClass('textarea_wrap');
   
   
   $(document).bind('gform_post_render', function(){
   		
-  	 $('footer textarea').parent().parent().addClass('textarea_wrap');
+  	 $('footer textarea, .pa_overlay textarea').parent().parent().addClass('textarea_wrap');
     	
   });
+  
+  
+  // section one injury input
+  
+  
+  
+  $('.pa_input, .pa_submit').on('click', function(e) {
+    
+  	$('.pa_dropdown').slideToggle(300);
+  
+  });
+  
+  
+  $('.pa_dropdown ul li').on('click', function(e) {
+	  
+	 	var injury = $(this).text();
+    
+  	$('span.pa_input_value.desktop').replaceWith('<span class="pa_input_value desktop">' + injury + '</span>');
+  	
+  	$('span.pa_input_value.mobile').replaceWith('<span class="pa_input_value mobile">' + injury + '</span>');
+  	
+  	$('.pa_dropdown').slideUp(300);
+  	
+  	$('.step_two').addClass('open');
+  	
+  
+  });
+  
+  
+  $('.step_two').on('click', function(e) {
+    
+    $('body').addClass('goooo');
+    
+  });
+  
+  
+  $('.step_two').on('mouseover', function(e) {
+    
+  	$('.pa_submit').addClass('hover');
+  
+  });
+  
+  
+  $('.step_two').on('mouseout', function(e) {
+    
+  	$('.pa_submit').removeClass('hover');
+  
+  });
+  
+
+  
+  $(document).click(function (e){
+
+		var container = $(".pa_input_wrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			$('.pa_dropdown').slideUp(250);
+		
+		}
+
+	}); 
+  
 
   
 }); // document ready

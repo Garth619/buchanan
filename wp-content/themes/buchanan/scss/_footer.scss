@@ -87,6 +87,16 @@ footer {
 			}
 		}
 	}
+	.gfield_description, .validation_message {
+		text-align: left;
+		text-transform: uppercase;
+		color:$bluedark;
+		display: block;
+		position: relative;
+		top:7px;
+		left:3px;
+		@include industry_bold;
+	}
 	.gform_footer {
 		width:353px;
 		margin:0 auto;
@@ -121,19 +131,15 @@ footer {
 			font-size: 17px;
 			letter-spacing: 0.1em;
 			text-transform: uppercase;
+			position: absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
 			@include industry_bold;
 		}
 	}
-	.gfield_description, .validation_message {
-		text-align: left;
-		text-transform: uppercase;
-		color:$bluedark;
-		display: block;
-		position: relative;
-		top:7px;
-		left:3px;
-		@include industry_bold;
-	}
+	
 }
 
 
