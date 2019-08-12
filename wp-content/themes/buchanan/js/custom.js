@@ -510,6 +510,8 @@ paraWidth();
   	
   	$('.step_two').addClass('open');
   	
+  	$('input#input_4_7').val(injury);
+  	
   
   });
   
