@@ -575,6 +575,25 @@ paraWidth();
 		    		$(this).next('ul.sub-menu').clone().appendTo('.nav_col_right_inner').hide().fadeIn(400);
 		    		
 		    });
+		    
+		    
+		    $('.menu_wrapper').on('click', function(e) {
+		      
+		    	$('nav').addClass('open');
+		    
+		    });
+		    
+		    $('.nav_close').on('click', function(e) {
+			    
+			    $('nav').addClass('close');
+		      
+		    	$('nav').delay(1500).queue(function(){
+	     
+						$(this).removeClass('open close').dequeue();
+	  
+					});
+		    
+		    });
 	    		
 	    } 
 	    
@@ -582,7 +601,7 @@ paraWidth();
 		
 	
 	navMediaquery();
-  
+	
 
   
 }); // document ready

@@ -91,8 +91,6 @@
 		
 		<nav>
 			
-			<div class="nav_close"></div><!-- nav_close -->
-			
 			<div class="nav_left">
 				
 				<div class="nav_col nav_col_left">
@@ -113,6 +111,8 @@
 			</div><!-- nav_left -->
 			
 			<div class="nav_right">
+				
+				<div class="nav_close"></div><!-- nav_close -->
 			
 				<div class="nav_right_inner">
 					

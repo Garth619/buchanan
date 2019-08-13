@@ -60,6 +60,7 @@ header {
 	height:100%;
 	width:96px;
 	margin-left:33px;
+	cursor: pointer;
 	.menu_bars {
 		max-width:48px;
 		margin:24px auto 0;
@@ -88,6 +89,26 @@ header {
 }
 
 
+nav.open {
+	opacity: 1;
+	visibility: visible;
+	.nav_left, .nav_right {
+		transform: translateX(0%);
+		transition-delay: 100ms;
+	}
+}
+
+nav.open.close {
+	.nav_left {
+		transform: translateX(-100%);
+		transition-delay: 100ms;
+	}
+	.nav_right {
+		transform: translateX(100%);
+		transition-delay: 100ms;
+	}
+}
+
 nav {
 	position: fixed;
 	width:100%;
@@ -98,6 +119,8 @@ nav {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	display: flex;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .nav_close {
@@ -106,6 +129,7 @@ nav {
 	position: absolute;
 	top:40px;
 	right:33px;
+	cursor: pointer;
 	//background: pink;
 	&:before, &:after {
 		content:"";
@@ -116,6 +140,7 @@ nav {
 		top:21px;
 		left:0;
 		background: $bluelight;
+		transition: all 200ms ease-in-out;
 	}
 	&:before {
 		transform: rotate(-45deg);
@@ -123,12 +148,19 @@ nav {
 	&:after {
 		transform: rotate(45deg);
 	}
+	&:hover {
+		&:before, &:after {
+			background: $red;
+		}
+	}
 }
 
 
 .nav_left {
 	display: flex;
 	flex-basis:67%;
+	transform: translateX(-100%);
+	transition: transform 900ms ease-in-out;
 	.nav_col {
 		flex-basis:50%;
 	}
@@ -241,6 +273,8 @@ nav.desktop {
 	padding:0 80px;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+	transform: translateX(100%);
+	transition: transform 900ms ease-in-out;
 }
 
 .nav_right_inner {
