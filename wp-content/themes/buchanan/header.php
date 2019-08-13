@@ -101,7 +101,14 @@
 					
 				</div><!-- nav_col_left -->
 				
-				<div class="nav_col nav_col_right"></div><!-- nav_col_right -->
+				<div class="nav_col nav_col_right">
+					
+					<div class="nav_col_right_inner">
+						
+						
+					</div><!-- nav_col_right_inner -->
+					
+				</div><!-- nav_col_right -->
 				
 			</div><!-- nav_left -->
 			

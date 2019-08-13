@@ -145,6 +145,8 @@ nav {
 	align-items: center;
 	justify-content: center;
 	padding:0 35px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	.menu-header {
 		width:100%;
 		max-width:400px;
@@ -152,6 +154,22 @@ nav {
 	ul.menu {
 		list-style: none;
 		width:100%;
+		li.menu-item-has-children {
+			a {
+				&:after {
+					content:"";
+					display: inline-block;
+					vertical-align: top;
+					margin-top:5px;
+					margin-left:11px;
+					width: 0; 
+					height: 0; 
+					border-top: 6px solid transparent;
+					border-bottom: 6px solid transparent;
+					border-left: 9px solid $red;
+				}
+			}
+		}
 		li {
 			text-transform: uppercase;
 			font-size: 23px;
@@ -172,9 +190,40 @@ nav {
 	}
 }
 
+
+.nav_col_right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	.nav_col_right_inner {
+		max-width:290px;
+		width:100%;
+	}
+	ul {
+		list-style: none;
+		li {
+			text-transform: uppercase;
+			font-size: 17px;
+			letter-spacing: 0.02em;
+			margin-bottom:41px;
+			@include industry_bold;
+			a {
+				color:$bluedark;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$bluelight;
+				}
+			}
+		}
+	}
+}
+
 nav.desktop {
-	.nav_col_left {
-		ul.menu {
+	.nav_col_left, .nav_col_right {
+		ul {
 			li {
 				a {
 					&:hover {

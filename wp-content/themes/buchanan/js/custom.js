@@ -561,24 +561,27 @@ paraWidth();
 	// nav
 	
 	
-		
-		
-	
-	
-	
-		function navClass() {
+	function navMediaquery() {
 	    
 	    if ($(window).width() >= 1400) {
 	        
 	      
 	    	$('nav').addClass('desktop');
+	    	
+	    	$('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+		    	
+		    		$('.nav_col_right_inner').empty();
+		    		
+		    		$(this).next('ul.sub-menu').clone().appendTo('.nav_col_right_inner').hide().fadeIn(400);
+		    		
+		    });
 	    		
 	    } 
 	    
 		};
 		
 	
-	navClass();
+	navMediaquery();
   
 
   
