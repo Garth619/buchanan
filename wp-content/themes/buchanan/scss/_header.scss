@@ -162,11 +162,27 @@ nav {
 			a {
 				text-decoration: none;
 				color:$bluedark;
+				cursor: pointer;
+				transition: all 200ms ease-in-out;
 			}
 		}
 	}
 	ul.sub-menu {
 		display: none;
+	}
+}
+
+nav.desktop {
+	.nav_col_left {
+		ul.menu {
+			li {
+				a {
+					&:hover {
+						color:$bluelight;
+					}
+				}
+			}
+		}
 	}
 }
 

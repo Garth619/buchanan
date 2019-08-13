@@ -556,6 +556,29 @@ paraWidth();
 		}
 
 	}); 
+	
+	
+	// nav
+	
+	
+		
+		
+	
+	
+	
+		function navClass() {
+	    
+	    if ($(window).width() >= 1400) {
+	        
+	      
+	    	$('nav').addClass('desktop');
+	    		
+	    } 
+	    
+		};
+		
+	
+	navClass();
   
 
   
