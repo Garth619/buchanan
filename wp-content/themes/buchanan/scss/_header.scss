@@ -89,7 +89,7 @@ header {
 }
 
 
-nav.open {
+nav.open_desktop {
 	opacity: 1;
 	visibility: visible;
 	.nav_left, .nav_right {
@@ -98,7 +98,7 @@ nav.open {
 	}
 }
 
-nav.open.close {
+nav.open_desktop.close_desktop {
 	.nav_left {
 		transform: translateX(-100%);
 		transition-delay: 100ms;
@@ -164,15 +164,10 @@ nav {
 	.nav_col {
 		flex-basis:50%;
 	}
-	.nav_col_left {
-		background: #fff;
-	}
-	.nav_col_right {
-		background: $greylight;
-	}
 }
 
 .nav_col_left {
+	background: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -228,6 +223,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	overflow-y: scroll;
+	background: #eff5fb;
 	-webkit-overflow-scrolling: touch;
 	.nav_col_right_inner {
 		max-width:290px;
@@ -368,6 +364,125 @@ nav.desktop {
 		}
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.nav_left {
+		flex-grow:1;
+		flex-basis:auto;
+	}
+	
+	
+	.nav_col_left {
+		.menu-header {
+			max-width: 267px;
+		}
+	}
+	
+	.nav_col_right {
+		.nav_col_right_inner {
+			max-width: 220px;
+		}
+	}
+	
+	.nav_right {
+		flex-basis:469px;
+		flex-shrink:0;
+		flex-grow:inherit;
+		padding: 0 0px;
+	}
+	
+	.nav_right_inner {
+		.gform_wrapper {
+			padding:0 49px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1230px) {
+	
+	
+	nav {
+		opacity: 1;
+		visibility: visible;
+		display: none;
+		top: 96px;
+		background:$bluedark;
+	}
+	
+	.nav_left {
+		transform: translateX(0);
+		display: block;
+		
+	}
+	
+	.nav_right {
+		display: none;
+	}
+	
+	.nav_col_left {
+		background: transparent;
+		padding-top:70px;
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		display: block;
+		padding-bottom:150px;
+		.menu-header {
+			margin:0 auto;
+		}
+		ul.menu {
+			text-align: center;
+			li {
+				margin-bottom: 40px;
+				a {
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	.nav_col_right {
+		position: absolute;
+		top:0;
+		left:0;
+		padding-top:70px;
+		width:100%;
+		background:transparent;
+		display: none;
+		padding-bottom:150px;
+		.nav_col_right_inner {
+			max-width:100%;
+			padding-left:35px;
+			padding-right:35px;
+		}
+		ul {
+			text-align: center;
+			li {
+				text-transform: uppercase;
+				font-size: 23px;
+				letter-spacing: 0.04em;
+				margin-bottom: 40px;
+				line-height: 26px;
+				@include industry_bold;
+				a {
+					color:#fff;
+				}
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1066px) {

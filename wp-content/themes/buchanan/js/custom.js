@@ -563,7 +563,7 @@ paraWidth();
 	
 	function navMediaquery() {
 	    
-	    if ($(window).width() >= 1400) {
+	    if ($(window).width() >= 1230) {
 	        
 	      
 	    	$('nav').addClass('desktop');
@@ -579,23 +579,47 @@ paraWidth();
 		    
 		    $('.menu_wrapper').on('click', function(e) {
 		      
-		    	$('nav').addClass('open');
+		    	$('nav').addClass('open_desktop');
 		    
 		    });
 		    
 		    $('.nav_close').on('click', function(e) {
 			    
-			    $('nav').addClass('close');
+			    $('nav').addClass('close_desktop');
 		      
 		    	$('nav').delay(1500).queue(function(){
 	     
-						$(this).removeClass('open close').dequeue();
+						$(this).removeClass('open_desktop close_desktop').dequeue();
 	  
 					});
 		    
 		    });
 	    		
-	    } 
+	    }
+	    
+	     if ($(window).width() < 1230) {
+		     
+		     
+		     $('.menu_wrapper').on('click', function(e) {
+		      
+		    	$('nav').slideToggle(400);
+		    
+		    });
+		    
+		    $('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+		    	
+		    		$('.nav_col_right_inner').empty();
+		    		
+		    		$(this).next('ul.sub-menu').clone().appendTo('.nav_col_right_inner').show();
+		    		
+		    		$('.nav_col_left').fadeOut(300);
+		    		
+		    		$('.nav_col_right').delay(300).fadeIn(300);
+		    		
+		    });
+		     
+		     
+	     } 
 	    
 		};
 		
