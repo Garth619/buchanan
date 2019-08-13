@@ -87,9 +87,43 @@
 			
 		</div><!-- header_right -->
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		
+		
+		<nav>
+			
+			<div class="nav_close"></div><!-- nav_close -->
+			
+			<div class="nav_left">
+				
+				<div class="nav_col nav_col_left">
+					
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+					
+				</div><!-- nav_col_left -->
+				
+				<div class="nav_col nav_col_right"></div><!-- nav_col_right -->
+				
+			</div><!-- nav_left -->
+			
+			<div class="nav_right">
+			
+				<div class="nav_right_inner">
+					
+					<span class="nav_right_header">Contact</span><!-- nav_right_header -->
+					
+					<span class="nav_right_sub_header">Information Required</span><!-- nav_right_sub_header -->
+					
+					<?php gravity_form(5, false, false, false, '', true, 1492); ?>
+					
+				</div><!-- nav_right_inner -->
+				
+			</div><!-- nav_right -->
+			
+		</nav>
 		
 	</header>
+	
+	
 				
 
 
