@@ -228,14 +228,11 @@ jQuery(document).ready(function($){
     }
 		
 		
-		createWaypoint('header_trigger', '.sticky_mobile_header', 'show', -149, null, true);
-    
-   
-
+		createWaypoint('header_trigger', '.sticky_mobile_header, nav', 'trigger', -89, null, true);
 
 		
 		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints
-   --------------------------------------------------------------------------------------------------- */ 
+		--------------------------------------------------------------------------------------------------- */ 
    
    
    
@@ -598,11 +595,13 @@ paraWidth();
 	     if ($(window).width() < 1230) {
 		     
 		     
-		     $('.menu_wrapper').on('click', function(e) {
+		     $('.menu_wrapper, .sticky_header_right').on('click', function(e) {
 		      
 		    	$('nav').slideDown(400);
 		    	
 		    	$('.small_device_close_wrapper').fadeIn();
+		    	
+		    	$('.sticky_mobile_header').addClass('open');
 		    
 		    });
 		    
