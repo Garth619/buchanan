@@ -85,6 +85,12 @@
 				
 			</div><!-- menu_wrapper -->
 			
+			<div class="small_device_close_wrapper">
+				
+				<div class="small_device_close"></div><!-- small_device_close -->
+				
+			</div><!-- small_device_close_wrapper -->
+			
 		</div><!-- header_right -->
 		
 		

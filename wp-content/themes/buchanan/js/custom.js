@@ -602,7 +602,9 @@ paraWidth();
 		     
 		     $('.menu_wrapper').on('click', function(e) {
 		      
-		    	$('nav').slideToggle(400);
+		    	$('nav').slideDown(400);
+		    	
+		    	$('.small_device_close_wrapper').fadeIn();
 		    
 		    });
 		    
@@ -616,6 +618,14 @@ paraWidth();
 		    		
 		    		$('.nav_col_right').delay(300).fadeIn(300);
 		    		
+		    });
+		    
+		    $('.small_device_close_wrapper').on('click', function(e) {
+		      
+		    	$('nav').slideUp(400);
+		    	
+		    	$(this).fadeOut(300);
+		    
 		    });
 		     
 		     

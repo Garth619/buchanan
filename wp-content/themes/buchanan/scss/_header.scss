@@ -241,9 +241,6 @@ nav {
 				color:$bluedark;
 				text-decoration: none;
 				transition: all 200ms ease-in-out;
-				&:hover {
-					color:$bluelight;
-				}
 			}
 		}
 	}
@@ -475,7 +472,43 @@ nav.desktop {
 				@include industry_bold;
 				a {
 					color:#fff;
+					&:hover {
+						
+					}
 				}
+			}
+		}
+	}
+	
+	.small_device_close_wrapper {
+		display: block;
+		width: 96px;
+		height:100%;
+		position: absolute;
+		top:0;
+		right:0;
+		background: $blue;
+		display: none;
+		.small_device_close {
+			width:45px;
+			height:45px;
+			margin:25px 0 0 27px;
+			position: relative;
+			&:before, &:after {
+				content:"";
+				display:block;
+				width:100%;
+				height:3px;
+				background:#fff;
+				position: absolute;
+				top:20px;
+				left:0;
+			}
+			&:before {
+				transform: rotate(-45deg);
+			}
+			&:after {
+				transform: rotate(45deg);
 			}
 		}
 	}
@@ -507,7 +540,11 @@ nav.desktop {
 			color:#fff;
 		}
 	}
-
+	
+	
+	nav {
+		top: 89px;
+	}
 	
 	
 	
