@@ -644,6 +644,7 @@ nav.desktop {
 		display: flex;
 		opacity: 0;
 		visibility: hidden;
+		transition: all 200ms ease-in-out;
 		.sticky_header_left {
 			flex-grow:1;
 			display: flex;
@@ -673,10 +674,34 @@ nav.desktop {
 			flex-shrink:0;
 			height:100%;
 			background: $blue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			.sticky_menu_bars {
-				
+				width:100%;
+				max-width:40px;
+				span.sticky_menu_bar {
+					display: block;
+					width:100%;
+					height:3px;
+					background:#fff;
+					margin-bottom:6px;
+					&:nth-of-type(2) {
+						width:32px;
+						margin-left:7px;
+					}
+					&:last-of-type {
+						margin-bottom:0;
+					}
+				}
 			}
 		}
+	}
+	
+	
+	.sticky_mobile_header.show {
+		opacity: 1;
+		visibility: visible;
 	}
 	
 	
@@ -692,6 +717,15 @@ nav.desktop {
 	.consult_phone {
 		span.free_consult {
 			display: none;
+		}
+	}
+	
+	
+	.sticky_mobile_header {
+		.sticky_header_left {
+			span.call_now {
+				display: none;
+			}
 		}
 	}
 	

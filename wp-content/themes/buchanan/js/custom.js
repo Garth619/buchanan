@@ -228,9 +228,7 @@ jQuery(document).ready(function($){
     }
 		
 		
-		
-
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+		createWaypoint('header_trigger', '.sticky_mobile_header', 'show', -149, null, true);
     
    
 
