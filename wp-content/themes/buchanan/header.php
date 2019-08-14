@@ -144,7 +144,7 @@
 		
 	</header>
 	
-	<div class="sticky_mobile_header">
+	<div class="sticky_mobile_header closed">
 		
 		<div class="sticky_header_left">
 			

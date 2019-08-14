@@ -602,6 +602,8 @@ paraWidth();
 		    	$('.small_device_close_wrapper').fadeIn();
 		    	
 		    	$('.sticky_mobile_header').addClass('open');
+		    	
+		    	$('.sticky_mobile_header').removeClass('closed');
 		    
 		    });
 		    
