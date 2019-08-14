@@ -367,6 +367,10 @@ nav.desktop {
 	display: none;
 }
 
+.sticky_mobile_header {
+	display: none;
+}
+
 
 @media screen and (max-width: 1450px) {
 	
@@ -596,6 +600,7 @@ nav.desktop {
 	
 	header {
 		height:89px;
+		position: relative;
 	}
 	
 	
@@ -611,6 +616,7 @@ nav.desktop {
 	
 	
 	.consult_phone {
+		position: absolute;
 		span.free_consult {
 			font-size:12px;
 			margin-right: 9px;
@@ -620,9 +626,59 @@ nav.desktop {
 		}
 	}
 	
-	.menu_wrapper {
+	.menu_wrapper, .small_device_close_wrapper, .small_device_back_wrapper {
 		width: 92px;
 	}
+	
+	
+	
+	.sticky_mobile_header {
+		display: block;
+		position: fixed;
+		top:0px;
+		left:0;
+		width:100%;
+		height:59px;
+		background:$bluedark;
+		z-index:10;
+		display: flex;
+		opacity: 0;
+		visibility: hidden;
+		.sticky_header_left {
+			flex-grow:1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span.call_now {
+				color:$bluelight;
+				font-size: 12px;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				display: block;
+				margin-right:9px;
+				position: relative;
+				top:2px;
+				@include industry_black;
+			}
+			a.sticky_phone {
+				font-size: 25px;
+				color:#fff;
+				text-decoration: none;
+				letter-spacing: 0.055em;
+				@include montserrat_bold;
+			}
+		}
+		.sticky_header_right {
+			flex-basis:73px;
+			flex-shrink:0;
+			height:100%;
+			background: $blue;
+			.sticky_menu_bars {
+				
+			}
+		}
+	}
+	
 	
 	
 	
