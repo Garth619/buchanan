@@ -164,6 +164,10 @@
 				
 			</div><!-- sticky_menu_bars -->
 			
+			<div class="sticky_close"></div><!-- sticky_close -->
+			
+			<div class="sticky_back">Back</div><!-- sticky_back -->
+			
 		</div><!-- sticky_header_right -->
 		
 	</div><!-- sticky_mobile_header -->
