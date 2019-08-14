@@ -618,6 +618,8 @@ paraWidth();
 		    		
 		    		$('.nav_col_right').delay(300).fadeIn(300);
 		    		
+		    		$('.small_device_back_wrapper').delay(300).fadeIn(300);
+		    		
 		    });
 		    
 		    $('.small_device_close_wrapper').on('click', function(e) {
@@ -625,6 +627,19 @@ paraWidth();
 		    	$('nav').slideUp(400);
 		    	
 		    	$(this).fadeOut(300);
+		    
+		    });
+		    
+		    
+		    $('.small_device_back_wrapper').on('click', function(e) {
+		    	
+		    	$(this).fadeOut(300);
+		    	
+		    	$('.small_device_close_wrapper').delay(300).fadeIn(300);
+		    	
+		    	$('.nav_col_right').fadeOut(300);
+		    		
+		    	$('.nav_col_left').delay(300).fadeIn(300);
 		    
 		    });
 		     

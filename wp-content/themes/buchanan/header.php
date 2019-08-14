@@ -91,6 +91,12 @@
 				
 			</div><!-- small_device_close_wrapper -->
 			
+			<div class="small_device_back_wrapper">
+				
+				<div class="small_device_back">Back</div><!-- small_device_back -->
+				
+			</div><!-- small_device_back_wrapper -->
+			
 		</div><!-- header_right -->
 		
 		
