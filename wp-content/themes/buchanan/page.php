@@ -45,25 +45,7 @@
 			
 		</div><!-- inner_content -->
 		
-		<div class="sidebar_wrapper">
-			
-			<div class="sidebar_form">
-				
-				<span class="sidebar_form_title">Free Consultation</span><!-- sidebar_form_title -->
-				
-				<span class="sidebar_form_required">Information Required</span><!-- sidebar_form_required -->
-				
-				<?php gravity_form(6, false, false, false, '', true, 12); ?>
-				
-				<div class="sidebar_box">
-					
-					<h3>Practice Areas</h3>
-					
-				</div><!-- sidebar_box -->
-				
-			</div><!-- sidebar_form -->
-			
-		</div><!-- sidebar_wrapper -->
+		<?php get_sidebar(); ?>
 		
 	</div><!-- container -->
 
@@ -71,7 +53,7 @@
 
 	<?php // get_template_part( 'loop', 'page' ); ?>
 		
-	<?php // get_sidebar(); ?>
+	
 
 
 <?php get_footer(); ?>

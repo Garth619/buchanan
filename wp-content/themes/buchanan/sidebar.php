@@ -1,4 +1,19 @@
-<?php
+
+<div class="sidebar_wrapper">
+	
+	<div class="sidebar_form">
+				
+		<span class="sidebar_form_title">Free Consultation</span><!-- sidebar_form_title -->
+				
+		<span class="sidebar_form_required">Information Required</span><!-- sidebar_form_required -->
+				
+		<?php gravity_form(6, false, false, false, '', true, 12); ?>
+				
+	</div><!-- sidebar_form -->
+	
+	<div class="sidebar_box">
+					
+			<?php
 				
 				if ( get_field('sidebar_menu') ){ //use same classes as widgets ?>
     
@@ -76,3 +91,9 @@
     	}
 	
 	};?>
+	
+
+</div><!-- sidebar_box -->
+	
+	
+</div><!-- sidebar_wrapper -->

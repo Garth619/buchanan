@@ -568,6 +568,20 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	navMediaquery();
 	
+	
+	
+	// sidebar
+	
+	$('.sidebar_box ul > li.current-menu-ancestor > a').addClass('active');
+	
+	$('.sidebar_box ul > li > a').on('click', function(e) {
+	  
+		$(this).next('ul').slideToggle(300);
+		
+		$(this).toggleClass('active');
+	
+	});
+	
 
 	
 
