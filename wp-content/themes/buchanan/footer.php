@@ -121,6 +121,116 @@
 
 <?php wp_footer();?>
 
+<?php if(is_front_page()) { ?>
+
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($){
+
+function paraWidth() {
+    
+    if ($(window).width() > 1290) {
+        
+      window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          window.oRequestAnimationFrame      ||
+          window.msRequestAnimationFrame     ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+(function(win, d) {
+
+  var $ = d.querySelector.bind(d);
+	
+	var paraOne = $('#para_one');
+ 
+  var paraTwo = $('#para_two');
+  var paraThree = $('#para_three');
+
+
+  
+
+  var ticking = false;
+  var lastScrollY = 0;
+
+  function onResize () {
+    updateElements(win.pageYOffset);
+  }
+
+  function onScroll (evt) {
+
+    if(!ticking) {
+      ticking = true;
+      requestAnimFrame(updateElements);
+      lastScrollY = win.pageYOffset;
+    }
+  }
+
+  function updateElements () {
+
+    var relativeY = lastScrollY / 1500;
+    
+    prefix(paraOne.style, "Transform", "translate3d(0px," +
+      pos(0, 700, relativeY, 0) + 'px, 0)');
+
+		prefix(paraTwo.style, "Transform", "translate3d(0px," +
+      pos(0, 500, relativeY, 0) + 'px, 0)');
+
+    prefix(paraThree.style, "Transform", "translate3d(0px," +
+      pos(0, 300, relativeY, 0) + 'px, 0)');
+
+
+    ticking = false;
+  }
+
+  function pos(base, range, relY, offset) {
+    return base + limit(0, 1, relY - offset) * range;
+  }
+
+  function prefix(obj, prop, value) {
+    var prefs = ['webkit', 'Moz', 'o', 'ms'];
+    for (var pref in prefs) {
+      obj[prefs[pref] + prop] = value;
+    }
+  }
+
+  function limit(min, max, value) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  (function() {
+
+    updateElements(win.pageYOffset);
+
+    
+   paraTwo.classList.add('force-show');
+   paraThree.classList.add('force-show');
+
+  })();
+
+  //win.addEventListener('resize', onResize, false);
+  win.addEventListener('scroll', onScroll, false);
+
+})(window, document);
+        	   		
+    		
+    } 
+    
+};
+
+paraWidth();
+
+}); // Document Ready
+
+</script>
+
+
+<?php } ?>
 
 </body>
 </html>

@@ -59,15 +59,38 @@ h1,h2,h3,h4 {
     opacity: 1; }
     
  
+ body:not(.page-template-template-home) {
+	 .content {
+		 @include montserrat_reg;
+	 }
+ }
+ 
+ 
  .content {
 	 font-size: 18px;
 	 line-height: 32px;
 	 @include montserrat_light;
+	 h1 {
+		 font-size: 68px;
+		 line-height: 82px;
+		 text-transform: uppercase;
+		 color:$blue;
+		 @include montserrat_bold;
+		 &:after {
+			content:"";
+			display: block;
+			width:77px;
+			height:10px;
+			margin:27px 0 29px;
+			background-size:80px 11px;
+			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
+		}
+	 }
 	 h2 {
 		 font-size: 32px;
-		 line-height: 50px;
+		 line-height: 44px;
 		 color:$bluedark;
-		 padding-bottom:16px;
+		 padding-bottom:20px;
 		 @include industry_bold;
 	 }
 	 h3 {
@@ -80,7 +103,14 @@ h1,h2,h3,h4 {
 		 line-height: 31px;
 		 @include industry_bold;
 	 }
-	p,ul {
+	 a {
+		 color:$bluelight;
+		 transition: all 200ms ease-in-out;
+		 &:hover {
+			 color:$red;
+		 }
+	 }
+	 p,ul {
 		 margin-bottom:29px;
 	 }
 	 ul {

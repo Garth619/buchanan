@@ -77,14 +77,6 @@
 		"oAP": "/category.php",
 		"oF": 0
 		},
-	"/footer copy.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/footer copy.php",
-		"oF": 0
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -370,7 +362,7 @@
 		"oAP": "/images/int-hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/int-video-thumb.jpg": {
@@ -672,6 +664,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-templates/template-about.php",
+		"oF": 0
+		},
+	"/page-templates/template-banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-banner.php",
 		"oF": 0
 		},
 	"/page-templates/template-bio.php": {
