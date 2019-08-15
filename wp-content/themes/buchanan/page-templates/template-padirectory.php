@@ -6,7 +6,9 @@ get_header(); ?>
 
 
 <div id="internal_main">
-
+	
+	<img class="internal_circles" src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
+	
 	<div class="internal_wrapper">
 		
 		<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->

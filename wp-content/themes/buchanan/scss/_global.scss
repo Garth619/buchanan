@@ -70,13 +70,25 @@ h1,h2,h3,h4 {
  #internal_main {
 	margin-top:96px;
 	padding-bottom:150px;
+	position: relative;
 }
 
 .internal_wrapper {
 	max-width:1759px;
 	margin:0 auto;
 	padding:105px 97px 0;
+	overflow-x: hidden;
+	position: relative;
+	z-index:1;
 }
+
+img.internal_circles {
+	width:411px;
+	height:395px;
+	position: absolute;
+	top:-20px;
+	right:0;
+ }
 
  h1.internal_header {
 	font-size: 68px;
@@ -302,6 +314,14 @@ h1,h2,h3,h4 {
 		}
 	}
 	
+	
+	img.internal_circles {
+	  width: 212px;
+	  height:203px;
+	  top: -30px;
+    right: -20px;
+ 	}
+	
 	 
 	
 	
@@ -374,6 +394,8 @@ img.aligncenter {
   .internal_wrapper {
 	  padding:0 32px;
   }
+  
+  
 	
 	h1.internal_header {
 		font-size: 37px;
@@ -411,6 +433,14 @@ a.button {
 		height:calc(100% - 18px);
 	}
 }
+
+
+	img.internal_circles {
+	  width: 162px;
+	  height:155px;
+	  top: -51px;
+    right: -44px;
+ 	}
 
 	
 } /* Media Query */
