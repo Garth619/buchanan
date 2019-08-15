@@ -36,14 +36,34 @@
 				<li>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</li>
 				<li>TRisus commodo viverra maecenas accumsan lacus.</li>
 			</ol>
-
+			
+			<p>Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  wenia veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commos commodo consequat.</p>
+			
 			<h3>H3 Lorem ipsum dolor sit amet consectetur</h3>
 			
 			<p>Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  wenia veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commos commodo consequat.</p>
 			
 		</div><!-- inner_content -->
 		
-		<div class="sidebar_wrapper"></div><!-- sidebar_wrapper -->
+		<div class="sidebar_wrapper">
+			
+			<div class="sidebar_form">
+				
+				<span class="sidebar_form_title">Free Consultation</span><!-- sidebar_form_title -->
+				
+				<span class="sidebar_form_required">Information Required</span><!-- sidebar_form_required -->
+				
+				<?php gravity_form(6, false, false, false, '', true, 12); ?>
+				
+				<div class="sidebar_box">
+					
+					<h3>Practice Areas</h3>
+					
+				</div><!-- sidebar_box -->
+				
+			</div><!-- sidebar_form -->
+			
+		</div><!-- sidebar_wrapper -->
 		
 	</div><!-- container -->
 

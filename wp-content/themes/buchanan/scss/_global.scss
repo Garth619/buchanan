@@ -98,7 +98,7 @@ h1,h2,h3,h4 {
 		 font-size: 20px;
 		 letter-spacing: 0.08em;
 		 color:$bluelight;
-		 padding-top:34px;
+		 padding-top:20px;
 		 padding-bottom:10px;
 		 line-height: 31px;
 		 @include industry_bold;
@@ -110,7 +110,30 @@ h1,h2,h3,h4 {
 			 color:$red;
 		 }
 	 }
-	 p,ul {
+	 blockquote {
+		 font-size: 34.75px;
+		 line-height: 48px;
+		 color:$bluelight;
+		 position: relative;
+		 z-index:1;
+		 padding:84px 0 0 110px;
+		 margin-top:35px;
+		 margin-bottom:90px;
+		 max-width: 930px;
+		 @include industry_book;
+		 &:after {
+			 content:"";
+			 display: block;
+			 width:199px;
+			 height:238px;
+			 background: url(#{$themePath}/images/graphic-pullquote-dots-2.jpg);
+			 position: absolute;
+			 top:0;
+			 left:0;
+			 z-index:-1;
+		 }
+	 }
+	 p,ul, ol {
 		 margin-bottom:29px;
 	 }
 	 ul {
@@ -133,10 +156,29 @@ h1,h2,h3,h4 {
 			 }
 		 }
 	 }
-	 a {
-		 color:$bluelight;
-	 }
- }
+	 ol {
+	 		list-style: none;
+	 		counter-reset: item;
+	 		> li {
+	 				counter-increment: item;
+	 				margin-bottom: 5px;
+	 				position: relative;
+	 				padding-left:25px;
+	  		}
+	  		> li:before {
+	  				content: counter(item)".";
+	  				display: block;
+	  				color:$blue;
+						position: absolute;
+	  				top:0;
+	  				left:0;
+	  				@include montserrat_extrabold;
+	  			}
+	 			}
+	 			a {
+	 				color:$bluelight;
+	 		}
+ 		}
  
  
  a.button {
