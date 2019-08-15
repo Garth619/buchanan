@@ -1,0 +1,235 @@
+
+
+
+.pa_directory {
+	ul {
+		list-style: none;
+		li {
+			text-transform: uppercase;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	ul.menu {
+		padding:103px 0 0 0;
+		> li {
+			font-size: 24px;
+			letter-spacing: 0.2em;
+			@include industry_black;
+			&:last-of-type {
+				ul.sub-menu {
+					padding-bottom:0;
+				}
+			}
+			> a {
+				color:$bluelight;
+				&:after {
+					content:"";
+					display: inline-block;
+					width:77px;
+					height:10px;
+					vertical-align: top;
+					margin:5px 0 0 20px;
+					background-size:80px 11px;
+					background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
+				}
+			}
+		}
+	}
+	ul.sub-menu {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap:wrap;
+		padding:21px 0 140px;
+		&:after {
+			content:"";
+			flex-basis:30%;
+		}
+		li {
+			flex-basis:29%;
+			font-size: 18px;
+			letter-spacing: 0.04em;
+			@include industry_bold;
+			a {
+				display: flex;
+				align-items: center;
+				color:$bluedark;
+				height:80px;
+				border-bottom:1px solid #ccd1d8;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$bluelight;
+				}
+			}
+		}
+		
+	}
+}
+
+
+@media screen and (max-width: 1225px) {
+	
+	
+.pa_directory {
+	ul {
+		
+		li {
+			
+			a {
+				
+			}
+		}
+	}
+	ul.menu {
+		
+		> li {
+				
+				&:last-of-type {
+					ul.sub-menu {
+					
+					}
+			}
+			> a {
+				
+				&:after {
+					
+				}
+			}
+		}
+	}
+	ul.sub-menu {
+		
+		&:after {
+			display: none;
+		}
+		li {
+			flex-basis:47%;
+			a {
+				
+				&:hover {
+					
+				}
+			}
+		}
+		
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
+   
+    
+    
+    
+ @media screen and (max-width: 1066px) {
+	 
+	 
+	 
+.pa_directory {
+	ul {
+		
+		li {
+			
+			a {
+				
+			}
+		}
+	}
+	ul.menu {
+		padding: 77px 0 0 0;
+		> li {
+				
+				&:last-of-type {
+					ul.sub-menu {
+					
+					}
+			}
+			> a {
+				
+				&:after {
+					
+				}
+			}
+		}
+	}
+	ul.sub-menu {
+		padding: 21px 0 80px;
+		&:after {
+			
+		}
+		li {
+			
+			a {
+				
+				&:hover {
+					
+				}
+			}
+		}
+		
+	}
+}
+	 
+	 
+	 
+	 
+ } /* Media Query */
+ 
+ @media screen and (max-width: 767px) {
+	 
+	 
+	 
+	 
+.pa_directory {
+	ul {
+		
+		li {
+			
+			a {
+				
+			}
+		}
+	}
+	ul.menu {
+		padding: 47px 0 0 0;
+		> li {
+				font-size: 21px;
+				&:last-of-type {
+					ul.sub-menu {
+						
+					}
+			}
+			> a {
+				
+				&:after {
+					
+				}
+			}
+		}
+	}
+	ul.sub-menu {
+		padding: 21px 0 71px;
+		&:after {
+			
+		}
+		li {
+			flex-basis:100%;
+			a {
+				
+				&:hover {
+					
+				}
+			}
+		}
+		
+	}
+}
+
+	 
+	 
+	 
+ } /* Media Query */
