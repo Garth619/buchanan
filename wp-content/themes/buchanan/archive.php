@@ -2,20 +2,21 @@
 
 
 
+<div id="internal_main">
+
+	<?php get_template_part('page-templates/template', 'banner'); ?>
+
+	<div class="container two_col">
 		
-		<?php
-	/*
-	 * Queue the first post, that way we know
-	 * what date we're dealing with (if that is the case).
-	 *
-	 * We reset this later so we can run the loop
-	 * properly with a call to rewind_posts().
-	 */
+		<div class="inner_content content">
+			
+			<?php
+	
 	if ( have_posts() )
 		the_post();
 ?>
 
-			<h1 class="page-title">
+			<h1>
 <?php if ( is_day() ) : ?>
 				<?php printf( __( '<span>%s</span>', 'twentyten' ), get_the_date() ); ?>
 <?php elseif ( is_month() ) : ?>
@@ -26,21 +27,19 @@
 				<?php _e( 'Blog Archives', 'twentyten' ); ?>
 <?php endif; ?>
 			</h1>
-		
-		
-				
-			<?php
-	/*
-	 * Since we called the_post() above, we need to
-	 * rewind the loop back to the beginning that way
-	 * we can run the loop properly, in full.
-	 */
-	rewind_posts();
+			
+				<?php rewind_posts(); ?>
 
-	/* include a file called loop-archive.php and that will be used instead.
-	 */
-	get_template_part( 'loop', 'archive' );
-?>
+			
+			<?php get_template_part( 'loop', 'index' ); ?>
+							
+		</div><!-- inner_content -->
+		
+		<?php get_sidebar('blog'); ?>
+		
+	</div><!-- container -->
+
+</div><!-- internal_main -->
 
 				
 			

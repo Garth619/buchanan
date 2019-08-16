@@ -132,20 +132,25 @@
 	}
 }
 
+
+.sidebar_box_wrapper {
+	margin:125px 0 0 0;
+}
+
 .sidebar_box {
+	margin-bottom:100px;
 	h3 {
 		color:$blue;
 		text-transform: uppercase;
 		font-size: 40px;
 		letter-spacing: 0.02em;
-		margin:125px 0 0 0;
 		@include montserrat_bold;
 		&:after {
 			content:"";
 			display: block;
 			width:77px;
 			height:10px;
-			margin:21px 0 26px;
+			margin: 18px 0 26px;
 			background-size:80px 11px;
 			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 		}
@@ -188,6 +193,7 @@
 		li {
 			text-transform: uppercase;
 			font-size: 19px;
+			line-height: 21px;
 			letter-spacing: 0.06em;
 			@include industry_bold;
 			a {
@@ -196,7 +202,7 @@
 				text-decoration: none;
 				display: block;
 				border-bottom:1px solid #dde0e5;
-				padding:29px 0;
+				padding:29px 97px 29px 0;
 				transition: all 200ms ease-in-out;
 				&:hover {
 					color:$bluelight;
@@ -221,14 +227,32 @@
 	}
 }
 
+
+.sidebar_box.blog {
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	ul {
+		li {
+			text-transform: none;
+			line-height: 33px;
+		}
+		li.active {
+			a {
+				color:$bluelight;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1450px) {
 	
 	
 	
 	.inner_content {
 		margin-top: 97px;
-		padding-left:97px;
-		padding-right:97px;
+		padding-left:54px;
+		padding-right:54px;
 	}
 	
 	
@@ -249,9 +273,19 @@
 	}
 	
 	.sidebar_form {
-		padding: 109px 45px;
+		padding: 85px 45px;
 	}
 	
+	
+	.sidebar_box {
+		ul {
+			li {
+				a {
+					padding-right:50px;
+				}
+			}
+		}
+	}
 	
 	
 } /* Media Query */
@@ -285,12 +319,33 @@
     }
 	}
 	
+	
+	.sidebar_box_wrapper {
+		margin:0;
+	}
+	
 	.sidebar_box {
 		padding:0 70px;
 		h3 {
 			margin-top:0;
 		}
+		ul {
+			li {
+				a {
+					padding-right:0;
+				}
+			}
+		}
 	}
+	
+	.sidebar_wrapper.blog {
+		margin-top:15px;
+	}
+	
+	.sidebar_box.blog {
+		margin-bottom: 75px;
+	}
+
 	
 	
 	
@@ -299,10 +354,6 @@
 
 
 @media screen and (max-width: 1066px) {
-	
-
-	
-
 	
 	.internal_banner {
 		display: none;
@@ -331,19 +382,31 @@
 
 @media screen and (max-width: 767px) {
 	
-	
-	
-	
-  
-  .inner_content {
+	.inner_content {
 	  padding: 0 32px 25px;
   }
   
   .sidebar_box {
-		padding:0 54px;
+		padding:0 32px;
 		h3 {
 			font-size: 36px;
 		}
+		ul {
+			li {
+				ul {
+					li {
+						a {
+							padding-left:0;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	.sidebar_box.blog {
+		margin-bottom: 55px;
 	}
 	
 	

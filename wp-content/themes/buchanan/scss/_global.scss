@@ -124,6 +124,14 @@ img.internal_circles {
 		 color:$bluedark;
 		 padding-bottom:20px;
 		 @include industry_bold;
+		 a {
+			 color:$bluedark;
+			 text-decoration: none;
+			 transition: all 200ms ease-in-out;
+			 &:hover {
+				 color:$bluelight;
+			 }
+		 }
 	 }
 	 h3 {
 		 text-transform: uppercase;
@@ -404,7 +412,7 @@ img.aligncenter {
 	
 	.content {
 		h1 {
-			font-size: 37px;
+			font-size: 45px;
 			line-height: 44px;
 		}
 		h2 {

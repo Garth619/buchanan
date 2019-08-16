@@ -582,6 +582,17 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	});
 	
+	
+		var pgurl = window.location.href;
+		
+		$(".sidebar_box.blog ul li").each(function(){
+	  
+	  if($(this).find('a').attr("href") == pgurl)
+	    
+	    $(this).addClass("active");
+		
+		})
+	
 
 	
 

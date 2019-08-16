@@ -11,6 +11,8 @@
 				
 	</div><!-- sidebar_form -->
 	
+	<div class="sidebar_box_wrapper">
+	
 	<div class="sidebar_box">
 					
 			<?php
@@ -94,6 +96,8 @@
 	
 
 </div><!-- sidebar_box -->
+
+</div><!-- sidebar_box_wrapper -->
 	
 	
 </div><!-- sidebar_wrapper -->
