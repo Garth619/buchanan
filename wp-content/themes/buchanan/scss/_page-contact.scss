@@ -1,0 +1,316 @@
+.contact_info {
+	position: relative;
+	z-index:2;
+	max-width: 1605px;
+	margin:85px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.contact_single_info {
+	span {
+		display: block;
+		//color:$bluelight;
+	}
+	span.contact_info_title {
+		text-transform: uppercase;
+		font-size: 22px;
+		letter-spacing: 0.14em;
+		@include industry_black;
+		&:after {
+			content:"";
+			display: block;
+			width:77px;
+			height:10px;
+			margin:17px 0 0;
+			background-size:80px 11px;
+			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
+		}
+	}
+	.large_text {
+		font-size: 29px;
+		line-height: 41px;
+		color:$bluedark;
+		text-decoration: none;
+		@include montserrat_reg;
+	}
+	span.address {
+		margin-top:25px;
+	}
+	a.contact_link {
+		color:$bluelight;
+		font-size: 15px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		display: flex;
+		align-items: center;
+		margin:41px 0 0;
+		@include industry_black;
+		svg {
+			width:60px;
+			margin-left:13px;
+			position: relative;
+			top:-2px;
+			.arrow-st0 {
+				color:$bluelight;
+			}
+		}
+	}
+	span.contact_info_subtitle {
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 0.14em;
+		color:$bluelight;
+		margin-top:35px;
+		@include industry_black;
+	}
+	span.view_calendar {
+		max-width:454px;
+		margin-top:25px;
+	}
+}
+
+.contact_info_left {
+	
+}
+
+.contact_info_right {
+	display: flex;
+	justify-content: space-between;
+	&:last-of-type {
+		.contact_single_info {
+			margin-left:145px;
+		}
+	}
+}
+
+
+body.page-template-template-contact {
+	footer {
+		.form_wrapper {
+			padding-bottom: 73px;
+		}
+	}
+	.footer_info {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 1640px) {
+	
+	
+.contact_info_right {
+	flex-grow:1;
+	margin-left: 8%;
+	&:last-of-type {
+		.contact_single_info {
+			margin-left:0;
+			flex-shrink: 0;
+			&:last-of-type {
+				flex-basis:440px;
+				flex-shrink:0;
+			}
+		}
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1480px) {
+	
+	
+	
+.contact_info_left {
+	flex-basis: 420px;
+}
+	
+.contact_single_info {
+	
+	span {
+		
+	}
+	span.contact_info_title {
+		
+		&:after {
+			
+		}
+	}
+	.large_text {
+		font-size: 26px;
+		line-height: 37px;
+	}
+	span.address {
+		
+	}
+	a.contact_link {
+		
+		svg {
+		
+		}
+	}
+	span.contact_info_subtitle {
+		
+	}
+	span.view_calendar {
+		
+	}
+}
+
+
+.contact_info_right {
+	
+	&:last-of-type {
+		.contact_single_info {
+			
+			&:last-of-type {
+				flex-basis:393px;
+				
+			}
+		}
+	}
+}
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1395px) {
+	
+	
+	.contact_info_right {
+		margin-left:5%;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1325px) {
+	
+	
+	.contact_info_right {
+		margin-left:3%;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1300px) {
+	
+	
+	.contact_info {
+		display: block;
+		max-width: 425px;
+		margin-left:0;
+		margin-right:0;
+	}
+	
+	.contact_info_right {
+		display: block;
+		margin-left:0;
+	}
+	
+	.contact_single_info {
+		margin-bottom:95px;
+		span.contact_info_title {
+			font-size: 21px;
+		}
+		span.contact_info_subtitle {
+			margin-top: 31px;
+		}
+		a.contact_link {
+			margin: 27px 0 0;
+		}
+	}
+	
+	
+	.contact_info_right {
+		.contact_single_info {
+			&:last-of-type {
+				margin-bottom:0;
+			}
+		}
+	}
+	
+	
+	 
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+body.page-template-template-contact {
+	footer {
+		.form_wrapper {
+			padding-bottom: 25px;
+		}
+	}
+	.footer_info {
+		
+	}
+}
+
+
+.contact_info {
+	margin-top:77px;
+}
+
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+body.page-template-template-contact {
+	footer {
+		.form_wrapper {
+			padding-bottom: 0px;
+		}
+	}
+	.footer_info {
+		
+	}
+}
+
+
+.contact_info {
+	margin-top:50px;
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+
+
+	
+	.contact_single_info {
+		margin-bottom: 81px;
+		.large_text {
+			font-size: 23px;
+			line-height: 34px;
+		}
+		span.contact_info_title {
+			font-size: 20px;
+		}
+		a.contact_link {
+			margin: 23px 0 0;
+		}
+	}
+
+	
+	
+	
+} /* Media Query */
