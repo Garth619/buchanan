@@ -593,7 +593,34 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		})
 	
+		
+		// columns
+		
+/*
+		
+		len=$('.single_testi').length;
+		cols=3; //number of desired columns
+		rows=Math.ceil(len/cols);
 
+
+		for(i=0;i<len;i+=rows) {
+
+			$('.single_testi').slice(i,i+rows).wrapAll("<div class='testi_col'></div>");
+
+		}
+*/
+
+// macy
+
+var macyInstance = Macy({
+  container: '.testimonials_wrapper',
+	columns: 3,
+	margin:49,
+	breakAt: {
+        1450: 2,
+        1066:1
+  }
+});
 	
 
   
