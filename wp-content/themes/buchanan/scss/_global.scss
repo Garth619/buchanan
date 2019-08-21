@@ -71,6 +71,7 @@ h1,h2,h3,h4 {
 	margin-top:96px;
 	padding-bottom:150px;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .internal_wrapper {
@@ -87,7 +88,7 @@ img.internal_circles {
 	height:395px;
 	position: absolute;
 	top:-20px;
-	right:0;
+	right: -54px;
  }
 
  h1.internal_header {
@@ -221,7 +222,7 @@ img.internal_circles {
  		}
  
  
- a.button {
+ .button {
 	color:#fff;
 	display: inline-block;
 	text-decoration: none;
@@ -413,7 +414,7 @@ img.aligncenter {
 	.content {
 		h1 {
 			font-size: 45px;
-			line-height: 44px;
+			line-height: 52px;
 		}
 		h2 {
 			font-size: 29px;
@@ -429,7 +430,7 @@ img.aligncenter {
 	}
 	
 	
-a.button {
+.button {
 	height:82px;
 	font-size: 14.5px;
 	width:348px;
@@ -457,7 +458,7 @@ a.button {
 @media screen and (max-width: 414px) {
 	
 	
-	a.button {
+	.button {
 		width:100%;
 	}
 

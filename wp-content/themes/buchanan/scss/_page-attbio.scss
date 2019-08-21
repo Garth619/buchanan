@@ -1,0 +1,194 @@
+
+
+body.page-template-template-bio {
+	h1 {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+
+span.att_postion {
+	text-transform: uppercase;
+	font-size: 24px;
+	display: block;
+	padding-top:8px;
+	letter-spacing: 0.26em;
+	margin-bottom:87px;
+	@include industry_black;
+	&:after {
+		content:"";
+		display: inline-block;
+		vertical-align: top;
+		width:77px;
+		height:10px;
+		margin:10px 0 0 10px;
+		background-size:80px 11px;
+		background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
+	}
+}
+
+h2.qa_title {
+	
+}
+
+
+.qa_wrapper {
+	
+}
+
+.qa_inner {
+	margin-top:-12px;
+	padding-bottom:25px;
+	&:last-of-type {
+		padding-bottom:0;
+	}
+}
+
+
+h3.question {
+	
+}
+
+
+img.bio_image {
+	width:100%;
+	height:auto;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+img.bio_image.mobile {
+	display: none;
+}
+
+
+.sidebar_box_wrapper.bio {
+  margin: 80px 0 0 0;
+  position: relative;
+}
+
+
+img.internal_circles.bio {
+	width:245px;
+	top: -159px;
+	right:-25px;
+}
+
+
+.sidebar_box.bio {
+	position: relative;
+	z-index:1;
+	margin-bottom:0;
+	ul {
+		li {
+			text-transform: none;
+			font-size: 20px;
+			line-height: 33px;
+			a {
+				padding: 38px 97px 38px 0;
+				cursor: default;
+				&:hover {
+					color:$bluedark;
+				}
+			}
+		}
+	}
+}
+
+
+.memberships {
+	padding-top:45px;
+}
+
+.fun_facts {
+	padding-top:18px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+	
+	
+	h1.bio_header {
+		text-align: center;
+	}
+	
+	span.att_postion {
+		text-align: center;
+		font-size: 21px;
+		line-height: 26px;
+		letter-spacing: 0.2em;
+		max-width: 350px;
+		margin:0 auto 53px;
+		&:after {
+			display: block;
+			margin:45px auto 0;
+		}
+	}
+	
+	.sidebar_bio_image.desktop {
+		display: none;
+	}
+	
+	img.bio_image.mobile {
+		display: block;
+		width:100%;
+		display: block;
+		max-width: 570px;
+		margin:0 auto 55px;
+	}
+	
+	
+	img.internal_circles.bio {
+		display: none;
+	}
+	
+	
+	.sidebar_box_wrapper.bio {
+		margin: 0px;
+	}
+	
+	.sidebar_box.bio {
+		ul {
+			li {
+				font-size: 19px;
+				a {
+					padding: 29px 97px 29px 0;
+				}
+			}
+		}
+	}
+	
+	.sidebar_wrapper.bio {
+		flex-basis:100%;
+	}
+
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	span.att_postion {
+		margin: 0px auto 45px;
+		&:after {
+    	margin: 23px auto 0;
+		}
+	}
+	
+	img.bio_image.mobile {
+		margin: 0 auto 42px;
+	}
+	
+	    
+	
+	
+	
+} /* Media Query */

@@ -481,7 +481,7 @@
 		"oAP": "/images/profile-rbuchanan.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/test-stars.svg": {
@@ -1115,6 +1115,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search.php",
+		"oF": 0
+		},
+	"/sidebar-bio.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sidebar-bio.php",
 		"oF": 0
 		},
 	"/sidebar-blog.php": {
