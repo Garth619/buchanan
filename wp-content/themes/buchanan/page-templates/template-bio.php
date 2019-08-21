@@ -16,12 +16,20 @@ get_header(); ?>
 			<span class="att_postion"><?php the_field( 'att_position' ); ?></span><!-- att_postion -->
 			
 			<?php $attorney_profile_image = get_field( 'attorney_profile_image' ); ?>
-
-			<img class="bio_image mobile" src="<?php echo $attorney_profile_image['url']; ?>" alt="<?php echo $attorney_profile_image['alt']; ?>" />
 			
-			<h2 class="qa_title"><?php the_field( 'questions_and_answers_title' ); ?></h2><!-- qa_title -->
+			<?php if($attorney_profile_image) : ?>
+
+				<img class="bio_image mobile" src="<?php echo $attorney_profile_image['url']; ?>" alt="<?php echo $attorney_profile_image['alt']; ?>" />
+			
+				<?php else:?>
+			
+				<img class="bio_image mobile" src="<?php bloginfo('template_directory'); ?>/images/placeholder.jpg" alt="<?php the_title();?>" />
+			
+			<?php endif;?>
 			
 				<?php if(get_field('questions_and_answers')): ?>
+				
+					<h2 class="qa_title"><?php the_field( 'questions_and_answers_title' ); ?></h2><!-- qa_title -->
 				
 					<div class="qa_wrapper">
 				 

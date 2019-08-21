@@ -14,135 +14,55 @@ get_header(); ?>
 		
 		<div class="meet_team_wrapper">
 			
-			<div class="single_att">
-				
-				<a class="" href="">
-				
-					<div class="att_img_wrapper">
-						
-						<img class="att_img" src="<?php bloginfo('template_directory');?>/images/profile-jbuchanan.jpg"/>
-					
-						<div class="att_overlay">
-						
-							<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
-						
-							<span>View Profile</span>
-						
-						</div><!-- att_overlay -->
-					
-					</div><!-- att_img_wrapper -->
-					
-					<span class="att_name">Robert J. Buchanan</span>
-					
-					<span class="att_position">Attorney and Managing Partner</span><!-- att_position -->
-				
-				</a>
-				
-			</div><!-- single_att -->
+			<?php $attorney_bios = get_field( 'attorney_bios' ); ?>
 			
-			<div class="single_att">
+			<?php if ( $attorney_bios ): ?>
 				
-				<a class="" href="">
+				<?php foreach ( $attorney_bios as $post ):  ?>
 				
-					<div class="att_img_wrapper">
-						
-						<img class="att_img" src="<?php bloginfo('template_directory');?>/images/profile-jbuchanan.jpg"/>
-					
-						<div class="att_overlay">
-						
-							<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
-						
-							<span>View Profile</span>
-						
-						</div><!-- att_overlay -->
-					
-					</div><!-- att_img_wrapper -->
-					
-					<span class="att_name">Robert J. Buchanan</span>
-					
-					<span class="att_position">Attorney and Managing Partner</span><!-- att_position -->
+				<?php setup_postdata ( $post ); ?>
 				
-				</a>
+					<div class="single_att">
 				
-			</div><!-- single_att -->
+						<a href="<?php the_permalink();?>">
+				
+							<div class="att_img_wrapper">
+								
+								<?php $attorney_profile_image = get_field( 'attorney_profile_image' ); ?>
 			
-			<div class="single_att">
-				
-				<a class="" href="">
-				
-					<div class="att_img_wrapper">
-						
-						<img class="att_img" src="<?php bloginfo('template_directory');?>/images/profile-jbuchanan.jpg"/>
-					
-						<div class="att_overlay">
-						
-							<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
-						
-							<span>View Profile</span>
-						
-						</div><!-- att_overlay -->
-					
-					</div><!-- att_img_wrapper -->
-					
-					<span class="att_name">Robert J. Buchanan</span>
-					
-					<span class="att_position">Attorney and Managing Partner</span><!-- att_position -->
-				
-				</a>
-				
-			</div><!-- single_att -->
+								<?php if($attorney_profile_image) : ?>
+
+									<img class="att_img" src="<?php echo $attorney_profile_image['url']; ?>" alt="<?php echo $attorney_profile_image['alt']; ?>" />
 			
-			<div class="single_att">
-				
-				<a class="" href="">
-				
-					<div class="att_img_wrapper">
-						
-						<img class="att_img" src="<?php bloginfo('template_directory');?>/images/profile-jbuchanan.jpg"/>
-					
-						<div class="att_overlay">
-						
-							<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
-						
-							<span>View Profile</span>
-						
-						</div><!-- att_overlay -->
-					
-					</div><!-- att_img_wrapper -->
-					
-					<span class="att_name">Robert J. Buchanan</span>
-					
-					<span class="att_position">Attorney and Managing Partner</span><!-- att_position -->
-				
-				</a>
-				
-			</div><!-- single_att -->
+									<?php else:?>
 			
-			<div class="single_att">
-				
-				<a class="" href="">
-				
-					<div class="att_img_wrapper">
+									<img class="att_img" src="<?php bloginfo('template_directory'); ?>/images/placeholder.jpg" alt="<?php the_title();?>" />
+			
+								<?php endif;?>
 						
-						<img class="att_img" src="<?php bloginfo('template_directory');?>/images/profile-jbuchanan.jpg"/>
-					
-						<div class="att_overlay">
+								<div class="att_overlay">
 						
-							<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
+									<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
 						
-							<span>View Profile</span>
+									<span>View Profile</span>
 						
-						</div><!-- att_overlay -->
+								</div><!-- att_overlay -->
 					
-					</div><!-- att_img_wrapper -->
+							</div><!-- att_img_wrapper -->
 					
-					<span class="att_name">Robert J. Buchanan</span>
+							<span class="att_name"><?php the_title();?></span>
 					
-					<span class="att_position">Attorney and Managing Partner</span><!-- att_position -->
+							<span class="att_position"><?php the_field( 'att_position' ); ?></span><!-- att_position -->
 				
-				</a>
+						</a>
 				
-			</div><!-- single_att -->
+					</div><!-- single_att -->
+				
+				<?php endforeach; ?>
+				
+				<?php wp_reset_postdata(); ?>
+				
+			<?php endif; ?>
 			
 		</div><!-- meet_team_wrapper -->
 				
