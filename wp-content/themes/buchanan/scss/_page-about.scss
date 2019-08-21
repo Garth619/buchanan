@@ -1,0 +1,129 @@
+
+
+
+.about_intro_wrapper {
+	padding-left:9%;
+}
+
+
+span.about_firm_subtitle {
+	display: block;
+	text-transform: uppercase;
+	color:$bluedark;
+	font-size: 24px;
+	letter-spacing: 0.26em;
+	margin-top:9px;
+	@include industry_black;
+	&:after {
+		content:"";
+		display: inline-block;
+		width:77px;
+		height:10px;
+		margin:6px 0 0 19px;
+		vertical-align: top;
+		background-size:80px 11px;
+		background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
+	}
+}
+
+
+.about_firm_intro {
+	font-size: 35px;
+	line-height: 55px;
+	color:#738095;
+	padding-top:65px;
+	max-width:1065px;
+	@include montserrat_light;
+	p {
+		margin-bottom:20px;
+	}
+}
+
+
+
+.about_top_content {
+	margin: 93px 0 0 9%;
+	display: flex;
+}
+
+.about_top_left {
+	flex-basis:720px;
+	flex-shrink:0;
+}
+
+.about_top_right {
+	flex-grow:1;
+	padding-left:10%;
+	margin-top:10px;
+}
+
+.about_top_video {
+	position: relative;
+	img.about_video_thumb {
+		max-width:100%;
+		width: 100%;
+		height:auto;
+		display: block;
+	}
+	img.about_play {
+		position: absolute;
+		bottom:-10px;
+		left:-15px;
+	}
+}
+
+
+body.page-template-template-about {
+	.internal_wrapper {
+		max-width:100%;
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	.content {
+		h2 {
+			padding-top:28px;
+		}
+	}
+}
+
+
+
+.about_middle_content {
+	text-align: center;
+	padding:95px 9% 0;
+	svg {
+		width:88px;
+		height:86px;
+	}
+	.about_middle_quote {
+		font-size: 35px;
+		line-height: 48px;
+		color:#738095;
+		max-width:990px;
+		margin:33px auto 0;
+		@include industry_book;
+		p {
+			margin-bottom:30px;
+		}
+	}
+	a.button {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+
+
+.about_bottom_content {
+	max-width:1915px;
+	margin:113px auto 0;
+	display: flex;
+	padding:0 9%;
+	justify-content: space-between;
+}
+
+
+.about_bottom_col {
+	flex-basis:46%;
+}
