@@ -415,6 +415,30 @@ a.ilawyer {
     padding: 0 32px;
 	}
 	
+	footer {
+		padding: 0px 97px 115px;
+		.form_wrapper {
+			padding: 155px 0 178px;
+		}
+	}
+	
+	.footer_single_info {
+		span.footer_info_subtitle {
+			margin-top: 28px;
+			&:after {
+				margin: 20px 0 0;
+			}
+		}
+		span.address {
+			margin-top: 20px;
+		}
+		a.footer_link {
+			margin: 32px 0 0;
+		}
+	}
+	
+	
+	    
 	
 	
 } /* Media Query */

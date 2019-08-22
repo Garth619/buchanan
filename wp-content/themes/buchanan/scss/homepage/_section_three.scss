@@ -146,6 +146,37 @@
 } /* Media Query */
 
 
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.sec_three_inner {
+		max-width: 1055px;
+	}
+	    
+	
+	.sec_three_slider {
+		.slick-slide {
+	    margin: 0 33px;
+	  }
+	  .slick-list {
+	    margin: 0 -33px;
+	    padding-bottom: 45px;
+	  }
+	 }
+	 
+	 .sec_three_slide {
+		 .sec_three_slide_inner {
+			 span.name {
+				 margin-top: 33px;
+			 }
+		 }
+	 }
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1365px) {
 	
 	

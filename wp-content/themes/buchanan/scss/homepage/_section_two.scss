@@ -141,6 +141,9 @@ a.sec_two_consult_button {
 	
 	#section_two {
 		padding-bottom:120px;
+		.circles {
+			right: -82px;
+		}
 	}
 	
 	.sec_two_top {
@@ -158,14 +161,17 @@ a.sec_two_consult_button {
 	
 	
 	.sec_two_left {
-		flex-basis:620px;
+		flex-basis: 650px;
 		flex-shrink:0;
 	}
 	
-	
+	.sec_two_right {
+		padding-left: 5%;
+	}
 	
 	.sec_two_cta {
 		margin: 95px 0 0 59px;
+		//max-width: 535px;
 	}
 	
 	
