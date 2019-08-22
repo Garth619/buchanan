@@ -20,7 +20,7 @@
 	    padding-bottom: 45px;
 	  }
 	  .slick-dots {
-	  	bottom: -100px;
+	  	bottom: -89px;
 	  	width:250px;
 	  	margin:auto;
 	  	position: relative;
@@ -68,10 +68,13 @@
 			span.large_quote {
 				color:$bluedark;
 			}
+			span.small_quote {
+				color:$bluedark;
+			}
 		}
 	}
 	.sec_three_slide_inner {
-		padding:90px 53px;
+		padding:93px 53px 20px;
 		img.stars {
 			width:205px;
 			height: 29px;
@@ -90,13 +93,14 @@
 		img.quote_line {
 			width:79px;
 			height:10px;
-			margin-top:17px;
+			margin-top:22px;
 		}
 		span.small_quote {
 			font-size: 17px;
 			line-height: 30px;
-			color:$greydark;
+			color:#a0acb8;
 			margin:20px 0 0;
+			transition: all 375ms ease-in-out;
 			@include montserrat_light;
 		}
 		span.name {
@@ -104,7 +108,7 @@
 			color:$bluelight;
 			font-size: 15px;
 			letter-spacing: 0.24em;
-			margin-top:37px;
+			margin-top:45px;
 			@include industry_black;
 		}
 	}
@@ -114,7 +118,7 @@
 .sec_three_arrow_wrapper {
 	width:100%;
 	max-width:400px;
-	margin:63px auto 0;
+	margin: 52px auto 0;
 	display: flex;
 	justify-content: space-between;
 	.sec_three_arrow {

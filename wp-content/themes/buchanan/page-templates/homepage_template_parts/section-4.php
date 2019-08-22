@@ -26,7 +26,7 @@
 
 			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu esta fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt induc culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undet  natus error sit voluptatem accusantium dolorem que laudantium, mal totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicaboeaque ipsa quae abeaque ipsa quae abeaque ipsa quae abeaque ipsa quae ab. </p>
 
-			<h3>H3 Lorem ipsum dolor sit amet consectetur</h3>
+			<h3 class="hack_two">H3 Lorem ipsum dolor sit amet consectetur</h3>
 			
 			<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis estom ipsumcommodo viverra maecenas accumsan lacus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et tal dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation dipsot ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
 			
@@ -36,9 +36,7 @@
 			
 			<h3 class="hack">H3 Lorem ipsum dolor sit amet consectetur</h3>
 			
-			<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis esto ipsum suspen disse ultrices gravida. Sed ut persptis unde omnis iste natus error sit voluptatem accusantium doloreue laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-			
-			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis esto ipsum suspen disse ultrices gravida. Sed ut persptis unde omnis iste natus error sit voluptatem accusantium doloreue laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 			<p>Risus commodo viverra maecenas accumsan lacus. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:</p>
 			

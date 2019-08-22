@@ -34,16 +34,16 @@
 		}
 		span.sub_header {
 			text-transform: uppercase;
-			font-size: 26px;
+			font-size: 24px;
 			letter-spacing: 0.26em;
-			margin:14px 0 0;
+			margin: 18px 0 0;
 			@include industry_black;
 			&:after {
 				content:"";
 				display: block;
 				width:77px;
 				height:10px;
-				margin:50px auto 0;
+				margin:48px auto 0;
 				background-size:80px 11px;
 				background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 			}
@@ -59,12 +59,12 @@ span.sec_four_description {
 	line-height: 55px;
 	color:#738095;
 	max-width:1000px;
-	margin:34px auto 0;
+	margin:36px auto 0;
 	@include montserrat_extralight;
 }
 
 a.sec_four_button {
-	margin:32px auto 0;
+	margin:38px auto 0;
 }
 
 
@@ -72,13 +72,16 @@ a.sec_four_button {
 	display: flex;
 	justify-content: space-between;
 	max-width:1605px;
-	margin:115px auto 0;
+	margin:118px auto 0;
 }
 
 .sec_four_col {
 	flex-basis: 44.5%;
 	h3.hack {
 		padding-top:5px;
+	}
+	h3.hack_two {
+		padding-top:2px;
 	}
 }
 
