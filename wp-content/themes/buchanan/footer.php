@@ -176,10 +176,10 @@ function paraWidth() {
     var relativeY = lastScrollY / 1500;
     
     prefix(paraOne.style, "Transform", "translate3d(0px," +
-      pos(0, 700, relativeY, 0) + 'px, 0)');
+      pos(0, 1300, relativeY, 0) + 'px, 0)');
 
 		prefix(paraTwo.style, "Transform", "translate3d(0px," +
-      pos(0, 500, relativeY, 0) + 'px, 0)');
+      pos(0, 800, relativeY, 0) + 'px, 0)');
 
     prefix(paraThree.style, "Transform", "translate3d(0px," +
       pos(0, 300, relativeY, 0) + 'px, 0)');

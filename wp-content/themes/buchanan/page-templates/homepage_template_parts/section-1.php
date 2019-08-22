@@ -86,6 +86,8 @@
 		<div class="mobile_position_play">
 		
 		<div class="sec_one_play_wrapper">
+			
+				<div class="sec_one_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- sec_one_wistia -->
 				
 				<img class="play_button_dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
 				
@@ -128,17 +130,7 @@
 				
 			</picture>
 
-			
-			
-<!--
-			<img id="para_one" src="<?php bloginfo('template_directory');?>/images/layer-3.jpg"/> 
-			
-			<img id="para_two" src="<?php bloginfo('template_directory');?>/images/layer-2.png"/>
-			
-			<img id="para_three" src="<?php bloginfo('template_directory');?>/images/layer-1.png"/>
--->
-
-			
+		
 		</div><!-- parallax -->
 
 		
@@ -149,6 +141,10 @@
 			<img class="tab_hero" src="" alt=""/>
 		
 		</picture>
+		
+		<div class="sec_one_gradient"></div>
+		
+<!-- 		<div class="sec_one_cover"></div> -->
 
 	</section><!-- section_one -->
 	

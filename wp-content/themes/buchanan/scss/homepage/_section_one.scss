@@ -8,6 +8,35 @@
 	z-index:0;
 }
 
+
+
+.sec_one_gradient {
+	z-index: 1;
+	position: absolute;
+	width:100%;
+	height:1052px;
+	top:96px;
+	left:0;
+	background: linear-gradient(to bottom, rgba(125,185,232,0) 41%,rgba(0,29,65,1) 84%);
+// 	background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(68,113,155,0) 46%,rgba(16,49,87,1) 87%,rgba(0,29,65,1) 100%);
+}
+
+
+/*
+.sec_one_cover {
+	z-index: 2;
+	position: absolute;
+	width:100%;
+	height:1052px;
+	top:0px;
+	left:0;
+	background:rgba(0,41,87,0.12);
+
+}
+*/
+
+
+
 .section_one_inner {
 	position: relative;
 	z-index: 3;
@@ -411,31 +440,6 @@ ul.sec_one_sp_list {
 	left:0;
 	width:100%;
 	height:1052px;
-	&:before, &:after {
-		content:"";
-		display: block;
-		position: absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-	}
-/*
-	&:before {
-		z-index: 1;
-		background:rgba(0,41,87,0.2);
-		mix-blend-mode: multiply;
-	}
-	&:after {
-		z-index: 2;
-		position: absolute;
-		width:100%;
-		height:1052px;
-		top:96px;
-		left:0;
-		background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(68,113,155,0) 46%,rgba(16,49,87,1) 87%,rgba(0,29,65,1) 100%);
-	}
-*/
 	img {
 		position: absolute;
 		top:0;
@@ -456,6 +460,22 @@ ul.sec_one_sp_list {
 	bottom:90px;
 	right:107px;
 	z-index:3;
+	cursor: pointer;
+	.sec_one_wistia {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:2;
+	}
+	&:hover {
+		.vid_img_wrapper {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
 	img.play_button_dots {
 		position: absolute;
 		top:0;
@@ -466,18 +486,37 @@ ul.sec_one_sp_list {
 		position: absolute;
 		top: 74px;
 		left:19px;
+		overflow: hidden;
+		&:after {
+			content:"";
+			display: block;
+			width:100%;
+			height:100%;
+			background: rgba(56,123,212,0.65);
+			position: absolute;
+			top:0;
+			left:0;
+			z-index:1;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all 200ms ease-in-out;
+		}
 		img {
 			display: block;
 			width:295px;
 			height:295px;
+			border-radius: 50%;
 		}
 	}
 	img.play_verbiage {
 		position: absolute;
     top: 66px;
     left: 23px;
+    z-index:1;
 	}
 }
+
+
 
 
 img.tab_hero {
