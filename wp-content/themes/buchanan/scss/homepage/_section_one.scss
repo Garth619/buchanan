@@ -228,7 +228,7 @@ ul.sec_one_sp_list {
 	cursor: pointer;
 	&:hover {
 		&:before, &:after {
-			background:$bluelight;
+			background:$red;
 		}
 	}
 	&:before, &:after {
