@@ -243,6 +243,14 @@
 	}
 	
 	.sec_three_slide {
+		.sec_three_slide_inner {
+			img.quote_line {
+				margin-top: 15px;
+			}
+			span.small_quote {
+				margin: 23px 0 0;
+			}
+		}
 		&:hover {
 			transform: translateY(35px);
 			background: transparent;

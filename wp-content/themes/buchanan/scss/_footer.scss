@@ -438,6 +438,11 @@ a.ilawyer {
 	}
 	
 	
+	.sec_one_gradient {
+		 height: 945px;
+	}
+	
+	   
 	    
 	
 	
@@ -530,6 +535,32 @@ a.ilawyer {
 
 
 @media screen and (max-width: 1066px) {
+	
+	footer {
+		.form_wrapper {
+			padding: 119px 0 151px;
+		}
+	}
+	
+	.footer_single_info {
+		margin-bottom:99px;
+		span.footer_info_title {
+			&:after {
+				margin: 18px 0 0;
+			}
+		}
+		span.footer_info_subtitle {
+			margin-top: 27px;
+		}
+		span.address {
+			margin-top: 16px;
+		}
+		a.footer_link {
+			margin: 33px 0 0;
+		}
+	}
+	
+	
 	
 	.copyright {
 		height:auto;
