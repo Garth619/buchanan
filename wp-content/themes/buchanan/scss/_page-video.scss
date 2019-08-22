@@ -134,6 +134,39 @@
 }
 
 
+
+@media screen and (max-width: 1560px) {
+	
+	
+	.single_video {
+		a {
+			.click_play_wrapper {
+				.click_play_inner {
+					width: 140px;
+					height: 140px;
+					&:before {
+						width: 95px;
+						height: 95px;
+						top: 26px;
+						left: 20px;
+					}
+					&:after {
+						top: 62px;
+						left: 64px;
+					}
+					img.click_play {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1399px) {
 	
 	
@@ -153,3 +186,127 @@
 } /* Media Query */
 
 
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.video_wrapper {
+		margin:77px auto -85px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 815px) {
+	
+	
+	.single_video {
+		a {
+			.click_play_wrapper {
+				.click_play_inner {
+					width: 120px;
+					height: 120px;
+					&:before {
+						width: 85px;
+						height: 85px;
+						top: 21px;
+						left: 16px;
+					}
+					&:after {
+						top: 52px;
+						left: 55px;
+					}
+					img.click_play {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.video_wrapper {
+		display: block;
+		margin:50px auto -50px;
+	}
+	
+	
+	.single_video {
+		margin-bottom: 50px;
+		a {
+			.video_content {
+				span.video_title {
+					margin-top:25px;
+					font-size: 28px;
+					line-height: 33px;
+				}
+			}
+			.click_play_wrapper {
+				.click_play_inner {
+					width: 145px;
+					height: 145px;
+					&:before {
+						width: 105px;
+						height: 105px;
+						top: 24px;
+						left: 18px;
+					}
+					&:after {
+						top: 64px;
+						left: 66px;
+					}
+					img.click_play {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 420px) {
+	
+	
+	.single_video {
+		a {
+			.click_play_wrapper {
+				.click_play_inner {
+					width: 120px;
+					height: 120px;
+					&:before {
+						width: 85px;
+						height: 85px;
+						top: 21px;
+						left: 16px;
+					}
+					&:after {
+						top: 52px;
+						left: 55px;
+					}
+					img.click_play {
+						
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
