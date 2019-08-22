@@ -14,256 +14,72 @@ get_header(); ?>
 		
 		<div class="video_wrapper">
 			
-			<div class="single_video">
+			<?php if(get_field('video_library')): ?>
+			 
+				<?php while(has_sub_field('video_library')): ?>
+			 
+						<div class="single_video">
 				
-				<a href="//player.vimeo.com/video/283801404?portrait=0&autoplay=1" data-lity>
+							<a href="//player.vimeo.com/video/<?php the_sub_field( 'vimeo_id' ); ?>?portrait=0&autoplay=1" data-lity>
 					
-					<div class="single_video_img_wrapper">
+								<div class="single_video_img_wrapper">
 						
-						<div class="click_play_wrapper">
+									<div class="click_play_wrapper">
 							
-							<div class="click_play_inner">
+										<div class="click_play_inner">
 							
-								<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
+											<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
 							
-							</div><!-- click_play_inner -->
+										</div><!-- click_play_inner -->
 							
-						</div><!-- click_play_wrapper -->
-						
-						<?php 
-               	
-							$url = "https://player.vimeo.com/video/283801404";
+								</div><!-- click_play_wrapper -->
+								
+								<?php $video_thumbnail = get_sub_field( 'video_thumbnail' ); 
+								
+									if ( $video_thumbnail ) : ?>
+								
+									<img class="vimeo_thumb" src="<?php echo $video_thumbnail['url']; ?>" alt="<?php echo $video_thumbnail['alt']; ?>" />
+								
+									<?php else:
+									
+										$url = "https://player.vimeo.com/video/" . get_sub_field('vimeo_id');
                 
-							if(function_exists('grab_vimeo_thumbnail')){
+										if(function_exists('grab_vimeo_thumbnail')){
                                     
-								$thumb = grab_vimeo_thumbnail($url);
+											$thumb = grab_vimeo_thumbnail($url);
                  
-             	} else {
+             				} else {
                   	
-						 		$thumb = "grab vimeo didn't work";
+						 					$thumb = "grab vimeo didn't work";
                  
-             	}
+             				}
                                 
-           	?>
+           				?>
 						
-						<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
+					 				<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
+									
+								<?php endif; ?>
 						
-						<div class="video_overlay"></div><!-- video_overlay -->
+								<div class="video_overlay"></div><!-- video_overlay -->
 						
-					</div><!-- single_video_img_wrapper -->
+							</div><!-- single_video_img_wrapper -->
 					
-					<div class="video_content">
+							<div class="video_content">
 						
-						<span class="video_title">Buchanan & Buchanan, P.L.C. Overview</span><!-- video_title -->
+								<span class="video_title"><?php the_sub_field( 'video_title' ); ?></span><!-- video_title -->
 						
-						<span class="video_description">Learn More About Auto Cases at the Buchanan & Buchanan Law Firm in Grand Rapids, Michigan.</span><!-- video_description -->
+								<span class="video_description"><?php the_sub_field( 'video_description' ); ?></span><!-- video_description -->
 						
-					</div><!-- video_content -->
+							</div><!-- video_content -->
 					
-				</a>
+						</a>
 				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="//player.vimeo.com/video/283801404?portrait=0&autoplay=1" data-lity>
-					
-					<div class="single_video_img_wrapper">
-						
-						<div class="click_play_wrapper">
+					</div><!-- single_video -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 							
-							<div class="click_play_inner">
-							
-								<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
-							
-							</div><!-- click_play_inner -->
-							
-						</div><!-- click_play_wrapper -->
-						
-						<?php 
-               	
-							$url = "https://player.vimeo.com/video/283801404";
-                
-							if(function_exists('grab_vimeo_thumbnail')){
-                                    
-								$thumb = grab_vimeo_thumbnail($url);
-                 
-             	} else {
-                  	
-						 		$thumb = "grab vimeo didn't work";
-                 
-             	}
-                                
-           	?>
-						
-						<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
-						
-						<div class="video_overlay"></div><!-- video_overlay -->
-						
-					</div><!-- single_video_img_wrapper -->
-					
-					<div class="video_content">
-						
-						<span class="video_title">Buchanan & Buchanan, P.L.C. Overview</span><!-- video_title -->
-						
-						<span class="video_description">Learn More About Auto Cases at the Buchanan & Buchanan Law Firm in Grand Rapids, Michigan.</span><!-- video_description -->
-						
-					</div><!-- video_content -->
-					
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="//player.vimeo.com/video/283801404?portrait=0&autoplay=1" data-lity>
-					
-					<div class="single_video_img_wrapper">
-						
-						<div class="click_play_wrapper">
-							
-							<div class="click_play_inner">
-							
-								<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
-							
-							</div><!-- click_play_inner -->
-							
-						</div><!-- click_play_wrapper -->
-						
-						<?php 
-               	
-							$url = "https://player.vimeo.com/video/283801404";
-                
-							if(function_exists('grab_vimeo_thumbnail')){
-                                    
-								$thumb = grab_vimeo_thumbnail($url);
-                 
-             	} else {
-                  	
-						 		$thumb = "grab vimeo didn't work";
-                 
-             	}
-                                
-           	?>
-						
-						<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
-						
-						<div class="video_overlay"></div><!-- video_overlay -->
-						
-					</div><!-- single_video_img_wrapper -->
-					
-					<div class="video_content">
-						
-						<span class="video_title">Buchanan & Buchanan, P.L.C. Overview</span><!-- video_title -->
-						
-						<span class="video_description">Learn More About Auto Cases at the Buchanan & Buchanan Law Firm in Grand Rapids, Michigan.</span><!-- video_description -->
-						
-					</div><!-- video_content -->
-					
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="//player.vimeo.com/video/283801404?portrait=0&autoplay=1" data-lity>
-					
-					<div class="single_video_img_wrapper">
-						
-						<div class="click_play_wrapper">
-							
-							<div class="click_play_inner">
-							
-								<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
-							
-							</div><!-- click_play_inner -->
-							
-						</div><!-- click_play_wrapper -->
-						
-						<?php 
-               	
-							$url = "https://player.vimeo.com/video/283801404";
-                
-							if(function_exists('grab_vimeo_thumbnail')){
-                                    
-								$thumb = grab_vimeo_thumbnail($url);
-                 
-             	} else {
-                  	
-						 		$thumb = "grab vimeo didn't work";
-                 
-             	}
-                                
-           	?>
-						
-						<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
-						
-						<div class="video_overlay"></div><!-- video_overlay -->
-						
-					</div><!-- single_video_img_wrapper -->
-					
-					<div class="video_content">
-						
-						<span class="video_title">Buchanan & Buchanan, P.L.C. Overview</span><!-- video_title -->
-						
-						<span class="video_description">Learn More About Auto Cases at the Buchanan & Buchanan Law Firm in Grand Rapids, Michigan.</span><!-- video_description -->
-						
-					</div><!-- video_content -->
-					
-				</a>
-				
-			</div><!-- single_video -->
-			
-			<div class="single_video">
-				
-				<a href="//player.vimeo.com/video/283801404?portrait=0&autoplay=1" data-lity>
-					
-					<div class="single_video_img_wrapper">
-						
-						<div class="click_play_wrapper">
-							
-							<div class="click_play_inner">
-							
-								<img class="click_play" src="<?php bloginfo('template_directory');?>/images/test.png"/>
-							
-							</div><!-- click_play_inner -->
-							
-						</div><!-- click_play_wrapper -->
-						
-						<?php 
-               	
-							$url = "https://player.vimeo.com/video/283801404";
-                
-							if(function_exists('grab_vimeo_thumbnail')){
-                                    
-								$thumb = grab_vimeo_thumbnail($url);
-                 
-             	} else {
-                  	
-						 		$thumb = "grab vimeo didn't work";
-                 
-             	}
-                                
-           	?>
-						
-						<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
-						
-						<div class="video_overlay"></div><!-- video_overlay -->
-						
-					</div><!-- single_video_img_wrapper -->
-					
-					<div class="video_content">
-						
-						<span class="video_title">Buchanan & Buchanan, P.L.C. Overview</span><!-- video_title -->
-						
-						<span class="video_description">Learn More About Auto Cases at the Buchanan & Buchanan Law Firm in Grand Rapids, Michigan.</span><!-- video_description -->
-						
-					</div><!-- video_content -->
-					
-				</a>
-				
-			</div><!-- single_video -->
-				
 		</div><!-- video_wrapper -->
 				
 	</div><!-- internal_wrapper -->
