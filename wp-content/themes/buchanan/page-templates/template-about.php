@@ -36,7 +36,7 @@ get_header(); ?>
 				
 				<div class="about_top_video">
 					
-					<div class="about_wistia"></div><!-- about_wistia -->
+					<div class="about_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- about_wistia -->
 					
 					<?php $video_thumb = get_field( 'video_thumb' ); ?>
 

@@ -60,7 +60,11 @@ header {
 	height:100%;
 	width:96px;
 	margin-left:33px;
+	transition: all 200ms ease-in-out;
 	cursor: pointer;
+	&:hover {
+		background: $bluelight;
+	}
 	.menu_bars {
 		max-width:48px;
 		margin:24px auto 0;

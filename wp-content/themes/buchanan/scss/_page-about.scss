@@ -66,6 +66,14 @@ span.about_firm_subtitle {
 
 .about_top_video {
 	position: relative;
+	.about_wistia {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:1;
+	}
 	img.about_video_thumb {
 		max-width:100%;
 		width: 100%;
