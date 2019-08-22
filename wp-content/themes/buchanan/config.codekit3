@@ -394,7 +394,7 @@
 		"oAP": "/images/int-video-thumb.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/layer-1.png": {
@@ -504,6 +504,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/images/test.png": {
+		"ft": 32768,
+		"iS": 23982,
+		"oA": 0,
+		"oAP": "/images/test.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/images/vid_thumb.png": {
 		"ft": 32768,

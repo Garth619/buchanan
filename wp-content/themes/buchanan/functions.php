@@ -580,5 +580,35 @@ function ilaw_id_friendly_text($string) {
   return $new_id;
 }
 
+// get vimeo thumbnail 
+
+
+function curl_get_contents($url)
+{
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    return $data;
+}
+
+
+
+function grab_vimeo_thumbnail($vimeo_url){
+    if( !$vimeo_url ) return "no url";
+    $url = 'https://vimeo.com/api/oembed.json?url=' . urlencode($vimeo_url ) . "/";
+    $contents = curl_get_contents($url);
+    if (!$contents) return "no contents";
+    $data = json_decode( $contents, true );
+    if( !$data ) return "no data";
+    // return $data['thumbnail_url'];
+    return $data['thumbnail_url'] ;
+}
+
 
 
