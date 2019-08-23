@@ -312,6 +312,7 @@
 	
 	.two_col {
 		display: block;
+		padding-top: 1px;
 	}
 	
 	
@@ -402,11 +403,18 @@
 	  padding: 0 32px 25px;
   }
   
+  .sidebar_box {
+	 padding:0 32px;
+	 h3 {
+		font-size: 35px;
+		line-height: 40px;
+	 }
+  }
+  
   .sidebar_box.pa_box {
-		padding:0 32px;
 		margin-bottom:0;
 		h3 {
-			font-size: 36px;
+			
 		}
 		ul {
 			li {

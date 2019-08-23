@@ -48,7 +48,7 @@ h2.qa_title {
 
 
 h3.question {
-	
+	padding-top:21px;
 }
 
 
@@ -187,8 +187,17 @@ img.internal_circles.bio {
 		margin: 0 auto 42px;
 	}
 	
-	    
-	
+	h3.question {
+		padding-top:5px;
+	}
+
+	.sidebar_box.bio {
+		ul {
+			li {
+				line-height: 28px;
+			}
+		}
+	}
 	
 	
 } /* Media Query */
