@@ -93,7 +93,7 @@
 				
 				<div class="vid_img_wrapper">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb.png"/>
+					<img src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb.jpg"/>
 					
 				</div><!-- vid_img_wrapper -->
 				
