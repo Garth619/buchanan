@@ -26,6 +26,8 @@ get_header(); ?>
 				<img class="bio_image mobile" src="<?php bloginfo('template_directory'); ?>/images/placeholder.jpg" alt="<?php the_title();?>" />
 			
 			<?php endif;?>
+				
+				<?php the_field( 'attorney_bio_content' ); ?>
 			
 				<?php if(get_field('questions_and_answers')): ?>
 				
