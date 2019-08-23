@@ -66,6 +66,7 @@ span.about_firm_subtitle {
 
 .about_top_video {
 	position: relative;
+	cursor: pointer;
 	.about_wistia {
 		position: absolute;
 		top:0;
@@ -106,7 +107,7 @@ body.page-template-template-about {
 
 .about_middle_content {
 	text-align: center;
-	padding:95px 9% 0;
+	padding: 101px 9% 0;
 	svg {
 		width:88px;
 		height:86px;
