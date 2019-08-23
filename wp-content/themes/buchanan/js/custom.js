@@ -398,7 +398,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
   	
   	$('span.pa_input_value.mobile').replaceWith('<span class="pa_input_value mobile">' + injury + '</span>');
   	
-  	$('.pa_dropdown').slideUp(300);
+  	$('.pa_dropdown').slideUp(400);
   	
   	$('.step_two').addClass('open');
   	

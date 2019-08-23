@@ -12,19 +12,19 @@
 	
 	<div class="sidebar_box_wrapper">
 	
-		<div class="sidebar_box blog">
+		<div class="sidebar_box blog recent_posts">
 			
 			<?php dynamic_sidebar( 'recent_posts' ); ?>
 			
 		</div><!-- sidebar_box -->
 		
-		<div class="sidebar_box blog">
+		<div class="sidebar_box blog categories">
 			
 			<?php dynamic_sidebar( 'category_sidebar' ); ?>
 			
 		</div><!-- sidebar_box -->
 		
-		<div class="sidebar_box blog">
+		<div class="sidebar_box blog archives">
 			
 			<?php dynamic_sidebar( 'archive_sidebar' ); ?>
 			

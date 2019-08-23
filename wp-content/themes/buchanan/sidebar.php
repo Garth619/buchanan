@@ -13,7 +13,7 @@
 	
 	<div class="sidebar_box_wrapper">
 	
-	<div class="sidebar_box">
+	<div class="sidebar_box pa_box">
 					
 			<?php
 				
