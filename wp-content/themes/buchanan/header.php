@@ -67,7 +67,7 @@
 				
 				<span class="free_consult">Free Consultation</span><!-- free_consult -->
 				
-				<a class="phone" href="">1(800)272-4080</a><!-- phone -->
+				<a class="phone" href="tel:18002724080">1(800)272-4080</a><!-- phone -->
 				
 			</div><!-- consult_phone -->
 			
@@ -150,7 +150,7 @@
 			
 			<span class="call_now">Call Now</span><!-- call_now -->
 			
-			<a class="sticky_phone" href="">1(800)272-4080</a><!-- call_now -->
+			<a class="sticky_phone" href="tel:18002724080">1(800)272-4080</a><!-- call_now -->
 			
 		</div><!-- sticky_header_left -->
 		

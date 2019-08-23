@@ -20,7 +20,7 @@
 			
 				<span class="address large_text">171 Monroe Ave. N.W. Suite 750<br/> Grand Rapids, MI 49503</span><!-- address -->
 			
-				<a class="get_directions footer_link" href="">
+				<a class="get_directions footer_link" href="https://www.google.com/maps/place/Buchanan+%26+Buchanan/@42.9660429,-85.6747177,17z/data=!3m1!4b1!4m5!3m4!1s0x8819adc56eaae4b7:0xa15168f6732b1f98!8m2!3d42.966039!4d-85.672529" target="_blank" rel="noopener">
 				
 					<span>Get Directions</span>
 				
@@ -40,11 +40,11 @@
 				
 				<span class="footer_info_subtitle">Toll Free</span><!-- footer_info_subtitle -->
 			
-				<a class="phone large_text" href="">1(800) 272-4080</a><!-- address -->
+				<a class="phone large_text" href="tel:18002724080">1(800) 272-4080</a><!-- address -->
 				
 				<span class="footer_info_subtitle">Fax</span><!-- footer_info_subtitle -->
 			
-				<a class="phone large_text" href="">(616) 458-0608</a><!-- address -->
+				<a class="phone large_text">(616) 458-0608</a><!-- address -->
 			
 			</div><!-- footer_single_info -->
 			
@@ -54,7 +54,7 @@
 			
 				<span class="view_calendar large_text">View our calendar and contact a member of our team</span><!-- address -->
 			
-				<a class="get_directions footer_link" href="">
+				<a class="get_directions footer_link" href="<?php the_permalink(56);?>">
 				
 					<span>Make Appointment</span>
 				
@@ -78,19 +78,19 @@
 		
 		<div class="social_media">
 			
-			<a class="sm_icon facebook" href="">
+			<a class="sm_icon facebook" href="http://www.facebook.com/pages/Buchanan-Buchanan-Law-Firm/537483316270169" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-facebook.svg"); ?>
 				
 			</a>
 			
-			<a class="sm_icon google" href="">
+			<a class="sm_icon google" href="https://plus.google.com/110230520271339992184/" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer_icon-01.svg"); ?>
 				
 			</a>
 			
-			<a class="sm_icon youtube" href="">
+			<a class="sm_icon youtube" href="http://www.youtube.com/user/BuchananLawFirm" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-youtube.svg"); ?>
 				
@@ -102,13 +102,13 @@
 			
 			<ul>
 				<li>Copyright &copy; <?php echo date("Y"); ?> Buchanan & Buchanan. All Rights Reserved</li>
-				<li><a href="">Privacy Policy</a></li>
-				<li><a href="">Disclaimer</a></li>
+				<li><a href="<?php the_permalink(751);?>">Privacy Policy</a></li>
+				<li><a href="<?php the_permalink(753);?>">Disclaimer</a></li>
 			</ul>
 			
 		</div><!-- all_rights_reserved -->
 		
-		<a class="ilawyer" href="">
+		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="nopener">
 			
 			<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-logo-ilawyer.svg"); ?>
 			
