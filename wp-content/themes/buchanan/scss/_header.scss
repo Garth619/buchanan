@@ -201,6 +201,16 @@ nav {
 				}
 			}
 		}
+		li.current-menu-item {
+			a {
+				color:$bluelight;
+			}
+		}
+		li.current-menu-ancestor {
+			> a {
+					color:$bluelight;
+			}
+		}
 		li {
 			text-transform: uppercase;
 			font-size: 23px;
@@ -245,6 +255,11 @@ nav {
 				color:$bluedark;
 				text-decoration: none;
 				transition: all 200ms ease-in-out;
+			}
+		}
+		li.current-menu-item {
+			a {
+				color:$bluelight;
 			}
 		}
 	}
@@ -336,6 +351,7 @@ nav.desktop {
 				color:$bluedark;
 				letter-spacing: 0.03em;
 				padding:21px 38px 21px 20px;
+				@include montserrat_light;
 			}
 			textarea {
 				height:210px;

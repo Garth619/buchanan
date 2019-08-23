@@ -468,6 +468,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		    		
 		    });
 		    
+		    $('nav ul.menu > li.current-menu-ancestor > a').next('ul.sub-menu').clone().appendTo('.nav_col_right_inner').show();
 		    
 		    $('.menu_wrapper').on('click', function(e) {
 		      

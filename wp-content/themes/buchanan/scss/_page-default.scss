@@ -103,6 +103,7 @@
 				color:$bluedark;
 				letter-spacing: 0.03em;
 				padding:21px 38px 21px 20px;
+				@include montserrat_light;
 			}
 			textarea {
 				height:210px;
