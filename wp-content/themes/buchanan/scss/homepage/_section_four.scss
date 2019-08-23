@@ -272,7 +272,7 @@ span.sec_four_description {
 	}
 	
 	.sec_four_top {
-		margin: -27px 0 0 0;
+		margin: -29px 0 0 0;
 		h2 {
 			
 			span.large_header {
@@ -292,6 +292,7 @@ span.sec_four_description {
 			line-height: 38px;
 			padding-left:32px;
 			padding-right:32px;
+			margin: 25px auto 0;
 		}
 	}
 	
@@ -303,7 +304,18 @@ span.sec_four_description {
 	}
 	
 	a.sec_four_button {
+		width:383px;
+		//width:calc(100% - 64px);
+	}
+	
+} /* Media Query */
+
+@media screen and (max-width: 414px) {
+	
+	
+	a.sec_four_button {
 		width:calc(100% - 64px);
+		margin: 27px auto 0;
 	}
 	
 } /* Media Query */

@@ -604,7 +604,7 @@ a.ilawyer {
 
 @media screen and (max-width: 767px) {
 	
-	
+	    
 	
 	footer {
 		padding: 0px 0 98px;
@@ -612,9 +612,12 @@ a.ilawyer {
 			display: none;
 		}
 		.form_wrapper {
-			padding: 63px 0 96px;
+			padding: 69px 0 96px;
 			ul {
 				display: block;
+				li {
+					margin-bottom: 11px;
+				}
 			}
 			.gform_wrapper {
 				margin: 42px auto 0;
@@ -647,6 +650,9 @@ a.ilawyer {
 		}
 		span.footer_info_title {
 			font-size: 20px;
+		}
+		span.address {
+			margin-top: 25px;
 		}
 		a.footer_link {
 			margin: 23px 0 0;

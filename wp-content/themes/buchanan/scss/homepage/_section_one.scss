@@ -899,6 +899,7 @@ img.tab_hero {
 
 .sec_one_play_wrapper {
 	max-width:350px;
+	top: 4px;
 	img.play_button_dots {
 		width: 277px;
     height: 277px;
@@ -932,6 +933,9 @@ img.tab_hero {
 		padding: 93px 0 96px;
 		ul {
 				display: block;
+				li {
+					margin-bottom:11px;
+				}
 			}
 			.gform_wrapper {
 				margin: 42px auto 0;
