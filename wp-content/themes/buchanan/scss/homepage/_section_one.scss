@@ -100,6 +100,7 @@ ul.sec_one_sp_list {
 	display: flex;
 	margin-top:40px;
 	position: relative;
+	z-index: 1;
 	.pa_input {
 		flex-grow:1;
 		background:#fff;
