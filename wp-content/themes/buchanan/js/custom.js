@@ -227,6 +227,7 @@ jQuery(document).ready(function($){
       }
     }
 		
+		$('body').addClass('ready');
 		
 		createWaypoint('header_trigger', '.sticky_mobile_header, nav', 'trigger', -89, null, true);
 

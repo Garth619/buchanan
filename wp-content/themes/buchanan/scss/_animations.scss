@@ -1,7 +1,90 @@
 @media screen and (min-width: 1399px) {
 	
+	// header
+	
+	.header_left {
+		a {
+			img.logo {
+				transform: translateX(-35px);
+				opacity: 0;
+				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
 	
 	
+	body.ready {
+		.header_left {
+			a {
+				img.logo {
+					transform: translateX(0px);
+					opacity: 1;
+				}
+			}
+		}
+	}
+	
+	.consult_phone {
+		span.free_consult, a.phone {
+			transform: translateX(35px);
+			opacity: 0;
+			transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	body.ready {
+		.consult_phone {
+			span.free_consult, a.phone {
+				transform: translateX(0px);
+				opacity: 1;
+			}
+			a.phone {
+				//transition-delay: 50ms;
+			}
+		}
+	}
+	
+	
+	.menu_wrapper {
+		.menu_bars {
+			span.menu_bar {
+				transform: scale(0,1);
+				transform-origin: top right;
+				opacity: 0;
+				transition: transform 850ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+			}
+			span.menu_title {
+				transform: translatey(-5px);
+				opacity: 0;
+				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
+	
+	
+	body.ready {
+		.menu_wrapper {
+			.menu_bars {
+				span.menu_bar {
+					transform: scale(1,1);
+					opacity: 1;
+					&:nth-of-type(1) {
+						
+					}
+					&:nth-of-type(2) {
+						transition-delay: 100ms;
+					}
+					&:nth-of-type(3) {
+						transition-delay: 200ms;
+					}
+				}
+				span.menu_title {
+					transform: scale(1,1);
+					opacity: 1;
+				}
+			}
+		}
+	}
 	
 	
 	
