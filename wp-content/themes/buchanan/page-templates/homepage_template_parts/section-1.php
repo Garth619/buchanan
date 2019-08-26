@@ -53,7 +53,7 @@
 				
 					<span class="pa_sps_description">We have a well-earned reputation for providing high quality representation to victims of medical malpractice.</span><!-- pa_sps_description -->
 				
-					<a class="learn_more" href="">
+					<a class="learn_more" href="<?php the_permalink(50);?>">
 						
 						<span>Learn More</span>
 						
@@ -69,7 +69,7 @@
 				
 					<span class="pa_sps_description">If you have been injured in an accident, contact us today for help and for the reimbursements you deserve.</span><!-- pa_sps_description -->
 				
-					<a class="learn_more" href="">
+					<a class="learn_more" href="<?php the_permalink(50);?>">
 						
 						<span>Learn More</span>
 						
