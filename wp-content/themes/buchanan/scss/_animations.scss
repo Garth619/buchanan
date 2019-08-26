@@ -7,7 +7,7 @@
 			img.logo {
 				transform: translateX(-35px);
 				opacity: 0;
-				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+				transition: transform 1300ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
 			}
 		}
 	}
@@ -28,7 +28,7 @@
 		span.free_consult, a.phone {
 			transform: translateX(35px);
 			opacity: 0;
-			transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+			transition: transform 1300ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
 		}
 	}
 	
@@ -56,7 +56,7 @@
 			span.menu_title {
 				transform: translateY(-5px);
 				opacity: 0;
-				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
+				transition: transform 1300ms cubic-bezier(.17,.66,.34,.98), opacity 400ms cubic-bezier(.17,.66,.34,.98);
 			}
 		}
 	}
@@ -198,7 +198,7 @@
 .sec_one_play_wrapper {
 	
 	img.play_button_dots {
-		transform: rotate(40deg);
+		transform: rotate(20deg);
 		transform-origin: 120px 222px 0;
 		transition: all 1300ms cubic-bezier(.17,.66,.34,.98);
 	}
