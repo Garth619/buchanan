@@ -1,0 +1,20 @@
+<svg id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 45">
+  <defs>
+    <style>
+      .arrow-left-cls-1 {
+        fill: #fff;
+      }
+
+      .arrow-left-cls-2 {
+        fill: none;
+        stroke: #a6c8ea;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>arrow-left</title>
+  <polygon class="arrow-left-cls-1" points="25.5 27.95 25.5 18.15 18 23.05 25.5 27.95"/>
+  <rect class="arrow-left-cls-1" x="25" y="22.05" width="46" height="2"/>
+  <path class="arrow-left-cls-2" d="M40.72,33.93A21.51,21.51,0,1,1,19.19,1.25,22.52,22.52,0,0,1,22.5,1,21.46,21.46,0,0,1,40.76,11.15" transform="translate(0 0)"/>
+</svg>

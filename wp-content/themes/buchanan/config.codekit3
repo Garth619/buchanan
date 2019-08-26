@@ -101,6 +101,16 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/images/arrow-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/arrow-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
