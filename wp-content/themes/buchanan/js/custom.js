@@ -230,6 +230,12 @@ jQuery(document).ready(function($){
 		$('body').addClass('ready');
 		
 		createWaypoint('header_trigger', '.sticky_mobile_header, nav', 'trigger', -89, null, true);
+		
+		createWaypoint('section_two', '#section_two', 'trigger', 400, null, true);
+		
+		createWaypoint('sec_two_left_trigger', '.sec_two_left', 'trigger', 700, null, true);
+		
+		createWaypoint('section_three', '#section_three', 'trigger', 400, null, true);
 
 		
 		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints

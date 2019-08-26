@@ -14,9 +14,13 @@ sed do esto eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis es 
 	
 	<div class="sec_two_bottom">
 		
-		<div class="sec_two_left">
+		<div id="sec_two_left_trigger" class="sec_two_left">
 			
-			<img class="pic" src="<?php bloginfo('template_directory');?>/images/content-img.jpg"/>
+			<div class="sec_two_pic_wrapper">
+			
+				<img class="pic" src="<?php bloginfo('template_directory');?>/images/content-img.jpg"/>
+			
+			</div><!-- sec_two_pic_wrapper -->
 			
 			<div class="sec_two_cta">
 			
