@@ -364,7 +364,15 @@
 		margin-bottom: 75px;
 	}
 
-	
+	.sidebar_box.blog.recent_posts {
+		ul {
+			li {
+				a {
+					padding-right:0;
+				}
+			}
+		}
+	}
 	
 	
 } /* Media Query */
