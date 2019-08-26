@@ -15,7 +15,7 @@ h1.blog {
 .blog_post {
 	padding-bottom:72px;
 	border-bottom:1px solid #ccd1d8;
-	margin-bottom:70px;
+	margin-bottom: 78px;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -23,6 +23,7 @@ h1.blog {
 
 .blog_meta {
 	font-size: 16px;
+	line-height: 22px;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	margin-bottom: 18px;
@@ -47,7 +48,7 @@ h1.blog {
 				margin:7px 10px 0 5px;
 				color:$bluesky;
 				position: relative;
-				top:0;
+				top: -4px;
 				left:0;
 				@include industry_book;
 			}
