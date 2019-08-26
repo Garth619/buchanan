@@ -175,7 +175,7 @@ footer {
 			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 		}
 	}
-	.large_text {
+	a, .large_text {
 		font-size: 29px;
 		line-height: 41px;
 		color:#fff;
@@ -290,7 +290,7 @@ footer {
 		list-style: none;
 		margin:0;
 		li {
-			display: inline-block;
+			display: inline;
 			font-size: 11px;
 			line-height: 20px;
 			@include montserrat_light;
@@ -322,6 +322,7 @@ a.ilawyer {
 	justify-content: flex-end;
 	svg {
 		width:255px;
+		height:18px;
 	}
 }
 
@@ -369,7 +370,7 @@ a.ilawyer {
 			
 		}
 	}
-	.large_text {
+	a, .large_text {
 		font-size: 26px;
 		line-height: 37px;
 	}
@@ -644,7 +645,7 @@ a.ilawyer {
 	
 	.footer_single_info {
 		margin-bottom: 81px;
-		.large_text {
+		a, .large_text {
 			font-size: 23px;
 			line-height: 34px;
 		}

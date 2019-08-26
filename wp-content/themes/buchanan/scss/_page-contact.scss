@@ -28,7 +28,7 @@
 			background: url(#{$themePath}images/graphic-squiggle.svg) no-repeat;
 		}
 	}
-	.large_text {
+	a, .large_text {
 		font-size: 29px;
 		line-height: 41px;
 		color:$bluedark;
@@ -141,7 +141,7 @@ body.page-template-template-contact {
 			
 		}
 	}
-	.large_text {
+	a, .large_text {
 		font-size: 26px;
 		line-height: 37px;
 	}
@@ -298,7 +298,7 @@ body.page-template-template-contact {
 	
 	.contact_single_info {
 		margin-bottom: 81px;
-		.large_text {
+		a, .large_text {
 			font-size: 23px;
 			line-height: 34px;
 		}
