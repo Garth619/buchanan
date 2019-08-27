@@ -55,7 +55,9 @@
 			
 			<a href="<?php bloginfo('url');?>">
 				
-				<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+				<?php $firm_logo = get_field( 'firm_logo','option'); ?>
+
+				<img class="logo" src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
 				
 			</a>
 			
@@ -67,7 +69,7 @@
 				
 				<span class="free_consult">Free Consultation</span><!-- free_consult -->
 				
-				<a class="phone" href="tel:18002724080">1(800)272-4080</a><!-- phone -->
+				<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone_number', 'option')); ?>"><?php the_field( 'firm_phone_number','option'); ?></a><!-- phone -->
 				
 			</div><!-- consult_phone -->
 			
