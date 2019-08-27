@@ -56,7 +56,7 @@
 			
 				<span class="view_calendar large_text">View our calendar and contact a member of our team</span><!-- address -->
 			
-				<a class="get_directions contact_link" href="<?php the_permalink(56);?>">
+				<a class="make_appointment contact_link" href="<?php the_permalink(56);?>">
 				
 					<span>Make Appointment</span>
 				

@@ -892,6 +892,71 @@ body.ready {
 	}
 }
 
+// contact 
+
+
+
+.contact_single_info {
+	span.contact_info_title {
+		&:after {
+			transform: translateX(30px);
+			opacity: 0;
+			transition:transform 1500ms cubic-bezier(.17,.66,.34,.98),opacity 500ms linear;
+		}
+	}
+}
+
+
+body.ready {
+	.contact_single_info {
+		span.contact_info_title {
+			&:after {
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+
+.contact_single_info {
+	a.get_directions {
+		width:230px;
+	}
+	a.make_appointment {
+		width:260px;
+	}
+	a.contact_link {
+		&:hover {
+			span {
+				color:$bluedark;
+			}
+			svg {
+				polygon, rect {
+					transform: translateX(5px);
+				}
+				.arrow2-st1 {
+					stroke: $bluelight;
+				}
+			}
+		}
+		svg {
+			polygon, rect {
+				transform: translateX(0px);
+				transition: transform 700ms cubic-bezier(.17,.66,.34,.98);
+			}
+			.arrow2-st1 {
+				stroke: #A6C8EA;
+				transition: stroke 300ms linear;
+			}
+		}
+		span {
+			transition: all 200ms ease-in-out;
+		}
+	}
+}
+
 
 	
 } /* Media Query */
