@@ -236,6 +236,13 @@ jQuery(document).ready(function($){
 		createWaypoint('sec_two_left_trigger', '.sec_two_left', 'trigger', 700, null, true);
 		
 		createWaypoint('section_three', '#section_three', 'trigger', 400, null, true);
+		
+		createWaypoint('section_four', '#section_four', 'trigger', 600, null, true);
+		
+		createWaypoint('consultation', '#consultation', 'trigger', 400, null, true);
+		
+		
+		
 
 		
 		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints
