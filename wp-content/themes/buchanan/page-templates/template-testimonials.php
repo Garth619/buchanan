@@ -19,18 +19,22 @@ get_header(); ?>
 					<?php while(has_sub_field('testimonials')): ?>
 			 
 				<div class="single_testi">
-				
-					<img class="stars" src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
-				
-					<span class="single_testi_title"><?php the_sub_field( 'testimonial_intro' ); ?></span><!-- testi_title -->
-				
-					<div class="single_testi_description">
 					
-						<?php the_sub_field( 'testimonial_description' ); ?>
-					
-					</div><!-- single_testi_description -->
+					<div class="single_testi_inner">
 				
-					<span class="single_testi_name"><?php the_sub_field( 'testimonial_name' ); ?></span><!-- single_testi_name -->
+						<img class="stars" src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
+					
+						<span class="single_testi_title"><?php the_sub_field( 'testimonial_intro' ); ?></span><!-- testi_title -->
+					
+						<div class="single_testi_description">
+						
+							<?php the_sub_field( 'testimonial_description' ); ?>
+						
+						</div><!-- single_testi_description -->
+					
+						<span class="single_testi_name"><?php the_sub_field( 'testimonial_name' ); ?></span><!-- single_testi_name -->
+					
+					</div><!-- single_testi_inner -->
 				
 				</div><!-- single_testi -->
 			 

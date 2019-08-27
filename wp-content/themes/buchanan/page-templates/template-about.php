@@ -24,7 +24,7 @@ get_header(); ?>
 		
 		</div><!-- about_intro_wrapper -->
 		
-		<div class="about_top_content">
+		<div id="about_trigger" class="about_top_content">
 			
 			<div class="about_top_left content">
 				

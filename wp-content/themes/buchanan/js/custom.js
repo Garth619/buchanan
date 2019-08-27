@@ -241,7 +241,7 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('consultation', '#consultation', 'trigger', 400, null, true);
 		
-		
+		createWaypoint('about_trigger', '#about_trigger', 'trigger', 600, null, true);
 		
 
 		
