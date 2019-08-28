@@ -36,25 +36,26 @@
 			
 			<div class="footer_single_info">
 			
-				<span class="footer_info_title">Give Us a Call</span><!-- footer_info_title -->
+				<span class="footer_info_title"><?php the_field( 'footer_give_us_a_call_title','option'); ?></span><!-- footer_info_title -->
 				
 				<span class="footer_info_subtitle">Toll Free</span><!-- footer_info_subtitle -->
 			
-				<a class="phone large_text" href="tel:18002724080">1(800) 272-4080</a><!-- address -->
+				<a class="phone large_text" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone_number', 'option')); ?>"><?php the_field( 'firm_phone_number','option'); ?></a><!-- address -->
 				
 				<span class="footer_info_subtitle">Fax</span><!-- footer_info_subtitle -->
 			
-				<a class="phone large_text">(616) 458-0608</a><!-- address -->
+				<a class="phone large_text"><?php the_field( 'footer_fax','option'); ?></a><!-- address -->
 			
 			</div><!-- footer_single_info -->
 			
 			<div class="footer_single_info">
 			
-				<span class="footer_info_title">Schedule an Appointment</span><!-- footer_info_title -->
+				<span class="footer_info_title"><?php the_field( 'footer_schedule_an_appointment_title','option'); ?></span><!-- footer_info_title -->
 			
-				<span class="view_calendar large_text">View our calendar and contact a member of our team</span><!-- address -->
+				<span class="view_calendar large_text"><?php the_field( 'footer_appointment_verbiage','option'); ?></span><!-- address -->
 			
-				<a class="make_appointment footer_link" href="<?php the_permalink(56);?>">
+				<a class="make_appointment footer_link" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>
+">
 				
 					<span>Make Appointment</span>
 				
@@ -68,8 +69,10 @@
 		
 	</div><!-- footer_info -->
 	
-	<img class="bridge desktop" src="<?php bloginfo('template_directory');?>/images/bridge-desktop.jpg"/><!-- bridge -->
-		
+	<?php $footer_background_image = get_field( 'footer_background_image','option'); ?>
+
+	<img class="bridge desktop" src="<?php echo $footer_background_image['url']; ?>" alt="<?php echo $footer_background_image['alt']; ?>" />
+
 </footer>
 
 <div class="copyright">
