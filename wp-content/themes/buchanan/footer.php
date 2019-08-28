@@ -2,9 +2,9 @@
 	
 	<div class="form_wrapper">
 		
-		<span class="large_header">Free Consultation</span><!-- large_header -->
+		<span class="large_header"><?php the_field( 'footer_form_title','option'); ?></span><!-- large_header -->
 		
-		<span class="small_header">Information Required</span><!-- small_header -->
+		<span class="small_header"><?php the_field( 'footer_form_required_verbiage','option'); ?></span><!-- small_header -->
 		
 		<?php gravity_form(1, false, false, false, '', true, 12); ?>
 		
@@ -16,11 +16,11 @@
 			
 			<div class="footer_single_info">
 			
-				<span class="footer_info_title">Our Office</span><!-- footer_info_title -->
+				<span class="footer_info_title"><?php the_field( 'footer_our_office_title','option'); ?></span><!-- footer_info_title -->
 			
-				<span class="address large_text">171 Monroe Ave. N.W. Suite 750<br/> Grand Rapids, MI 49503</span><!-- address -->
+				<span class="address large_text"><?php the_field( 'address','option'); ?></span><!-- address -->
 			
-				<a class="get_directions footer_link" href="https://www.google.com/maps/place/Buchanan+%26+Buchanan/@42.9660429,-85.6747177,17z/data=!3m1!4b1!4m5!3m4!1s0x8819adc56eaae4b7:0xa15168f6732b1f98!8m2!3d42.966039!4d-85.672529" target="_blank" rel="noopener">
+				<a class="get_directions footer_link" href="<?php the_field( 'address_link','option'); ?>" target="_blank" rel="noopener">
 				
 					<span>Get Directions</span>
 				
