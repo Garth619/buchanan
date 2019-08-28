@@ -512,6 +512,9 @@ ul.sec_one_sp_list {
 			height:295px;
 			border-radius: 50%;
 		}
+		picture.video_img_mobile {
+			display: none;
+		}
 	}
 	img.play_verbiage {
 		position: absolute;
@@ -656,6 +659,13 @@ img.tab_hero {
 		margin:0 auto;
 		right:0;
 		margin-top: 0;
+		&:hover {
+			.vid_img_wrapper {
+				&:after {
+					display: none;
+				}
+			}
+		}
 		img.play_button_dots {
 			transform: rotate(-45deg);
 			transform-origin: 0px -22px 0;
@@ -669,9 +679,18 @@ img.tab_hero {
 			 position: relative;
 			 width:270px;
 			 height: 270px;
+			 &:after {
+					display: none;
+				}
 			img {
 				width:270px;
 				height:270px;
+			}
+			picture.video_img_mobile {
+				display: block;
+			}
+			picture.video_img_desktop {
+				display: none;
 			}
 		}
 		img.play_verbiage {

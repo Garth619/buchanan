@@ -98,13 +98,33 @@
 				
 				<div class="vid_img_wrapper">
 					
-					<?php $section_one_video_thumb = get_field( 'section_one_video_thumb' ); ?>
+					<picture class="video_img_desktop">
+					
+						<?php $section_one_video_thumb = get_field( 'section_one_video_thumb' ); ?>
+					
+						<source media="(min-width: 1290px)" srcset="<?php echo $section_one_video_thumb['url']; ?>">
 
-					<img src="<?php echo $section_one_video_thumb['url']; ?>" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
+						<img src="" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
+					
+					</picture>
+					
+					<picture class="video_img_mobile">
+					
+						<source media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/video-thumb-tab.jpg">
+
+						<img src="" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
+					
+					</picture>
 
 				</div><!-- vid_img_wrapper -->
 				
-				<img class="play_verbiage" src="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png"/><!-- play_verbiage -->
+				<picture>
+				
+				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png">
+				
+				<img class="play_verbiage" src=""/><!-- play_verbiage -->
+				
+				</picture>
 				
 			</div><!-- sec_one_play_wrapper -->
 			
