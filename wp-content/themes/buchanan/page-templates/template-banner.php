@@ -1,5 +1,8 @@
 <div class="internal_banner">
 	
-	<img src="<?php bloginfo('template_directory');?>/images/int-hero.jpg"/>
+	<?php $internal_banner_image = get_field( 'internal_banner_image','option'); ?>
+
+	<img src="<?php echo $internal_banner_image['url']; ?>" alt="<?php echo $internal_banner_image['alt']; ?>" />
+	
 	
 </div><!-- internal_banner -->

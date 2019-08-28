@@ -18,11 +18,11 @@
 			
 			<div class="contact_single_info">
 			
-				<span class="contact_info_title">Our Office</span><!-- contact_info_title -->
+				<span class="contact_info_title"><?php the_field( 'footer_our_office_title','option'); ?></span><!-- contact_info_title -->
 			
-				<span class="address large_text">171 Monroe Ave. N.W. Suite 750<br/> Grand Rapids, MI 49503</span><!-- address -->
+				<span class="address large_text"><?php the_field( 'address','option'); ?></span><!-- address -->
 			
-				<a class="get_directions contact_link" href="https://www.google.com/maps/place/Buchanan+%26+Buchanan/@42.9660429,-85.6747177,17z/data=!3m1!4b1!4m5!3m4!1s0x8819adc56eaae4b7:0xa15168f6732b1f98!8m2!3d42.966039!4d-85.672529" target="_blank" rel="noopener">
+				<a class="get_directions contact_link" href="<?php the_field( 'address_link','option'); ?>" target="_blank" rel="noopener">
 				
 					<span>Get Directions</span>
 				
@@ -38,25 +38,25 @@
 			
 			<div class="contact_single_info">
 			
-				<span class="contact_info_title">Give Us a Call</span><!-- contact_info_title -->
+				<span class="contact_info_title"><?php the_field( 'footer_give_us_a_call_title','option'); ?></span><!-- contact_info_title -->
 				
 				<span class="contact_info_subtitle">Toll Free</span><!-- contact_info_subtitle -->
 			
-				<a class="phone large_text" href="tel:18002724080">1(800) 272-4080</a><!-- address -->
+				<a class="phone large_text" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone_number', 'option')); ?>"><?php the_field( 'firm_phone_number','option'); ?></a><!-- address -->
 				
 				<span class="contact_info_subtitle">Fax</span><!-- contact_info_subtitle -->
 			
-				<a class="phone large_text">(616) 458-0608</a><!-- address -->
+				<a class="phone large_text"><?php the_field( 'footer_fax','option'); ?></a><!-- address -->
 			
 			</div><!-- contact_single_info -->
 			
 			<div class="contact_single_info">
 			
-				<span class="contact_info_title">Schedule an Appointment</span><!-- contact_info_title -->
+				<span class="contact_info_title"><?php the_field( 'footer_schedule_an_appointment_title','option'); ?></span><!-- contact_info_title -->
 			
-				<span class="view_calendar large_text">View our calendar and contact a member of our team</span><!-- address -->
+				<span class="view_calendar large_text"><?php the_field( 'footer_appointment_verbiage','option'); ?></span><!-- address -->
 			
-				<a class="make_appointment contact_link" href="<?php the_permalink(56);?>">
+				<a class="make_appointment contact_link" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>">
 				
 					<span>Make Appointment</span>
 				

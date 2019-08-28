@@ -2,9 +2,9 @@
 	
 	<div class="sidebar_form">
 				
-		<span class="sidebar_form_title">Free Consultation</span><!-- sidebar_form_title -->
+		<span class="sidebar_form_title"><?php the_field( 'footer_form_title','option'); ?></span><!-- sidebar_form_title -->
 				
-		<span class="sidebar_form_required">Information Required</span><!-- sidebar_form_required -->
+		<span class="sidebar_form_required"><?php the_field( 'footer_form_required_verbiage','option'); ?></span><!-- sidebar_form_required -->
 				
 		<?php gravity_form(6, false, false, false, '', true, 12); ?>
 				

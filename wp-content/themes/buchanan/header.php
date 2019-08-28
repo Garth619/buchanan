@@ -67,7 +67,7 @@
 			
 			<div class="consult_phone">
 				
-				<span class="free_consult">Free Consultation</span><!-- free_consult -->
+				<span class="free_consult"><?php the_field( 'footer_form_title','option'); ?></span><!-- free_consult -->
 				
 				<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone_number', 'option')); ?>"><?php the_field( 'firm_phone_number','option'); ?></a><!-- phone -->
 				
@@ -132,9 +132,9 @@
 			
 				<div class="nav_right_inner">
 					
-					<span class="nav_right_header">Contact</span><!-- nav_right_header -->
+					<span class="nav_right_header"><?php the_field( 'nav_form_title' ); ?></span><!-- nav_right_header -->
 					
-					<span class="nav_right_sub_header">Information Required</span><!-- nav_right_sub_header -->
+					<span class="nav_right_sub_header"><?php the_field( 'footer_form_required_verbiage','option'); ?></span><!-- nav_right_sub_header -->
 					
 					<?php gravity_form(5, false, false, false, '', true, 1492); ?>
 					
@@ -152,7 +152,7 @@
 			
 			<span class="call_now">Call Now</span><!-- call_now -->
 			
-			<a class="sticky_phone" href="tel:18002724080">1(800)272-4080</a><!-- call_now -->
+			<a class="sticky_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone_number', 'option')); ?>"><?php the_field( 'firm_phone_number','option'); ?></a><!-- call_now -->
 			
 		</div><!-- sticky_header_left -->
 		

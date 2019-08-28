@@ -54,8 +54,7 @@
 			
 				<span class="view_calendar large_text"><?php the_field( 'footer_appointment_verbiage','option'); ?></span><!-- address -->
 			
-				<a class="make_appointment footer_link" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>
-">
+				<a class="make_appointment footer_link" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>">
 				
 					<span>Make Appointment</span>
 				
@@ -81,19 +80,19 @@
 		
 		<div class="social_media">
 			
-			<a class="sm_icon facebook" href="http://www.facebook.com/pages/Buchanan-Buchanan-Law-Firm/537483316270169" target="_blank" rel="nopener">
+			<a class="sm_icon facebook" href="<?php the_field( 'facebook_link','option'); ?>" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-facebook.svg"); ?>
 				
 			</a>
 			
-			<a class="sm_icon google" href="https://plus.google.com/110230520271339992184/" target="_blank" rel="nopener">
+			<a class="sm_icon google" href="<?php the_field( 'google_link','option'); ?>" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer_icon-01.svg"); ?>
 				
 			</a>
 			
-			<a class="sm_icon youtube" href="http://www.youtube.com/user/BuchananLawFirm" target="_blank" rel="nopener">
+			<a class="sm_icon youtube" href="<?php the_field( 'youtube_link','option'); ?>" target="_blank" rel="nopener">
 				
 				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-youtube.svg"); ?>
 				
@@ -104,9 +103,13 @@
 		<div class="all_rights_reserved">
 			
 			<ul>
-				<li>Copyright &copy; <?php echo date("Y"); ?> Buchanan & Buchanan. All Rights Reserved</li>
-				<li><a href="<?php the_permalink(751);?>">Privacy Policy</a></li>
-				<li><a href="<?php the_permalink(753);?>">Disclaimer</a></li>
+				<li>Copyright &copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></li>
+				<?php if(get_field('privacy_policy','option')) { ?>
+				<li><a href="<?php the_field( 'privacy_policy','option'); ?>">Privacy Policy</a></li>
+				<?php } ?>
+				<?php if(get_field('disclaimer','option')) { ?>
+				<li><a href="<?php the_field( 'disclaimer','option'); ?>">Disclaimer</a></li>
+				<?php } ?>
 			</ul>
 			
 		</div><!-- all_rights_reserved -->

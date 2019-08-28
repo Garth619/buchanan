@@ -765,14 +765,6 @@
 		"oAP": "/page-templates/template-blog.php",
 		"oF": 0
 		},
-	"/page-templates/template-caseresults.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-templates/template-caseresults.php",
-		"oF": 0
-		},
 	"/page-templates/template-contact.php": {
 		"cB": 0,
 		"ft": 8192,

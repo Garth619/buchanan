@@ -163,9 +163,9 @@
 			
 			<div class="form_wrapper">
 		
-				<span class="large_header">Free Consultation</span><!-- large_header -->
+				<span class="large_header"><?php the_field( 'footer_form_title','option'); ?></span><!-- large_header -->
 		
-				<span class="small_header">Information Required</span><!-- small_header -->
+				<span class="small_header"><?php the_field( 'footer_form_required_verbiage','option'); ?></span><!-- small_header -->
 		
 				<?php gravity_form(4, false, false, false, '', true, 132); ?>
 		
