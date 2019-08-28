@@ -110,9 +110,13 @@
 					
 					<picture class="video_img_mobile">
 					
-						<source type="image/webp" media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/video-tab.webp" >
+						<?php $section_one_video_thumb_tablet_image = get_field( 'section_one_video_thumb_tablet_image' ); ?>
+						
+						<?php $section_one_video_thumb_tablet_image_webp = get_field( 'section_one_video_thumb_tablet_image_webp' ); ?>
 					
-						<source media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/video-thumb-tab.jpg">
+						<source type="image/webp" media="(max-width: 1290px)" srcset="<?php echo $section_one_video_thumb_tablet_image_webp['url']; ?>" >
+					
+						<source media="(max-width: 1290px)" srcset="<?php echo $section_one_video_thumb_tablet_image['url']; ?>">
 
 						<img src="" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
 					
@@ -164,8 +168,14 @@
 
 		
 		<picture>
+		
+			<?php $section_one_hero_tab = get_field( 'section_one_hero_tab' ); ?>
+			
+			<?php $section_one_hero_tab_webp = get_field( 'section_one_hero_tab_webp' ); ?>
+			
+			<source type="image/webp" media="(max-width: 1290px)" srcset="<?php echo $section_one_hero_tab_webp['url']; ?>">
 				
-			<source media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/hero-tab.jpg">
+			<source media="(max-width: 1290px)" srcset="<?php echo $section_one_hero_tab['url']; ?>">
 					
 			<img class="tab_hero" src="" alt=""/>
 		
