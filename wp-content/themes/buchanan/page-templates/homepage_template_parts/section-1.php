@@ -110,6 +110,8 @@
 					
 					<picture class="video_img_mobile">
 					
+						<source type="image/webp" media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/video-tab.webp" >
+					
 						<source media="(max-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/video-thumb-tab.jpg">
 
 						<img src="" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
