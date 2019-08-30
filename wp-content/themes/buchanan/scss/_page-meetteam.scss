@@ -151,11 +151,16 @@
 	
 	
 	.single_att {
+		span.att_position {
+			font-size: 16px;
+			margin-top: 0px;
+		}
 		.att_img_wrapper {
-			height: 510px;
+			height: 450px;
 		}
 		span.att_name {
-			margin-top: 30px;
+			margin-top: 20px;
+			font-size: 27px;
 		}
 	}
 	

@@ -132,7 +132,7 @@
 			
 				<div class="nav_right_inner">
 					
-					<span class="nav_right_header"><?php the_field( 'nav_form_title' ); ?></span><!-- nav_right_header -->
+					<span class="nav_right_header"><?php the_field( 'nav_form_title','option'); ?></span><!-- nav_right_header -->
 					
 					<span class="nav_right_sub_header"><?php the_field( 'footer_form_required_verbiage','option'); ?></span><!-- nav_right_sub_header -->
 					

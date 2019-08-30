@@ -44,7 +44,7 @@ get_header(); ?>
 
 					<div class="about_play_wrapper">
 					
-						<img class="about_play" src="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png"/>
+						<img class="about_play" src="<?php bloginfo('template_directory');?>/images/about-vid-play.png"/>
 					
 					</div><!-- about_play_wrapper -->
 					

@@ -312,7 +312,7 @@ ul.sec_one_sp_list {
 					font-size: 16px;
 					letter-spacing: 0.03em;
 					padding:21px 45px 22px 23px;
-					@include montserrat_light;
+					@include montserrat_reg;
 				}
 				textarea {
 					height:201px;
@@ -336,7 +336,7 @@ ul.sec_one_sp_list {
 	.gform_footer {
 		width:353px;
 		margin:0 auto;
-		border:1px solid #819ca8;
+		border:1px solid #ccd1d8;
 		height:97px;
 		display: flex;
 		justify-content: center;

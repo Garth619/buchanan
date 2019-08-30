@@ -101,6 +101,17 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/images/about-vid-play.png": {
+		"ft": 32768,
+		"iS": 19297,
+		"oA": 0,
+		"oAP": "/images/about-vid-play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/arrow-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
