@@ -38,9 +38,13 @@ get_header(); ?>
 					
 					<div class="about_wistia wistia_embed wistia_async_<?php the_field( 'about_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- about_wistia -->
 					
-					<?php $video_thumb = get_field( 'video_thumb' ); ?>
+				
+					
+						<?php $video_thumb = get_field( 'video_thumb' ); ?>
 
-					<img class="about_video_thumb" src="<?php echo $video_thumb['url']; ?>" alt="<?php echo $video_thumb['alt']; ?>" />
+						<img class="about_video_thumb" src="<?php echo $video_thumb['url']; ?>" alt="<?php echo $video_thumb['alt']; ?>" />
+					
+					
 
 					<div class="about_play_wrapper">
 					
