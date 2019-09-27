@@ -1,8 +1,8 @@
 <section id="section_four">
 	
-	<img class="circles desktop" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
+	<img class="circles desktop" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg" alt="Circles Image"/>
 	
-	<img class="circles tablet" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots-tablet.svg"/>
+	<img class="circles tablet" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots-tablet.svg" alt="Circles Image"/>
 	
 	
 	

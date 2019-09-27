@@ -323,6 +323,17 @@ span.sec_four_description {
 		//width:calc(100% - 64px);
 	}
 	
+	
+	.sec_four_col {
+		ul.h3_list {
+		li {
+			padding-bottom: 5px;
+		}
+	}
+	}
+	
+	
+	
 } /* Media Query */
 
 @media screen and (max-width: 414px) {

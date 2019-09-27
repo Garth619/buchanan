@@ -94,7 +94,7 @@
 			
 				<div class="sec_one_wistia wistia_embed wistia_async_<?php the_field( 'section_one_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- sec_one_wistia -->
 				
-				<img class="play_button_dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
+				<img class="play_button_dots" alt="Play Button Dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
 				
 				<div class="vid_img_wrapper">
 					
@@ -128,7 +128,7 @@
 				
 				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/hero-vid-playbutton.png">
 				
-				<img class="play_verbiage" src=""/><!-- play_verbiage -->
+				<img class="play_verbiage" alt="Play Verbiage" src=""/><!-- play_verbiage -->
 				
 				</picture>
 				
@@ -143,7 +143,7 @@
 				
 				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-3.jpg">
 					
-				<img id="para_one" src="" alt=""/>
+				<img id="para_one" src="" alt="Parralax Img One"/>
 		
 			</picture>
 			
@@ -151,7 +151,7 @@
 				
 				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-2.png">
 					
-				<img id="para_two" src="" alt=""/>
+				<img id="para_two" src="" alt="Parralax Img One"/>
 				
 			</picture>
 			
@@ -159,7 +159,7 @@
 				
 				<source media="(min-width: 1290px)" srcset="<?php bloginfo('template_directory');?>/images/layer-1.png">
 					
-				<img id="para_three" src="" alt=""/>
+				<img id="para_three" src="" alt="Parralax Img One"/>
 				
 			</picture>
 
@@ -177,7 +177,7 @@
 				
 			<source media="(max-width: 1290px)" srcset="<?php echo $section_one_hero_tab['url']; ?>">
 					
-			<img class="tab_hero" src="" alt=""/>
+			<img class="tab_hero" src="" alt="Tablet Hero Image"/>
 		
 		</picture>
 		

@@ -12,11 +12,11 @@
 				
 				<div class="sec_three_slide_inner">
 				
-					<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
+					<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test-stars.svg" alt="Stars Image"/>
 				
 					<span class="large_quote"><?php the_sub_field( 'testimonial_header_quote' ); ?></span><!-- large_quote -->
 				
-					<img class="quote_line" data-src="<?php bloginfo('template_directory');?>/images/graphic-squiggle.svg"/>
+					<img class="quote_line" data-src="<?php bloginfo('template_directory');?>/images/graphic-squiggle.svg" alt="Quote Line Image"/>
 					
 					<span class="small_quote"><?php the_sub_field( 'testimonial_description_quote' ); ?></span><!-- small_quote -->
 					

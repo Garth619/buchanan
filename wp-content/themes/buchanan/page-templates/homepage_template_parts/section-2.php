@@ -1,6 +1,6 @@
 <section id="section_two">
 	
-	<img class="circles" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
+	<img class="circles" alt="Circles Image" data-src="<?php bloginfo('template_directory');?>/images/graphic-dots.svg"/>
 	
 	<div class="sec_two_top">
 		
@@ -25,7 +25,7 @@
 			
 			<div class="sec_two_cta">
 			
-				<img class="sec_two_cta_img" data-src="<?php bloginfo('template_directory');?>/images/graphic-pullquote-dots.jpg"/>
+				<img class="sec_two_cta_img" data-src="<?php bloginfo('template_directory');?>/images/graphic-pullquote-dots.jpg" alt="Dots Image"/>
 				
 				<span class="sec_two_cta_description"><?php the_field( 'section_two_quote' ); ?></span><!-- sec_two_cta_description -->
 				
