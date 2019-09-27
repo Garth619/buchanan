@@ -83,6 +83,21 @@ a.sec_four_button {
 	h3.hack_two {
 		//padding-top:2px;
 	}
+	ul.h3_list {
+		li {
+			padding-bottom: 28px;
+		}
+	}
+	ul {
+		li {
+			margin-bottom: 0;
+			padding-bottom:6px;
+			h3 {
+				padding-top:3px;
+				padding-bottom: 0px;
+			}
+		}
+	}
 }
 
 
