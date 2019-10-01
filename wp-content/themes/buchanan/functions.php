@@ -26,16 +26,22 @@ function load_my_styles_scripts() {
     
 		
 		// Localized PHP Data that needs to be passed onto my custom-min.js file, this grabs the live chat script acf and applies to my lazyload "getScript" function
-
+		
+		if(is_page_template('page-templates/template-makeappoiontment.php')) {
 			
-		$livechat = get_field('live_chat_script','option');
+			$make_appointment_image = get_field( 'make_appointment_image' );
 		
+			$appointmenturl = $make_appointment_image['url'];
 		
+			$appointmentalt = $make_appointment_image['alt'];
 		
-			// Localize the script with new data array 
+		}
+
+		// Localize the script with new data array 
 		
 			$translation_array = array(
-    		'live_chat' => $livechat
+    		'appointmenturl' => $appointmenturl,
+    		'appointmentalt' => $appointmentalt,
 			);
 
 			wp_localize_script( 'jquery-addon', 'my_data', $translation_array );

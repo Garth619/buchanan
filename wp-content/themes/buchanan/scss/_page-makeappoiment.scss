@@ -1,0 +1,47 @@
+
+
+.myappointment_wrapper {
+	
+}
+
+.appointment_image_wrapper {
+	img {
+		max-width: 100%;
+		height:auto;
+		display: block;
+	}
+}
+
+.myblock_row {
+	width:100%;
+	background: pink;
+	display: flex;
+	justify-content: space-between;
+	&:last-of-type {
+		
+	}
+}
+
+.myblock_one {
+	order:1;
+}
+
+.myblock_two {
+	order:2;
+}
+
+/*
+.block {
+	order:3;
+}
+*/
+
+.make_appointment_wrapper {
+	
+}
+
+.final {
+	br {
+		display: none;
+	}
+}
