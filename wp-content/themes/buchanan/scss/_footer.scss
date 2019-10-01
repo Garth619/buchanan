@@ -267,9 +267,15 @@ footer {
 		width:9px;
 		height:19px;
 	}
-	a.google {
+	a.linkedin {
 		width:17px;
 		height:20px;
+		position: relative;
+		top:1px;
+	}
+	a.instagram {
+		width:17px;
+		height:23px;
 		position: relative;
 		top:1px;
 	}
@@ -765,5 +771,28 @@ a.ilawyer {
 			}
 		}
 	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 355px) {
+	
+	
+	
+	footer {
+		.form_wrapper {
+			span.large_header {
+				font-size: 31px;
+				line-height: 39px;
+			}
+		}
+		.gform_footer {
+			input[type="submit"] {
+				font-size: 14px;
+			}
+		}
+  }
+	
+	
 	
 } /* Media Query */

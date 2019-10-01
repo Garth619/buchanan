@@ -74,5 +74,10 @@
 
 </div><!-- internal_main -->	
 
+<div class="contact_map">
+	
+	<?php the_field( 'iframe_map' ); ?>
+	
+</div><!-- contact_map -->
 			
 <?php get_footer(); ?>

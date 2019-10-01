@@ -365,7 +365,14 @@ a.sec_two_consult_button {
 } /* Media Query */
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
+	
+	
+	a.button {
+		padding:0 20px;
+		text-align: center;
+		line-height: 16px;
+	}
 	
 		
 } /* Media Query */

@@ -762,7 +762,14 @@ $('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_o
 
 
 
-
+$("form :input").each(function(index, elem) {
+    var eId = $(elem).attr("id");
+    var label = null;
+    if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
+        $(elem).attr("placeholder", $(label).html());
+        $(label).remove();
+    }
+ });
 
 
 

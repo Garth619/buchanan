@@ -86,9 +86,15 @@
 				
 			</a>
 			
-			<a class="sm_icon google" href="<?php the_field( 'google_link','option'); ?>" target="_blank" rel="nopener">
+			<a class="sm_icon linkedin" href="<?php the_field( 'linkedin_link','option'); ?>" target="_blank" rel="nopener">
 				
-				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer_icon-01.svg"); ?>
+				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-linkedin.svg"); ?>
+				
+			</a>
+			
+			<a class="sm_icon instagram" href="<?php the_field( 'instagram_link','option'); ?>" target="_blank" rel="nopener">
+				
+				<?php echo file_get_contents("wp-content/themes/buchanan/images/footer-social-insta.svg"); ?>
 				
 			</a>
 			

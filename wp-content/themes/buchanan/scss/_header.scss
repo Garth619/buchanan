@@ -852,3 +852,29 @@ nav.desktop {
 	
 	
 } /* Media Query */
+
+@media screen and (max-width: 355px) {
+	
+	
+	
+	
+	.header_left {
+		a {
+			img.logo {
+				width: 170px;
+			}
+		}
+	}
+	
+	.sticky_mobile_header {
+		.sticky_header_left {
+			a.sticky_phone {
+				font-size: 21px;
+			}
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */

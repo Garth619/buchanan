@@ -470,3 +470,26 @@ img.aligncenter {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 355px) {
+	
+	
+	
+	.content {
+		h1 {
+			font-size: 39px;
+			line-height: 42px;
+			hyphens: auto;
+		}
+	}
+	
+	
+	h1.internal_header {
+		font-size: 32px;
+    line-height: 37px;
+	}
+	
+	
+	
+} /* Media Query */
