@@ -20,6 +20,52 @@ get_header(); ?>
 			 
 				<div class="single_testi">
 					
+					<?php if(get_sub_field('vimeo_id_testimonial')) { ?>
+							
+						<div class="testimonial_vid">
+						
+							<a href="//player.vimeo.com/video/<?php the_sub_field( 'vimeo_id_testimonial' ); ?>?portrait=0&autoplay=1" data-lity>
+						
+								<?php $video_thumbnail_testimonial = get_sub_field( 'video_thumbnail_testimonial' ); 
+								
+									if ( $video_thumbnail_testimonial ) : ?>
+								
+										<img class="vimeo_thumb" src="<?php echo $video_thumbnail_testimonial['url']; ?>" alt="<?php echo $video_thumbnail_testimonial['alt']; ?>" />
+								
+										<?php else:
+									
+											$url = "https://player.vimeo.com/video/" . get_sub_field('vimeo_id_testimonial');
+                
+											if(function_exists('grab_vimeo_thumbnail')){
+                                    
+												$thumb = grab_vimeo_thumbnail($url);
+                 
+             					} else {
+                  	
+						 					$thumb = "grab vimeo didn't work";
+                 
+             				}
+                                
+           				?>
+						
+					 				<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
+									
+					 			<?php endif; ?>
+					 			
+					 			<div class="testimonial_video_overlay">
+						 			
+						 			<div class="testi_play"></div><!-- testi_play -->
+						 			
+					 			</div><!-- testimonial_video_overlay -->
+
+							</a>
+						
+						</div><!-- testimonial_vid -->
+						
+						<?php } ?>
+						
+				
+					
 					<div class="single_testi_inner">
 				
 						<img class="stars" src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>

@@ -622,7 +622,7 @@ if($('.testimonials_wrapper').length >0 ){
 		margin:49,
 		breakAt: {
         1450: 2,
-        1066:1
+        800:1
   	}	
 	});
 }
@@ -739,29 +739,33 @@ if($('.parallax').length > 0 ){
 
 // make an appointment 
 
-$(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
 
-$('<div class="appointment_image_wrapper myblock"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
 
-$('.time').parent().addClass('mytime');
+if($('body.page-template-template-makeappointment').length >0 ){
 
-$('.calendar, .mytime').wrapAll('<div class="myblock myblock_calendar"></div>');
 
-$('.final').addClass('myblock_row');
+		$(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
+		
+		$('<div class="appointment_image_wrapper myblock"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
+		
+		$('.time').parent().addClass('mytime');
+		
+		$('.calendar, .mytime').wrapAll('<div class="myblock myblock_calendar"></div>');
+		
+		$('.final').addClass('myblock_row');
+		
+		$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>');
+		
+		$('#booking-overview').next('div').addClass('mysubmit');
+		
+		$('.section, #booking-overview, .mysubmit').wrapAll('<div class="myblock myblock_two"></div>');
+		
+		$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
 
-$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>');
 
-$('#booking-overview').next('div').addClass('mysubmit');
-
-$('.section, #booking-overview, .mysubmit').wrapAll('<div class="myblock myblock_two"></div>');
-
-$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
-
+}
 
 /*
-
-
-
 $("form :input").each(function(index, elem) {
     var eId = $(elem).attr("id");
     var label = null;
@@ -770,10 +774,16 @@ $("form :input").each(function(index, elem) {
         $(label).remove();
     }
  });
-
-
-
 */
+
+
+
+
+
+
+
+
+
 
 	
 

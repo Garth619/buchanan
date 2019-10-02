@@ -1058,7 +1058,7 @@ img.tab_hero {
 			position: relative;
 			
 			span.pa_input_value {
-			
+				font-size:14px;
 				&:before {
 				content:"";
 				display: block;
@@ -1083,6 +1083,14 @@ img.tab_hero {
 			white-space: nowrap;
 			
 		}
+		}
+	}
+	
+	.pa_dropdown {
+		ul {
+			li {
+				font-size: 14px;
+			}
 		}
 	}
 

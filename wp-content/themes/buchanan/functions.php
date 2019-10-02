@@ -27,7 +27,7 @@ function load_my_styles_scripts() {
 		
 		// Localized PHP Data that needs to be passed onto my custom-min.js file, this grabs the live chat script acf and applies to my lazyload "getScript" function
 		
-		if(is_page_template('page-templates/template-makeappoiontment.php')) {
+		if(is_page_template('page-templates/template-makeappointment.php')) {
 			
 			$make_appointment_image = get_field( 'make_appointment_image' );
 		
