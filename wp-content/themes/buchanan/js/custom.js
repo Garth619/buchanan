@@ -770,7 +770,35 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		
 		
 		
-		$('<div class="bottom_header"><span>Personal Information</span></div>').insertBefore('small');
+		$('<div class="bottom_header"><span class="personal">Personal Information</span><div><span>Informaton Required</span><span>*</span></div></div>').insertBefore('small');
+		
+		$('.myblock_one small, .myblock_one p').wrapAll('<div class="pi_form_wrapper"></div>');
+		
+		
+		$(".pi_form_wrapper input[name='email']").prop("placeholder", "Email");
+		$(".pi_form_wrapper input[name='name']").prop("placeholder", "Full Name");
+		$(".pi_form_wrapper input[name='phone']").prop("placeholder", "Phone");
+		
+		$('.pi_form_wrapper textarea').prop('placeholder', 'Please type your message here.');
+		
+/*
+	$(".pi_form_wrapper :input").each(function(index, elem) {
+    var eId = $(elem).attr("id");
+    var label = null;
+    if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
+        $(elem).attr("placeholder", $(label).html());
+        $(label).remove();
+    }
+ });
+*/
+
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

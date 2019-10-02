@@ -260,15 +260,15 @@ a.time-disabled {
 .calendar {
 	width:427px;
 	margin:128px 0 0;
-	border-right:1px solid grey;
-	border-left:1px solid grey;
+	border-right:1px solid #d4d6da;
+	border-left:1px solid #d4d6da;
 }
 
 .mytime {
 	width:427px;
-	border-right:1px solid grey;
-	border-left:1px solid grey;
-	border-bottom:1px solid grey;
+	border-right:1px solid #d4d6da;
+	border-left:1px solid #d4d6da;
+	border-bottom:1px solid #d4d6da;
 }
 
 
@@ -289,17 +289,53 @@ a.time-disabled {
 .bottom_header {
 	width:100%;
 	background: $bluedark;
-	padding:19px 35px;
-	span {
+	padding:20px 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	span.personal {
 		color:#fff;
 		font-size: 26px;
 		letter-spacing: 0.02em;
 		text-transform: uppercase;
 		@include montserrat_bold;
 	}
+	div {
+		span {
+			text-transform: uppercase;
+			letter-spacing: 0.28em;
+			@include industry_black;
+			&:first-of-type {
+				color:#9da9b6;
+				font-size:14px;
+			}
+			&:last-of-type {
+				color: #3b7dd5;
+				font-size:22px;
+				position: relative;
+				margin-left:10px;
+				top:7px;
+			}
+		}
+	}
 }
 
 small {
 	display: none;
+}
+
+.pi_form_wrapper {
+	border-left:1px solid #d4d6da;
+	border-right:1px solid #d4d6da;
+	border-bottom:1px solid #d4d6da;
+	p {
+		line-height: 0;
+		label {
+			display: none;
+		}
+		input, textarea {
+			border:1px solid #d4d6da;
+		}
+	}
 }
 
