@@ -56,6 +56,11 @@ body.page-template-template-makeappointment {
 }
 
 
+.myblock_calendar {
+	height:584px;
+	overflow: hidden;
+}
+
 .ui-widget-header {
 	background:$bluedark;
 	position: relative;
@@ -104,6 +109,7 @@ body.page-template-template-makeappointment {
   right:35px;
   span {
 	  display: block;
+	  text-indent: -9999px;
   }
 }
 
@@ -117,15 +123,15 @@ body.page-template-template-makeappointment {
 
 .myblock_calendar {
 	flex-basis:427px;
+	position: relative;
 	flex-shrink:0;
 	box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 table.ui-datepicker-calendar {
-	padding:35px;
+	padding: 35px 35px 30px;
 	width:100%;
 	thead {
-		
 		tr {
 			th {
 				span {
@@ -144,26 +150,156 @@ table.ui-datepicker-calendar {
 		tr {
 			td {
 				text-align: center;
-				background:#ebebeb;
 				margin:0 3px 0;
 				transition: all 200ms ease-in-out;
-				&:hover {
-					background:#c9dff1;
-				}
 				.ui-state-default {
 					text-decoration: none;
 					display: block;
 					font-size:16px;
 					padding: 15px 0px;
 					color:$bluedark;
+					background:#ebebeb;
 					@include montserrat_reg;
+					&:hover {
+						background:#c9dff1;
+					}
 				}
 			}
 			td.ui-datepicker-other-month {
 				background: #fff;
 			}
+			td.ui-datepicker-current-day {
+				.ui-state-active {
+					background:#c9dff1;
+				}
+			}
 		}
 	}
 }
 
+span.select_time {
+	text-transform: uppercase;
+	display: block;
+	font-size: 16px;
+	letter-spacing: 0.16em;
+	color:#6091da;
+	padding-bottom: 10px;
+	@include industry_black;
+}
+
+.mytime {
+	padding:0 35px;
+}
+
+#ea-loader {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100% !important;
+	height:!important;
+	
+	z-index: 1;
+	display: none !important;
+}
+
+.time {
+	height: 135px;
+	width:100%;
+/*
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+*/
+	
+	
+	
+	
+	a.time-value, a.time-disabled {
+		text-decoration: none;
+		float:left;
+		font-size: 16px;
+		margin-bottom:6px;
+		width: 23.4%;
+		height: 37px;
+		display: block;
+		letter-spacing: 0.03em;
+		color:$bluedark;
+		border:1px solid #d4d6da;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+		margin-right:6px;
+		transition: all 200ms ease-in-out;
+		@include montserrat_reg;
+		&:nth-of-type(4n + 4) {
+			margin-right:0;
+		}
+		&:hover {
+			border:1px solid #C6DFED;
+			background:#C6DFED;
+		}
+	}
+	a.time-value.selected-time {
+		background:#C6DFED;
+		border:1px solid #C6DFED;
+		
+	}
+}
+
+
+a.time-disabled {
+	background:#ebebeb !important;
+}
+
+
+/* ********** */
+
+
+
+.calendar {
+	width:427px;
+	margin:128px 0 0;
+	border-right:1px solid grey;
+	border-left:1px solid grey;
+}
+
+.mytime {
+	width:427px;
+	border-right:1px solid grey;
+	border-left:1px solid grey;
+	border-bottom:1px solid grey;
+}
+
+
+.final.myblock_row {
+	justify-content: flex-start;
+	margin-top: 104px;
+	.myblock_one {
+		width:971px;
+	}
+	.myblock_two {
+		.section {
+			display: none;
+		}
+	}
+}
+
+
+.bottom_header {
+	width:100%;
+	background: $bluedark;
+	padding:19px 35px;
+	span {
+		color:#fff;
+		font-size: 26px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		@include montserrat_bold;
+	}
+}
+
+small {
+	display: none;
+}
 

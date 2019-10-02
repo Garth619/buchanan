@@ -744,25 +744,64 @@ if($('.parallax').length > 0 ){
 if($('body.page-template-template-makeappointment').length >0 ){
 
 
-		$(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
+//(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
 		
-		$('<div class="appointment_image_wrapper myblock_two"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
+		//$('<div class="appointment_image_wrapper myblock_two"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
 		
-		$('.time').parent().addClass('mytime');
+	$('.time').parent().addClass('mytime');
 		
-		$('.calendar, .mytime').wrapAll('<div class="myblock_one myblock_calendar"></div>');
+		//$('.calendar, .mytime').wrapAll('<div class="myblock_one myblock_calendar"></div>');
 		
 		$('.final').addClass('myblock_row');
 		
-		$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>');
+	//$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>'); //
 		
 		$('#booking-overview').next('div').addClass('mysubmit');
 		
 		$('.section, #booking-overview, .mysubmit').wrapAll('<div class="myblock myblock_two"></div>');
 		
 		$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
+		
+		$('<span class="select_time">Select a Time</span>').insertBefore('.time');
+		
+		
+		
+		
+		
+		
+		
+		$('<div class="bottom_header"><span>Personal Information</span></div>').insertBefore('small');
+		
+		
+		
+/*
+		
+		
+		//(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
+		
+		$('<div class="appointment_image_wrapper myblock_two"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
+		
+	$('.time').parent().addClass('mytime');
+		
+		//$('.calendar, .mytime').wrapAll('<div class="myblock_one myblock_calendar"></div>');
+		
+		$('.final').addClass('myblock_row');
+		
+	$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>'); //
+		
+		$('#booking-overview').next('div').addClass('mysubmit');
+		
+		$('.section, #booking-overview, .mysubmit').wrapAll('<div class="myblock myblock_two"></div>');
+		
+		$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
+		
+		$('<span class="select_time">Select a Time</span>').insertBefore('.time');
 
-		//$('.ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-title').wrapAll('<div class="mydate_wrapper"></div>');
+		
+*/
+		
+		
+
 
 }
 
