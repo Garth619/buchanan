@@ -145,11 +145,16 @@ table.ui-datepicker-calendar {
 			td {
 				text-align: center;
 				background:#ebebeb;
-				a {
+				margin:0 3px 0;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					background:#c9dff1;
+				}
+				.ui-state-default {
 					text-decoration: none;
-					padding:5px 0;
 					display: block;
 					font-size:16px;
+					padding: 15px 0px;
 					color:$bluedark;
 					@include montserrat_reg;
 				}
