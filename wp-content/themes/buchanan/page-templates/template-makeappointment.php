@@ -14,6 +14,14 @@ get_header(); ?>
 		<span class="about_firm_subtitle">SELECT A DATE ON THE CALENDAR TO START</span><!-- about_firm_subtitle -->
 		
 		<div class="make_appointment_wrapper">
+			
+			<?php $make_appointment_image = get_field( 'make_appointment_image' ); ?>
+			
+			<?php if ( $make_appointment_image ) { ?>
+			
+			<img class="make_appointment_image" src="<?php echo $make_appointment_image['url']; ?>" alt="<?php echo $make_appointment_image['alt']; ?>" />
+			
+			<?php } ?>
 		
 			<?php echo do_shortcode("[ea_standard]"); ?>
 		

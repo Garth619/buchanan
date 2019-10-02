@@ -746,7 +746,7 @@ if($('body.page-template-template-makeappointment').length >0 ){
 
 //(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
 		
-		//$('<div class="appointment_image_wrapper myblock_two"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
+		//$('<img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" />').insertBefore(".calendar");
 		
 	$('.time').parent().addClass('mytime');
 		
@@ -770,9 +770,16 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		
 		
 		
-		$('<div class="bottom_header"><span class="personal">Personal Information</span><div><span>Informaton Required</span><span>*</span></div></div>').insertBefore('small');
+		$('<div class="bottom_header"><span class="personal">Personal Information</span><div><span>Informaton Required</span><span>*</span></div></div>').insertBefore('.myblock_one small');
 		
-		$('.myblock_one small, .myblock_one p').wrapAll('<div class="pi_form_wrapper"></div>');
+		
+		$('.myblock_two').prepend('<div class="bottom_header"><span class="personal">Booking Overview</span></div>');
+		
+		$('.myblock_one p').wrapAll('<div class="pi_form_wrapper"></div>');
+		
+		$('.ea-submit').wrapAll('<div class="button_wrapper submit_wrapper"></div>');
+		
+		$('.ea-cancel').wrapAll('<div class="button_wrapper cancel_wrapper"></div>');
 		
 		
 		$(".pi_form_wrapper input[name='email']").prop("placeholder", "Email");
