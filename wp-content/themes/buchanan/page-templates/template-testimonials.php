@@ -26,32 +26,16 @@ get_header(); ?>
 						
 							<a href="//player.vimeo.com/video/<?php the_sub_field( 'vimeo_id_testimonial' ); ?>?portrait=0&autoplay=1" data-lity>
 						
-								<?php $video_thumbnail_testimonial = get_sub_field( 'video_thumbnail_testimonial' ); 
-								
-									if ( $video_thumbnail_testimonial ) : ?>
-								
-										<img class="vimeo_thumb" src="<?php echo $video_thumbnail_testimonial['url']; ?>" alt="<?php echo $video_thumbnail_testimonial['alt']; ?>" />
-								
-										<?php else:
-									
-											$url = "https://player.vimeo.com/video/" . get_sub_field('vimeo_id_testimonial');
+								<?php $url = "https://player.vimeo.com/video/" . get_sub_field('vimeo_id_testimonial');
                 
-											if(function_exists('grab_vimeo_thumbnail')){
+									if(function_exists('grab_vimeo_thumbnail')){
                                     
-												$thumb = grab_vimeo_thumbnail($url);
+									$thumb = grab_vimeo_thumbnail($url);?>
+												
+									<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
                  
-             					} else {
-                  	
-						 					$thumb = "grab vimeo didn't work";
-                 
-             				}
-                                
-           				?>
+             		<?php } ?>
 						
-					 				<img class="vimeo_thumb" src="<?php echo $thumb; ?>"/>
-									
-					 			<?php endif; ?>
-					 			
 					 			<div class="testimonial_video_overlay">
 						 			
 						 			<div class="testi_play"></div><!-- testi_play -->

@@ -746,11 +746,11 @@ if($('body.page-template-template-makeappointment').length >0 ){
 
 		$(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
 		
-		$('<div class="appointment_image_wrapper myblock"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
+		$('<div class="appointment_image_wrapper myblock_two"><img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" /></div>').insertBefore(".calendar");
 		
 		$('.time').parent().addClass('mytime');
 		
-		$('.calendar, .mytime').wrapAll('<div class="myblock myblock_calendar"></div>');
+		$('.calendar, .mytime').wrapAll('<div class="myblock_one myblock_calendar"></div>');
 		
 		$('.final').addClass('myblock_row');
 		
@@ -762,6 +762,7 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		
 		$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
 
+		//$('.ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-title').wrapAll('<div class="mydate_wrapper"></div>');
 
 }
 

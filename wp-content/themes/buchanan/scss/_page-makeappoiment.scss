@@ -1,7 +1,14 @@
-
+body.page-template-template-makeappointment {
+	#internal_main {
+		padding-left:175px;
+		padding-top:110px;
+	}
+}
 
 .myappointment_wrapper {
-	
+	margin-top:125px;
+	position: relative;
+	z-index:1;
 }
 
 .appointment_image_wrapper {
@@ -9,12 +16,14 @@
 		max-width: 100%;
 		height:auto;
 		display: block;
+		box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
 	}
 }
 
+
 .myblock_row {
 	width:100%;
-	background: pink;
+	//background: pink;
 	display: flex;
 	justify-content: space-between;
 	&:last-of-type {
@@ -45,3 +54,111 @@
 		display: none;
 	}
 }
+
+
+.ui-widget-header {
+	background:$bluedark;
+	position: relative;
+}
+
+.ui-datepicker-title {
+	color:#fff;
+	order:2;
+	text-transform: uppercase;
+	font-size: 26px;
+	text-align: center;
+	height:66px;
+	padding-top: 20px;
+	letter-spacing: 0.02em;
+	@include montserrat_extrabold;
+}
+
+.ui-datepicker-prev {
+	display: block;
+	width: 0; 
+  height: 0;
+  order:1;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent; 
+  border-right:7px solid #6091da; 
+  text-indent:-9999px;
+  position: absolute;
+  top: 26px;
+  left:35px;
+  span {
+	  display: block;
+	  text-indent: -9999px;
+  }
+}
+
+.ui-datepicker-next {
+	display: block;
+	width: 0; 
+	order:3;
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent; 
+  border-left:7px solid #6091da;
+  position: absolute;
+  top: 26px;
+  right:35px;
+  span {
+	  display: block;
+  }
+}
+
+
+.mydate_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.myblock_calendar {
+	flex-basis:427px;
+	flex-shrink:0;
+	box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+table.ui-datepicker-calendar {
+	padding:35px;
+	width:100%;
+	thead {
+		
+		tr {
+			th {
+				span {
+					text-transform: uppercase;
+					font-size: 16px;
+					letter-spacing: 0.16em;
+					color:#6091da;
+					display: block;
+					padding-bottom:10px;
+					@include industry_black;
+				}
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				text-align: center;
+				background:#ebebeb;
+				a {
+					text-decoration: none;
+					padding:5px 0;
+					display: block;
+					font-size:16px;
+					color:$bluedark;
+					@include montserrat_reg;
+				}
+			}
+			td.ui-datepicker-other-month {
+				background: #fff;
+			}
+		}
+	}
+}
+
+
