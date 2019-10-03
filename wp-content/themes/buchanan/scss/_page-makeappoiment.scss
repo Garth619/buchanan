@@ -980,6 +980,37 @@ small {
 			padding:0 20px;
 		}
 		
+		.ea-label, .value {
+    	padding: 0 20px;
+		}
+		
+		.pi_form_wrapper {
+			padding: 26px 20px 30px;
+		}
+		
+		.final.myblock_row {
+			.myblock_two {
+				min-height: 880px;
+			}
+		}
+		
+		
+		.myblock_two {
+			.bottom_header {
+				margin-bottom: 30px;
+			}
+		}
+		
+		.bottom_header {
+			padding: 20px 10px;
+		}
+		
+		
+		.mysubmit {
+			margin-top: 176px;
+		}
+		
+		
 		
 	} /* Media Query */
 	
@@ -992,6 +1023,24 @@ small {
 				
 			}
 		}
+		
+		
+		.mytime {
+			min-height: 210px;
+		}
+		
+		.time {
+			display: flex;
+			flex-wrap:wrap;
+			a.time-value, a.time-disabled {
+				float:none;
+				&:nth-of-type(4n + 4) {
+					margin-right:6px;
+				}
+			}
+		}
+		
+		
 	    
 	
 		
