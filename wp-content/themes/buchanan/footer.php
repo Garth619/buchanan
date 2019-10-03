@@ -54,13 +54,7 @@
 			
 				<span class="view_calendar large_text"><?php the_field( 'footer_appointment_verbiage','option'); ?></span><!-- address -->
 			
-				<a class="make_appointment footer_link" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>">
-				
-					<span>Make Appointment</span>
-				
-					<?php echo file_get_contents("wp-content/themes/buchanan/images/arrow.svg"); ?>
-			
-				</a><!-- get_directions -->
+				<a class="make_appointment_button" href="<?php the_field( 'footer_make_an_appointment_link','option'); ?>">Make an Appointment</a><!-- get_directions -->
 			
 			</div><!-- footer_single_info -->
 			

@@ -143,6 +143,24 @@ footer {
 	
 }
 
+.footer_single_info {
+	a.make_appointment_button {
+		background: $red;
+		margin-top:27px;
+		color:#fff;
+		text-transform: uppercase;
+		font-size:17px;
+		display: inline-block;
+		line-height: 17px;
+		padding:19px 35px 16px;
+		letter-spacing: 0.1em;
+		transition: all 200ms ease-in-out;
+		@include industry_bold;
+		&:hover {
+			background: $bluelight;
+		}
+	}
+}
 
 
 .footer_info {
@@ -771,6 +789,21 @@ a.ilawyer {
 			}
 		}
 	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 370px) {
+	
+	
+	.footer_single_info {
+		a.make_appointment_button {
+			padding: 19px 20px 16px;
+			font-size: 15px;
+		}
+	}
+	
+	
 	
 } /* Media Query */
 

@@ -92,7 +92,9 @@
 		
 		<div class="sec_one_play_wrapper">
 			
-				<div class="sec_one_wistia wistia_embed wistia_async_<?php the_field( 'section_one_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- sec_one_wistia -->
+<!-- 				<div class="sec_one_wistia"></div> --><!-- sec_one_wistia -->
+				
+				<a href="//player.vimeo.com/video/<?php the_field( 'section_one_vimeo_id' ); ?>?portrait=0&autoplay=1" data-lity>
 				
 				<img class="play_button_dots" alt="Play Button Dots" src="<?php bloginfo('template_directory');?>/images/hero-vid-thumb-dots.svg"/><!-- play_button_dots -->
 				
@@ -131,6 +133,8 @@
 				<img class="play_verbiage" alt="Play Verbiage" src=""/><!-- play_verbiage -->
 				
 				</picture>
+				
+				</a>
 				
 			</div><!-- sec_one_play_wrapper -->
 			
