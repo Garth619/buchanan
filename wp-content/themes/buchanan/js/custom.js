@@ -770,7 +770,7 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		
 		
 		
-		$('<div class="bottom_header"><span class="personal">Personal Information</span><div><span>Informaton Required</span><span>*</span></div></div>').insertBefore('.myblock_one small');
+		$('<div class="bottom_header"><span class="personal">Personal Information</span><div class="pi_required"><span>Informaton Required</span><span>*</span></div></div>').insertBefore('.myblock_one small');
 		
 		
 		$('.myblock_two').prepend('<div class="bottom_header"><span class="personal">Booking Overview</span></div>');

@@ -1,25 +1,33 @@
 body.page-template-template-makeappointment {
 	#internal_main {
-		padding-left:175px;
+		margin-left:175px;
 		padding-top:110px;
 	}
 }
 
 
+.ea-standard {
+	position: relative;
+	z-index:1;
+}
+
+
+.make_appointment_img_wrapper {
+	float:right;
+	position: relative;
+	z-index:1;
+	box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
+}
 
 img.make_appointment_image {
-	position: absolute;
-	top:0;
-	right:0;
-	box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.3);
+	display: block;
 }
 
 
 
 .myappointment_wrapper {
 	margin-top:125px;
-	position: relative;
-	z-index:1;
+	
 }
 
 /*
@@ -216,7 +224,7 @@ span.select_time {
 }
 
 .time {
-	height: 135px;
+	height: 158px;
 	width:100%;
 /*
 	display: flex;
@@ -306,6 +314,7 @@ a.time-disabled {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 	span.personal {
 		color:#fff;
 		font-size: 26px;
@@ -554,3 +563,172 @@ small {
 			@include montserrat_reg;
 		}
 	}
+	
+	@media screen and (max-width: 1890px) {
+		
+		
+		.make_appointment_img_wrapper {
+			position: absolute;
+			top: 353px;
+			left: 496px;
+		}
+		
+		img.make_appointment_image {
+			
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 1845px) {
+		
+		
+		.final.myblock_row {
+			padding-right:175px;
+			.myblock_one {
+				width:auto;
+				flex-grow:1;
+			}
+			.myblock_two {
+				flex-shrink:0;
+			}
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 1660px) {
+		
+		
+		.pi_required {
+			position: absolute;
+			top: 95px;
+			left: 52px;
+		}
+		
+		
+		.pi_form_wrapper {
+			height: 505px;
+			padding: 72px 47px 30px;
+			p {
+				&:after {
+					top: 30px;
+				}
+				input,textarea {
+					padding: 15px 40px 15px 20px;
+				}
+				textarea {
+					height: 255px !important;
+				}
+			}
+		}
+			
+  
+		
+		
+		
+	} /* Media Query */
+	
+	
+	
+	@media screen and (max-width: 1500px) {
+		
+		
+		
+		body.page-template-template-makeappointment #internal_main {
+   		margin-left: 138px;
+   	}
+   	
+   	
+   	.final.myblock_row {
+	   	padding-right: 138px;
+   	}
+		
+		
+		.make_appointment_img_wrapper {
+			overflow: hidden;
+		}
+		
+		img.make_appointment_image {
+			margin-left:-200px;
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 1250px) {
+		
+		body.page-template-template-makeappointment #internal_main {
+    	margin-left: 97px;
+		}
+		
+		.final.myblock_row {
+    	padding-right: 97px;
+	}
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 1175px) {
+		
+		
+		body.page-template-template-makeappointment #internal_main {
+			padding-right:97px;
+		}
+		
+		.ea-standard {
+			width: 637px;
+			margin:0 auto;
+		}
+		
+		
+		.make_appointment_img_wrapper {
+			display: none;
+		}
+		
+		.calendar {
+   	 	//width: 637px;
+   	 	width:100%;
+		}
+		
+		.mytime {
+			width:100%;
+		}
+		
+		.final.myblock_row {
+			flex-direction:column;
+			padding-right:0;
+			margin-top: 80px;
+			
+			.myblock_one {
+				width:100%;
+			}
+			.myblock_two {
+				height: 623px;
+				width: 100%;;
+				margin-left: 0;
+				margin-top:80px;
+			}
+		}
+		
+		
+		
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (min-width: 1920px) {
+		
+		
+		.make_appointment_wrapper {
+			max-width:1750px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		
+	} /* Media Query */

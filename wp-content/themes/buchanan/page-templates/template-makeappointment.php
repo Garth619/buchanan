@@ -19,7 +19,10 @@ get_header(); ?>
 			
 			<?php if ( $make_appointment_image ) { ?>
 			
-			<img class="make_appointment_image" src="<?php echo $make_appointment_image['url']; ?>" alt="<?php echo $make_appointment_image['alt']; ?>" />
+			<div class="make_appointment_img_wrapper">
+			
+				<img class="make_appointment_image" src="<?php echo $make_appointment_image['url']; ?>" alt="<?php echo $make_appointment_image['alt']; ?>" />
+			</div><!-- make_appointment_img_wrapper -->
 			
 			<?php } ?>
 		
