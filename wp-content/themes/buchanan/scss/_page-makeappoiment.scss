@@ -3,6 +3,10 @@ body.page-template-template-makeappointment {
 		margin-left:175px;
 		padding-top:110px;
 	}
+	.about_firm_subtitle {
+		position: relative;
+		z-index:1;
+	}
 }
 
 
@@ -672,6 +676,19 @@ small {
 	} /* Media Query */
 	
 	
+	@media screen and (max-width: 1200px) {
+		
+		
+		body.page-template-template-makeappointment #internal_main {
+			padding-top: 98px;
+			margin-left:98px;
+		}
+		
+		
+		
+	} /* Media Query */
+	
+	
 	@media screen and (max-width: 1175px) {
 		
 		
@@ -680,7 +697,7 @@ small {
 		}
 		
 		.ea-standard {
-			width: 637px;
+			max-width: 637px;
 			margin:0 auto;
 		}
 		
@@ -721,6 +738,54 @@ small {
 	} /* Media Query */
 	
 	
+	@media screen and (max-width: 1066px) {
+		
+		
+		body.page-template-template-makeappointment #internal_main {
+			padding-right: 54px;
+			padding-left: 54px;
+			padding-top: 50px;
+			margin-left:0;
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 1040px) {
+		
+		
+		body.page-template-template-makeappointment span.about_firm_subtitle {
+			&:after {
+				display: block;
+				margin-top: 30px;
+				margin-left:0;
+			}
+		}
+		
+		.calendar {
+    	margin: 67px 0 0;
+		}
+		
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 967px) {
+		
+		
+		
+		body.page-template-template-makeappointment .about_firm_subtitle {
+			max-width: 500px;
+			line-height: 27px;
+		}
+		
+		
+		
+	} /* Media Query */
+	
+	
 	@media screen and (min-width: 1920px) {
 		
 		
@@ -729,6 +794,57 @@ small {
 			margin-left:auto;
 			margin-right:auto;
 		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 767px) {
+		
+		
+		body.page-template-template-makeappointment #internal_main {
+			padding-right: 32px;
+			padding-left: 32px;
+		}
+		
+		.calendar {
+			margin-top:67px;
+		}
+		
+		.time {
+			height:auto;
+		}
+		
+		.pi_form_wrapper {
+			height:auto;
+		}
+		
+		.mytime {
+			min-height: 140px;
+		}
+		
+		
+		
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 630px) {
+		
+		
+		.pi_form_wrapper {
+			display: block;
+			p {
+				&:nth-of-type(1) {
+					
+				}
+				&:nth-of-type(2) {
+					
+				}
+			}
+		}
+
 		
 		
 	} /* Media Query */
