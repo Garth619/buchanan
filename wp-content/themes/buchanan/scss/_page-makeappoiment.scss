@@ -568,6 +568,19 @@ small {
 		}
 	}
 	
+	
+		@media screen and (min-width: 1920px) {
+		
+		
+		.make_appointment_wrapper {
+			max-width:1750px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		
+	} /* Media Query */
+	
 	@media screen and (max-width: 1890px) {
 		
 		
@@ -731,8 +744,18 @@ small {
 			}
 		}
 		
+		.pi_form_wrapper {
+			height:auto
+		}
 		
-		
+/*
+		.bottom_header {
+			text-align: center;
+			span.personal {
+				
+			}
+		}
+*/
 		
 		
 	} /* Media Query */
@@ -786,17 +809,7 @@ small {
 	} /* Media Query */
 	
 	
-	@media screen and (min-width: 1920px) {
-		
-		
-		.make_appointment_wrapper {
-			max-width:1750px;
-			margin-left:auto;
-			margin-right:auto;
-		}
-		
-		
-	} /* Media Query */
+
 	
 	
 	@media screen and (max-width: 767px) {
@@ -816,15 +829,52 @@ small {
 		}
 		
 		.pi_form_wrapper {
-			height:auto;
+			padding-left:35px;
+			padding-right:35px;
 		}
 		
 		.mytime {
 			min-height: 140px;
 		}
 		
+		.final.myblock_row {
+    	margin-top: 40px;
+    	.myblock_two {
+	    	margin-top: 40px;
+    	}
+    }
+    
+   .pi_required {
+    left: 35px;
+		}
 		
 		
+		.bottom_header {
+			display: block;
+			span.personal {
+				display: block;
+				text-align: center;
+			}
+		}
+		
+		
+		.ea-label, .value {
+			padding:0 32px;
+		}
+		
+		
+		.final.myblock_row {
+			.myblock_two {
+				min-height:623px;
+			}
+		}
+		
+		
+		.mysubmit {
+			position: relative;
+			bottom:0;
+			margin-top:45px;
+		}
 		
 		
 	} /* Media Query */
@@ -845,6 +895,118 @@ small {
 			}
 		}
 
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 565px) {
+		
+		
+		body.page-template-template-makeappointment .about_firm_subtitle {
+			    max-width: 310px;
+		}
+		
+		
+		.mysubmit {
+			display: block !important;
+			
+		}
+		
+		.button_wrapper {
+			margin: 0 auto;
+			&:first-of-type {
+				margin-bottom:25px;
+			}
+		}
+		
+		
+		.final.myblock_row .myblock_two {
+    	min-height: 750px;
+		}
+		
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 515px) {
+		
+		
+		.pi_required {
+    	top: 104px;
+    }
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 490px) {
+		
+		.pi_required {
+    	top: 0;
+    	left:13px;
+    	position: relative;
+    	text-align: center;
+		}
+		
+		.ui-datepicker-title {
+			font-size: 18px;
+			padding-top: 25px;
+		}
+		
+		.bottom_header {
+			span.personal {
+				font-size: 18px;
+			}
+		}
+		
+		.pi_form_wrapper {
+			padding: 33px 35px 30px;
+		}
+		
+
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 420px) {
+		
+		table.ui-datepicker-calendar {
+			padding: 20px 20px 30px;
+		}
+		
+		.mytime {
+			padding:0 20px;
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 390px) {
+		
+	.bottom_header {
+		padding: 20px 20px;
+			span.personal {
+				
+			}
+		}
+	    
+	
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 330px) {
+		
+		
+		
+		
+		.ui-datepicker-title {
+			font-size: 18px;
+			padding-top: 24px;
+		}
 		
 		
 	} /* Media Query */
