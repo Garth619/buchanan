@@ -358,6 +358,7 @@ small {
 	flex-wrap:wrap;
 	justify-content: space-between;
 	padding: 50px 47px 30px;
+	height: 593px;
 	p {
 		line-height: 0;
 		flex-basis:49%;
@@ -564,6 +565,7 @@ small {
 			text-decoration: none;
 			letter-spacing: 0.055em;
 			padding-top: 1200px;
+			padding-right: 175px;
 			@include montserrat_reg;
 		}
 	}
@@ -627,7 +629,7 @@ small {
 		
 		
 		.pi_form_wrapper {
-			height: 505px;
+			//height: 505px;
 			padding: 72px 47px 30px;
 			p {
 				&:after {
@@ -637,7 +639,7 @@ small {
 					padding: 15px 40px 15px 20px;
 				}
 				textarea {
-					height: 255px !important;
+					height: 346px !important;
 				}
 			}
 		}
@@ -682,6 +684,12 @@ small {
     	margin-left: 97px;
 		}
 		
+		.myblock_row {
+			h4 {
+				padding-right:97px;
+			}
+		}
+		
 		.final.myblock_row {
     	padding-right: 97px;
 	}
@@ -694,7 +702,7 @@ small {
 		
 		body.page-template-template-makeappointment #internal_main {
 			padding-top: 98px;
-			margin-left:98px;
+			//margin-left:98px;
 		}
 		
 		
@@ -702,7 +710,7 @@ small {
 	} /* Media Query */
 	
 	
-	@media screen and (max-width: 1175px) {
+	@media screen and (max-width: 1187px) {
 		
 		
 		body.page-template-template-makeappointment #internal_main {
@@ -769,6 +777,14 @@ small {
 			padding-left: 54px;
 			padding-top: 50px;
 			margin-left:0;
+		}
+		
+		.myblock_row {
+			h4 {
+				padding-top: 1730px;
+				padding-right:97px;
+				text-align: center;
+			}
 		}
 		
 		
@@ -876,6 +892,13 @@ small {
 			margin-top:45px;
 		}
 		
+		.myblock_row {
+			h4 {
+				font-size: 26px;
+			}
+		}
+		    
+		
 		
 	} /* Media Query */
 	
@@ -892,6 +915,13 @@ small {
 				&:nth-of-type(2) {
 					
 				}
+			}
+		}
+		
+		
+		.myblock_row {
+			h4 {
+				padding-top: 2000px;
 			}
 		}
 
@@ -1043,6 +1073,32 @@ small {
 		
 	    
 	
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 366px) {
+		
+		
+		.pi_required {
+			max-width: 254px;
+			left:0;
+			
+		}
+		
+		.bottom_header {
+			div {
+				span {
+					margin-top:5px;
+					display: block;
+					&:last-of-type {
+					display: none;
+				}
+				}
+			}
+		}
+		
+		
 		
 	} /* Media Query */
 	

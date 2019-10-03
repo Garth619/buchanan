@@ -744,17 +744,10 @@ if($('.parallax').length > 0 ){
 if($('body.page-template-template-makeappointment').length >0 ){
 
 
-//(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
-		
-		//$('<img src="'+my_data.appointmenturl+'" alt="'+my_data.appointmentalt+'" />').insertBefore(".calendar");
 		
 	$('.time').parent().addClass('mytime');
 		
-		//$('.calendar, .mytime').wrapAll('<div class="myblock_one myblock_calendar"></div>');
-		
 		$('.final').addClass('myblock_row');
-		
-	//$('.appointment_image_wrapper, .myblock_calendar').wrapAll('<div class="myblock_row"></div>'); //
 		
 		$('#booking-overview').next('div').addClass('mysubmit');
 		
@@ -763,12 +756,6 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		$('.final small, .final p:not(.section)').wrapAll('<div class="myblock myblock_one"></div>');
 		
 		$('<span class="select_time">Select a Time</span>').insertBefore('.time');
-		
-		
-		
-		
-		
-		
 		
 		$('<div class="bottom_header"><span class="personal">Personal Information</span><div class="pi_required"><span>Informaton Required</span><span>*</span></div></div>').insertBefore('.myblock_one small');
 		
@@ -788,28 +775,10 @@ if($('body.page-template-template-makeappointment').length >0 ){
 		
 		$('.pi_form_wrapper textarea').prop('placeholder', 'Please type your message here.');
 		
-/*
-	$(".pi_form_wrapper :input").each(function(index, elem) {
-    var eId = $(elem).attr("id");
-    var label = null;
-    if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
-        $(elem).attr("placeholder", $(label).html());
-        $(label).remove();
-    }
- });
-*/
 
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-/*
+	/* first attempt wrapping .calendar breaks the day time slots 
 		
 		
 		//(".appointment_image_wrapper, .calendar, .myappointment_form, .final").wrapAll('<div class="myappointment_wrapper"></div>');
